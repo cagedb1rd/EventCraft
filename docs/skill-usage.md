@@ -2,7 +2,18 @@
 
 The repository root is the skill folder: `SKILL.md`, `agents/openai.yaml`, scripts, references and assets belong together. Install its CLI with `python -m pip install -e <absolute-repository-path>`. Install Chromium and system CJK fonts. A wheel alone installs the CLI; Agent instructions are in the repository/skill archive.
 
-For Codex, copy or link the repository as `~/.codex/skills/eventcraft` (Windows: `%USERPROFILE%\.codex\skills\eventcraft`). Use the client's normal skill discovery/setup. This work created the skill in the project; it did not alter the user's global skill installation. A complete skill archive is built by `python scripts/package_skill.py`; it includes public fictional examples and excludes `.venv`, Git metadata and user output.
+For Codex, put the complete skill folder at `~/.agents/skills/eventcraft` (Windows: `%USERPROFILE%\.agents\skills\eventcraft`). Codex also discovers repository skills under `.agents/skills`, and supports symlinked skill folders. A root-level `SKILL.md` alone does not register the project as an installed skill. See [official skill discovery documentation](https://learn.chatgpt.com/docs/build-skills). Codex detects changes automatically; restart Codex if the skill does not appear. This work created the skill in the project; it did not alter the user's global skill installation.
+
+A complete skill archive is built by `python scripts/package_skill.py`; it includes public fictional examples and excludes `.venv`, Git metadata and user output. On this Windows checkout, install the built archive with:
+
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills" | Out-Null
+Expand-Archive -LiteralPath "D:\project\eventCraft\dist\eventcraft-skill-1.0.0.zip" -DestinationPath "$env:USERPROFILE\.agents\skills"
+```
+
+The ZIP contains the outer `eventcraft/` directory. The final path must be `%USERPROFILE%\.agents\skills\eventcraft\SKILL.md`, with its supporting files alongside it. These commands do not replace an existing skill folder. Installing the instructions does not install Python dependencies: use the existing project virtual environment or install the CLI separately.
+
+In the current project, no global installation is necessary to follow the workflow explicitly. Ask Codex to read `D:\project\eventCraft\SKILL.md` and use `D:\project\eventCraft\.venv\Scripts\eventcraft.exe`. Once registered, start a chat for `D:\project\eventCraft`, invoke `$eventcraft`, provide the activity facts, and specify the project virtual-environment executable if it is not on PATH.
 
 Suggested conversation:
 
