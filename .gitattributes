@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+# Preserve exact generated artifact bytes so manifest hashes survive a clone.
+examples/generated/** -text whitespace=cr-at-eol
+examples/gallery/** -text whitespace=cr-at-eol
+examples/recommendation/** -text whitespace=cr-at-eol

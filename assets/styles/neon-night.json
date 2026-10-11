@@ -1,0 +1,70 @@
+{
+  "id": "neon-night",
+  "name": "霓虹夜生活风",
+  "name_en": "Neon night",
+  "palette": [
+    "#130e25",
+    "#faf4ff",
+    "#ef75f3"
+  ],
+  "types": [
+    "night-party",
+    "esports",
+    "community"
+  ],
+  "audience": [
+    "young",
+    "gamers",
+    "music fans"
+  ],
+  "formality": [
+    "casual"
+  ],
+  "keywords": [
+    "夜间",
+    "night",
+    "DJ",
+    "音乐",
+    "party",
+    "霓虹"
+  ],
+  "time": "night",
+  "density": "low",
+  "family": "neon",
+  "hero": "optional",
+  "language": [
+    "zh",
+    "en",
+    "bilingual"
+  ],
+  "avoid": [
+    "ceremonial"
+  ],
+  "brand": {
+    "recolorable": true,
+    "preserve_logo": true,
+    "contrast_min": 4.5
+  },
+  "tokens": {
+    "grid_columns": 6,
+    "margin": 72,
+    "title_px": 148,
+    "body_px": 35,
+    "small_px": 24,
+    "invitation_title_px": 112,
+    "square_title_px": 96,
+    "heading_fonts": "Bahnschrift, Microsoft JhengHei, Noto Sans CJK SC, PingFang SC",
+    "heading_weight": 700,
+    "font": "sans",
+    "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
+    "cjk_serif": "SimSun, Noto Serif CJK SC, Songti SC",
+    "whitespace": "generous",
+    "alignment": "center"
+  },
+  "layout": {
+    "poster": "左上夜场标签 / 发光门框 / 下部居中强标题 / 时间地点发光线",
+    "invitation": "门框缩为横向霓虹边线，称谓与细节上下分组"
+  },
+  "negative": "日间体育不应默认使用；不让正文字体发虚",
+  "tradeoff": "夜间吸睛，不适合密集学术信息"
+}

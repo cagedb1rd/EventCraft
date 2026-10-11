@@ -1,0 +1,53 @@
+[
+  {
+    "title": "灵感相遇",
+    "layout": "display",
+    "lines": 2,
+    "size": "148px",
+    "passed": true,
+    "fonts": [
+      {
+        "familyName": "DengXian",
+        "postScriptName": "DengXian-Bold",
+        "isCustomFont": false,
+        "glyphCount": 4
+      }
+    ]
+  },
+  {
+    "title": "AI Agent 实战分享会",
+    "layout": "expanded",
+    "lines": 2,
+    "size": "148px",
+    "passed": true,
+    "fonts": [
+      {
+        "familyName": "DengXian",
+        "postScriptName": "DengXian-Bold",
+        "isCustomFont": false,
+        "glyphCount": 5
+      },
+      {
+        "familyName": "Arial",
+        "postScriptName": "Arial-BoldMT",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ]
+  },
+  {
+    "title": "人工智能时代的创作实践：从灵感探索到跨学科协作",
+    "layout": "expanded",
+    "lines": 4,
+    "size": "122px",
+    "passed": true,
+    "fonts": [
+      {
+        "familyName": "DengXian",
+        "postScriptName": "DengXian-Bold",
+        "isCustomFont": false,
+        "glyphCount": 23
+      }
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "EventCraft"
+  short_description: "Create complete event campaigns with three style choices"
+  default_prompt: "Use $eventcraft to extract my event facts, recommend three visual styles with actual previews, and generate the complete campaign after my choice."

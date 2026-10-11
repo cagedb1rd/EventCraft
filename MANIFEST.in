@@ -1,0 +1,9 @@
+include SKILL.md LICENSE THIRD_PARTY_NOTICES.md README.md README.en.md CONTRIBUTING.md CHANGELOG.md .env.example .gitattributes requirements-dev.lock
+recursive-include agents *.yaml
+recursive-include references *.md
+recursive-include assets *.json
+recursive-include scripts *.py
+recursive-include docs *.md *.json *.txt *.png *.html *.xml
+recursive-include examples *.json *.md *.txt *.png *.html *.pdf
+recursive-include tests *.py
+global-exclude __pycache__ *.py[cod]

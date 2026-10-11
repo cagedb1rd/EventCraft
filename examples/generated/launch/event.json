@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "title": "未来创作工具发布会",
+  "subtitle": "让每一个好想法，走得更远",
+  "category": "launch",
+  "subtype": "",
+  "start": "2026-11-06T15:00",
+  "end": "2026-11-06T17:00",
+  "timezone": "Asia/Shanghai",
+  "venue": null,
+  "online_platform": "示例直播平台 · Demo 频道",
+  "venue_mode": "online",
+  "organizer": "示例创作实验室",
+  "audience": [
+    "开发者",
+    "设计师"
+  ],
+  "formality": "professional",
+  "atmosphere": [],
+  "keywords": [
+    "科技",
+    "digital",
+    "AI"
+  ],
+  "channels": [],
+  "highlights": [
+    "新品演示",
+    "工作流探索",
+    "现场问答"
+  ],
+  "speakers": [],
+  "teams": [],
+  "fee": "免费",
+  "registration": "无需报名 · 示例线上活动",
+  "registration_url": null,
+  "deadline": null,
+  "contact": null,
+  "recipient": null,
+  "language": "zh",
+  "style": null,
+  "style_description": "",
+  "brand": {
+    "colors": [],
+    "forbidden_colors": [],
+    "forbidden_styles": [],
+    "high_contrast": false,
+    "preserve_logo": true
+  },
+  "assets": {
+    "logo": null,
+    "hero_image": null,
+    "speaker_photo": null,
+    "qr_image": null,
+    "style_reference": []
+  },
+  "sources": {
+    "title": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "subtitle": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "category": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "start": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "end": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "timezone": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "online_platform": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue_mode": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "organizer": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "audience": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "formality": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "keywords": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "highlights": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "registration": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "fee": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "demo": {
+      "source": "launch.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    }
+  },
+  "confirmed_fields": [],
+  "uncertainties": [],
+  "demo": true
+}

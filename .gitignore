@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+output/
+tmp/
+.env
+.env.*
+!.env.example
+private/
+*.log
+.coverage
+# The user's original task brief is local planning material, not a release asset.
+EventCraft_Codex_OneShot_Brief_v3.md

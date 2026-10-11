@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "title": "AI Agent 实战分享会",
+  "subtitle": "从想法到工作流，探索创作的新可能",
+  "category": "lecture",
+  "subtype": "",
+  "start": "2026-10-26T14:00",
+  "end": "2026-10-26T16:30",
+  "timezone": "Asia/Shanghai",
+  "venue": "示例大学 · 创新楼报告厅",
+  "online_platform": null,
+  "venue_mode": "indoor",
+  "organizer": "示例大学创作社",
+  "audience": [
+    "学生",
+    "开发者"
+  ],
+  "formality": "professional",
+  "atmosphere": [],
+  "keywords": [
+    "AI",
+    "Agent",
+    "科技"
+  ],
+  "channels": [
+    "social"
+  ],
+  "highlights": [
+    "工作流实战",
+    "工具与创作",
+    "开放交流"
+  ],
+  "speakers": [
+    "示例讲者"
+  ],
+  "teams": [],
+  "fee": "免费",
+  "registration": "示例链接仅用于二维码测试",
+  "registration_url": "https://example.org/events/agent-lab",
+  "deadline": null,
+  "contact": null,
+  "recipient": null,
+  "language": "zh",
+  "style": null,
+  "style_description": "",
+  "brand": {
+    "colors": [],
+    "forbidden_colors": [],
+    "forbidden_styles": [],
+    "high_contrast": false,
+    "preserve_logo": true
+  },
+  "assets": {
+    "logo": null,
+    "hero_image": null,
+    "speaker_photo": null,
+    "qr_image": null,
+    "style_reference": []
+  },
+  "sources": {
+    "title": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "subtitle": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "category": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "start": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "end": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "timezone": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue_mode": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "organizer": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "audience": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "formality": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "keywords": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "channels": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "highlights": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "speakers": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "fee": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "registration_url": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "registration": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "demo": {
+      "source": "lecture.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    }
+  },
+  "confirmed_fields": [],
+  "uncertainties": [],
+  "demo": true
+}

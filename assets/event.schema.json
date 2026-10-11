@@ -1,0 +1,449 @@
+{
+  "$defs": {
+    "Assets": {
+      "properties": {
+        "logo": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Logo"
+        },
+        "hero_image": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hero Image"
+        },
+        "speaker_photo": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Speaker Photo"
+        },
+        "qr_image": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qr Image"
+        },
+        "style_reference": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Style Reference",
+          "type": "array"
+        }
+      },
+      "title": "Assets",
+      "type": "object"
+    },
+    "Brand": {
+      "properties": {
+        "colors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Colors",
+          "type": "array"
+        },
+        "forbidden_colors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Forbidden Colors",
+          "type": "array"
+        },
+        "forbidden_styles": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Forbidden Styles",
+          "type": "array"
+        },
+        "high_contrast": {
+          "default": false,
+          "title": "High Contrast",
+          "type": "boolean"
+        },
+        "preserve_logo": {
+          "default": true,
+          "title": "Preserve Logo",
+          "type": "boolean"
+        }
+      },
+      "title": "Brand",
+      "type": "object"
+    },
+    "Evidence": {
+      "properties": {
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "excerpt": {
+          "default": "",
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "status": {
+          "default": "provided",
+          "enum": [
+            "provided",
+            "extracted",
+            "inferred",
+            "confirmed"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "title": {
+      "default": "",
+      "maxLength": 500,
+      "title": "Title",
+      "type": "string"
+    },
+    "subtitle": {
+      "default": "",
+      "maxLength": 800,
+      "title": "Subtitle",
+      "type": "string"
+    },
+    "category": {
+      "default": "general",
+      "title": "Category",
+      "type": "string"
+    },
+    "subtype": {
+      "default": "",
+      "title": "Subtype",
+      "type": "string"
+    },
+    "start": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start"
+    },
+    "end": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End"
+    },
+    "timezone": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Timezone"
+    },
+    "venue": {
+      "anyOf": [
+        {
+          "maxLength": 800,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Venue"
+    },
+    "online_platform": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Online Platform"
+    },
+    "venue_mode": {
+      "default": "unknown",
+      "enum": [
+        "unknown",
+        "online",
+        "indoor",
+        "outdoor",
+        "hybrid"
+      ],
+      "title": "Venue Mode",
+      "type": "string"
+    },
+    "organizer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Organizer"
+    },
+    "audience": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Audience",
+      "type": "array"
+    },
+    "formality": {
+      "default": "unknown",
+      "enum": [
+        "unknown",
+        "casual",
+        "professional",
+        "ceremonial"
+      ],
+      "title": "Formality",
+      "type": "string"
+    },
+    "atmosphere": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Atmosphere",
+      "type": "array"
+    },
+    "keywords": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Keywords",
+      "type": "array"
+    },
+    "channels": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Channels",
+      "type": "array"
+    },
+    "highlights": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 20,
+      "title": "Highlights",
+      "type": "array"
+    },
+    "speakers": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 20,
+      "title": "Speakers",
+      "type": "array"
+    },
+    "teams": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 12,
+      "title": "Teams",
+      "type": "array"
+    },
+    "fee": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Fee"
+    },
+    "registration": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Registration"
+    },
+    "registration_url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Registration Url"
+    },
+    "deadline": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Deadline"
+    },
+    "contact": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Contact"
+    },
+    "recipient": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Recipient"
+    },
+    "language": {
+      "default": "zh",
+      "enum": [
+        "zh",
+        "en",
+        "bilingual"
+      ],
+      "title": "Language",
+      "type": "string"
+    },
+    "style": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Style"
+    },
+    "style_description": {
+      "default": "",
+      "title": "Style Description",
+      "type": "string"
+    },
+    "brand": {
+      "$ref": "#/$defs/Brand"
+    },
+    "assets": {
+      "$ref": "#/$defs/Assets"
+    },
+    "sources": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Sources",
+      "type": "object"
+    },
+    "confirmed_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Confirmed Fields",
+      "type": "array"
+    },
+    "uncertainties": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Uncertainties",
+      "type": "array"
+    },
+    "demo": {
+      "default": false,
+      "title": "Demo",
+      "type": "boolean"
+    }
+  },
+  "title": "Event",
+  "type": "object"
+}

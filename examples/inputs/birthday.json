@@ -1,0 +1,15 @@
+{
+  "title": "把快乐种在今天",
+  "subtitle": "一场属于亲友的生日小聚",
+  "category": "birthday",
+  "start": "2026-11-08T14:30",
+  "end": "2026-11-08T17:30",
+  "timezone": "Asia/Shanghai",
+  "venue": "示例花园 · 小屋客厅",
+  "venue_mode": "indoor",
+  "audience": ["亲友", "家庭"],
+  "formality": "casual",
+  "highlights": ["手作时间", "分享故事", "一起庆祝"],
+  "registration": "请通过原邀请渠道回复是否参加",
+  "demo": true
+}

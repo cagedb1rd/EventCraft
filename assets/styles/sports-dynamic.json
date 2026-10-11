@@ -1,0 +1,73 @@
+{
+  "id": "sports-dynamic",
+  "name": "运动竞技风",
+  "name_en": "Sports dynamic",
+  "palette": [
+    "#0e2331",
+    "#f8faf7",
+    "#d6f349"
+  ],
+  "types": [
+    "sports",
+    "esports",
+    "recruitment"
+  ],
+  "audience": [
+    "athletes",
+    "students",
+    "gamers",
+    "young"
+  ],
+  "formality": [
+    "casual",
+    "professional"
+  ],
+  "keywords": [
+    "足球",
+    "篮球",
+    "跑步",
+    "比赛",
+    "sport",
+    "race",
+    "竞技"
+  ],
+  "time": "day",
+  "density": "medium",
+  "family": "diagonal",
+  "hero": "optional",
+  "language": [
+    "zh",
+    "en",
+    "bilingual"
+  ],
+  "avoid": [
+    "ceremonial"
+  ],
+  "brand": {
+    "recolorable": true,
+    "preserve_logo": true,
+    "contrast_min": 4.5
+  },
+  "tokens": {
+    "grid_columns": 6,
+    "margin": 72,
+    "title_px": 162,
+    "body_px": 35,
+    "small_px": 24,
+    "invitation_title_px": 112,
+    "square_title_px": 96,
+    "heading_fonts": "Arial Narrow, Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
+    "heading_weight": 900,
+    "font": "sans",
+    "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
+    "cjk_serif": "SimSun, Noto Serif CJK SC, Songti SC",
+    "whitespace": "balanced",
+    "alignment": "left"
+  },
+  "layout": {
+    "poster": "右侧巨大日期数字 / 斜切速度带 / 左侧竞技标题 / 对抗队伍栏 / 硬信息底块",
+    "invitation": "队伍和时间靠前，速度图形移到侧边，正文不倾斜"
+  },
+  "negative": "竞技与夜生活分开；不虚构队伍、赛程或编号",
+  "tradeoff": "速度感强，仪式性活动适配较弱"
+}

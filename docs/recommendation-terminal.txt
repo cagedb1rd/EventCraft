@@ -1,0 +1,17 @@
+$ eventcraft recommend examples/inputs/lecture.json --output output/documented-selection
+1. 现代科技渐变风 [tech-gradient]
+   活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；主题含 AI；日间时段。采用顶部坐标 / 左对齐标题 / 轨道光环主视觉 / 底部半透明信息区。
+   取舍：科技氛围强，正文应控制密度
+   预览：output\documented-selection\previews\tech-gradient.png
+2. 瑞士网格设计 [swiss-grid]
+   活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用左侧窄索引栏 / 大字号标题 / 右侧几何圆 / 底部横向信息表。
+   取舍：构图鲜明，超长标题需要压缩字号
+   预览：output\documented-selection\previews\swiss-grid.png
+3. 学术专业风 [academic-clean]
+   活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用顶部细色带 / 左侧书脊 / 编号主题 / 水平知识图形 / 结构化事实表。
+   取舍：专业可信，视觉表达相对克制
+   预览：output\documented-selection\previews\academic-clean.png
+
+$ eventcraft all examples/inputs/lecture.json --select 2 --state output/documented-selection --output output/documented-final
+Generated complete campaign: output\documented-final\preview.html
+Style: swiss-grid / swiss-grid; batch calls: 1; layout checks: passed

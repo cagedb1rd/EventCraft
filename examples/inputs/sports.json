@@ -1,0 +1,19 @@
+{
+  "title": "奔向下一程",
+  "subtitle": "校园友谊跑 · 共同出发",
+  "category": "sports",
+  "subtype": "running",
+  "start": "2026-11-15T09:00",
+  "end": "2026-11-15T12:00",
+  "timezone": "Asia/Shanghai",
+  "venue": "示例大学 · 东区田径场",
+  "venue_mode": "outdoor",
+  "organizer": "示例运动社",
+  "audience": ["学生", "运动员"],
+  "formality": "casual",
+  "keywords": ["跑步", "比赛"],
+  "highlights": ["校园友谊赛", "一起向前"],
+  "fee": "免费",
+  "registration_url": "https://example.org/events/campus-run",
+  "demo": true
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "title": "灵感相遇",
+  "subtitle": "在这里，让新的想法发生",
+  "category": "community",
+  "subtype": "",
+  "start": "2026-11-14T14:00",
+  "end": "2026-11-14T17:00",
+  "timezone": "Asia/Shanghai",
+  "venue": "示例艺术空间 · 一层展厅",
+  "online_platform": null,
+  "venue_mode": "unknown",
+  "organizer": "EventCraft Demo",
+  "audience": [],
+  "formality": "unknown",
+  "atmosphere": [],
+  "keywords": [],
+  "channels": [],
+  "highlights": [
+    "创作分享",
+    "开放交流",
+    "灵感实践"
+  ],
+  "speakers": [],
+  "teams": [],
+  "fee": null,
+  "registration": "无需报名 · 示例活动",
+  "registration_url": null,
+  "deadline": null,
+  "contact": null,
+  "recipient": null,
+  "language": "zh",
+  "style": null,
+  "style_description": "",
+  "brand": {
+    "colors": [],
+    "forbidden_colors": [],
+    "forbidden_styles": [],
+    "high_contrast": false,
+    "preserve_logo": true
+  },
+  "assets": {
+    "logo": null,
+    "hero_image": null,
+    "speaker_photo": null,
+    "qr_image": null,
+    "style_reference": []
+  },
+  "sources": {},
+  "confirmed_fields": [],
+  "uncertainties": [],
+  "demo": true
+}

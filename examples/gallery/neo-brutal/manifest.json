@@ -1,0 +1,1228 @@
+{
+  "generator": "EventCraft 1.0.0",
+  "event_digest": "1e46004ea78f8c337ea603b5d6c07965a10aeace5971886ae01e549a67fe4823",
+  "language": "zh",
+  "style": "neo-brutal",
+  "base_style": "neo-brutal",
+  "generation_mode": "deterministic-html-chromium",
+  "draft": false,
+  "publishable": false,
+  "batch_entry_calls": 1,
+  "files": [
+    {
+      "path": "copy/formal.md",
+      "bytes": 317,
+      "sha256": "5308fc41f449f73567794fa29a5d27e50f96045ec5c0a3d3df2f24cd6937cde7"
+    },
+    {
+      "path": "copy/invitation.txt",
+      "bytes": 283,
+      "sha256": "96d16e4d30a0de0cd181dbf1fe4589e71740db8f18cfb82ae4bf59122cb94a7b"
+    },
+    {
+      "path": "copy/short.txt",
+      "bytes": 154,
+      "sha256": "2b7c8f26d8a2f66cd382e7da94e79a74f3005754c2aa38e758b7ec2d97ed7e68"
+    },
+    {
+      "path": "copy/social.md",
+      "bytes": 301,
+      "sha256": "cccc57b0f4c0ca766120a0c58fad4b3346ce51a76c6322624a67f5e53cc5429e"
+    },
+    {
+      "path": "event.json",
+      "bytes": 1229,
+      "sha256": "fd2a4785810a6760ed3276725113a0276a79e5a91c66d5e49dc7d5963d83d843"
+    },
+    {
+      "path": "invitation.html",
+      "bytes": 22017,
+      "sha256": "03a5753e96a307b5cc3de036fead9e3ab31b7dd748eee1025fd592a7cc366ab4"
+    },
+    {
+      "path": "invitation.png",
+      "bytes": 94418,
+      "sha256": "4ae622fc7a4d5a6f6c8279f6c95f090dc1b0896bdd813c1901ae42255316d19b",
+      "dimensions": [
+        1080,
+        1350
+      ]
+    },
+    {
+      "path": "invite_letter.html",
+      "bytes": 1044,
+      "sha256": "8692b6f7302a110a2d71eb7564eac84b5de61cf43ab70ecaa0666710d5166ad1"
+    },
+    {
+      "path": "invite_letter.pdf",
+      "bytes": 41903,
+      "sha256": "c88c6631710e46df006bc1446432056f4a92adbb5eac0140babd3a9c1344903b"
+    },
+    {
+      "path": "poster_portrait.html",
+      "bytes": 22012,
+      "sha256": "9fb2bf97ab92cc6a8aff77ec205d47171d883a47a9fad00e128507d2b3d02722"
+    },
+    {
+      "path": "poster_portrait.png",
+      "bytes": 130251,
+      "sha256": "d2f57d246e2afb15de685db9aaf803439658be6ad0abf4493c19ed3b9e226bd9",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "poster_print.html",
+      "bytes": 22009,
+      "sha256": "5bcf28bf4e26ad4e7f7d1f402941d40ef3d5e087adcbf98d4105462c7e27469a"
+    },
+    {
+      "path": "poster_print.pdf",
+      "bytes": 86863,
+      "sha256": "b71af5790403f3ffeac9bd65b42805e630e1e740c2f4ebd97d8976ed62be42df"
+    },
+    {
+      "path": "poster_square.html",
+      "bytes": 22010,
+      "sha256": "3d8870bcb7146971a717fa2489ba4a9aaa5c2ed6a873175ba93aae8d4eb11121"
+    },
+    {
+      "path": "poster_square.png",
+      "bytes": 73040,
+      "sha256": "d7772c9768ffbf40ff48015b408c0ff09867fc413c27fd9c427e551771dd5663",
+      "dimensions": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "path": "preview.html",
+      "bytes": 2492,
+      "sha256": "c6e849c8f70f3b47fb548ec08a904a18239bce69dd6d0c3c5c602c883e4d310d"
+    }
+  ],
+  "selection": {
+    "ranking_version": "1.0.0",
+    "weights": {
+      "type": 30,
+      "audience": 20,
+      "formality": 15,
+      "scene": 10,
+      "density": 10,
+      "brand": 10,
+      "readability": 5
+    },
+    "input_digest": "1e46004ea78f8c337ea603b5d6c07965a10aeace5971886ae01e549a67fe4823",
+    "profile_digest": "319eff2351fb461dec166a6bdbcfcf297cc775b00e1138619687dcddd4d6348d",
+    "input_summary": {
+      "category": "community",
+      "language": "zh",
+      "title_length": 4,
+      "audience": [],
+      "formality": "unknown",
+      "scene": "day",
+      "density": 27
+    },
+    "style_scores": [
+      {
+        "style_id": "editorial-minimal",
+        "score": 81.0,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 30,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用杂志刊头 / 偏置作品窗 / 编辑标题 / 页脚细栏。",
+        "tradeoff": "留白丰富，长议程更适合附页",
+        "preview_path": null,
+        "family": "editorial"
+      },
+      {
+        "style_id": "neo-brutal",
+        "score": 81.0,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 30,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用顶部分裂标签 / 硬阴影标题块 / 错位圆形贴纸 / 黑色信息模块。",
+        "tradeoff": "年轻醒目，不适合庄重礼仪",
+        "preview_path": null,
+        "family": "blocks"
+      },
+      {
+        "style_id": "retro-print",
+        "score": 81.0,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 30,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用双线印刷边框 / 拱形日晕 / 衬线标题 / 半色调纸张 / 票券式底栏。",
+        "tradeoff": "温厚怀旧，色彩表现较柔和",
+        "preview_path": null,
+        "family": "print"
+      },
+      {
+        "style_id": "warm-playful",
+        "score": 81.0,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 30,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用顶部手绘枝叶 / 便笺式标题 / 花朵太阳插画 / 圆角邀请信纸。",
+        "tradeoff": "亲和温暖，正式商务气质较弱",
+        "preview_path": null,
+        "family": "organic"
+      },
+      {
+        "style_id": "neon-night",
+        "score": 77.62,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 30,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 3.62,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用左上夜场标签 / 发光门框 / 下部居中强标题 / 时间地点发光线。",
+        "tradeoff": "夜间吸睛，不适合密集学术信息",
+        "preview_path": null,
+        "family": "neon"
+      },
+      {
+        "style_id": "swiss-grid",
+        "score": 54.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用左侧窄索引栏 / 大字号标题 / 右侧几何圆 / 底部横向信息表。",
+        "tradeoff": "构图鲜明，超长标题需要压缩字号",
+        "preview_path": null,
+        "family": "grid"
+      },
+      {
+        "style_id": "tech-gradient",
+        "score": 54.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用顶部坐标 / 左对齐标题 / 轨道光环主视觉 / 底部半透明信息区。",
+        "tradeoff": "科技氛围强，正文应控制密度",
+        "preview_path": null,
+        "family": "space"
+      },
+      {
+        "style_id": "academic-clean",
+        "score": 54.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用顶部细色带 / 左侧书脊 / 编号主题 / 水平知识图形 / 结构化事实表。",
+        "tradeoff": "专业可信，视觉表达相对克制",
+        "preview_path": null,
+        "family": "institutional"
+      },
+      {
+        "style_id": "sports-dynamic",
+        "score": 54.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用右侧巨大日期数字 / 斜切速度带 / 左侧竞技标题 / 对抗队伍栏 / 硬信息底块。",
+        "tradeoff": "速度感强，仪式性活动适配较弱",
+        "preview_path": null,
+        "family": "diagonal"
+      },
+      {
+        "style_id": "luxury-elegant",
+        "score": 51.23,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 10.0,
+          "formality": 9.0,
+          "scene": 3.62,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「灵感相遇」；类型 community；日间时段。采用双层细线框 / 精致几何花结 / 衬线主标题 / 中轴留白 / 礼仪信息组。",
+        "tradeoff": "礼仪感突出，长文本会降低高级留白感",
+        "preview_path": null,
+        "family": "ceremony"
+      }
+    ],
+    "selected_style": "neo-brutal",
+    "selection_source": "user-specified"
+  },
+  "checks": {
+    "facts": true,
+    "fact_issues": [],
+    "layouts": {
+      "poster_portrait": {
+        "passed": true,
+        "problems": [],
+        "text_boxes": [
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "COMMUNITY",
+            "rect": {
+              "x": 72,
+              "y": 87.5,
+              "w": 178.75,
+              "h": 33
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "2026.11.14",
+            "rect": {
+              "x": 864.71875,
+              "y": 89.5,
+              "w": 143.28125,
+              "h": 29
+            }
+          },
+          {
+            "tag": "H1",
+            "field": "title",
+            "text": "灵感相遇",
+            "rect": {
+              "x": 112,
+              "y": 236,
+              "w": 856,
+              "h": 207.1875
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "在这里，让新的想法发生",
+            "rect": {
+              "x": 112,
+              "y": 469.1875,
+              "w": 856,
+              "h": 57
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "创作分享",
+            "rect": {
+              "x": 72,
+              "y": 1063.5,
+              "w": 178,
+              "h": 76.5
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "开放交流",
+            "rect": {
+              "x": 276,
+              "y": 1063.5,
+              "w": 178,
+              "h": 76.5
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "灵感实践",
+            "rect": {
+              "x": 480,
+              "y": 1063.5,
+              "w": 178,
+              "h": 76.5
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "日期 / 时间",
+            "rect": {
+              "x": 107,
+              "y": 1207,
+              "w": 866,
+              "h": 31
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "2026.11.14  14:00 – 17:00  (Asia/Shanghai)",
+            "rect": {
+              "x": 107,
+              "y": 1247,
+              "w": 866,
+              "h": 58
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动地点",
+            "rect": {
+              "x": 107,
+              "y": 1330,
+              "w": 415.5,
+              "h": 31
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "示例艺术空间 · 一层展厅",
+            "rect": {
+              "x": 107,
+              "y": 1370,
+              "w": 415.5,
+              "h": 116
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "报名方式",
+            "rect": {
+              "x": 107,
+              "y": 1511,
+              "w": 866,
+              "h": 31
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "无需报名 · 示例活动",
+            "rect": {
+              "x": 107,
+              "y": 1551,
+              "w": 866,
+              "h": 58
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "EventCraft Demo",
+            "rect": {
+              "x": 72,
+              "y": 1758,
+              "w": 195.953125,
+              "h": 36
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动 / 2026.11.14",
+            "rect": {
+              "x": 831.921875,
+              "y": 1765.5,
+              "w": 176.078125,
+              "h": 21
+            }
+          }
+        ],
+        "width": 1080,
+        "height": 1920,
+        "title_layout": "display",
+        "title_lines": 1,
+        "font_sizes": [
+          {
+            "field": "title",
+            "size": "148px"
+          },
+          {
+            "field": "subtitle",
+            "size": "38px"
+          },
+          {
+            "field": "",
+            "size": "35px"
+          },
+          {
+            "field": "speakers",
+            "size": "32px"
+          },
+          {
+            "field": "",
+            "size": "40px"
+          },
+          {
+            "field": "",
+            "size": "40px"
+          },
+          {
+            "field": "",
+            "size": "40px"
+          },
+          {
+            "field": "credit",
+            "size": "24px"
+          }
+        ],
+        "font_families": "\"Arial Black\", SimHei, \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
+        "browser_version": "154.0.8037.98",
+        "actual_fonts": [
+          {
+            "familyName": "SimHei",
+            "postScriptName": "SimHei",
+            "isCustomFont": false,
+            "glyphCount": 4
+          }
+        ]
+      },
+      "poster_square": {
+        "passed": true,
+        "problems": [],
+        "text_boxes": [
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "COMMUNITY",
+            "rect": {
+              "x": 56,
+              "y": 63,
+              "w": 117.640625,
+              "h": 21
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "2026.11.14",
+            "rect": {
+              "x": 925.109375,
+              "y": 64.5,
+              "w": 98.890625,
+              "h": 18
+            }
+          },
+          {
+            "tag": "H1",
+            "field": "title",
+            "text": "灵感相遇",
+            "rect": {
+              "x": 83,
+              "y": 157,
+              "w": 914,
+              "h": 134.390625
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "在这里，让新的想法发生",
+            "rect": {
+              "x": 83,
+              "y": 306.390625,
+              "w": 914,
+              "h": 43.5
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "创作分享",
+            "rect": {
+              "x": 56,
+              "y": 489,
+              "w": 146,
+              "h": 64.5
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "开放交流",
+            "rect": {
+              "x": 228,
+              "y": 489,
+              "w": 146,
+              "h": 64.5
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "灵感实践",
+            "rect": {
+              "x": 400,
+              "y": 489,
+              "w": 146,
+              "h": 64.5
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "日期 / 时间",
+            "rect": {
+              "x": 83,
+              "y": 600.5,
+              "w": 914,
+              "h": 26
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "2026.11.14  14:00 – 17:00  (Asia/Shanghai)",
+            "rect": {
+              "x": 83,
+              "y": 632.5,
+              "w": 914,
+              "h": 43.5
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动地点",
+            "rect": {
+              "x": 83,
+              "y": 691,
+              "w": 445,
+              "h": 26
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "示例艺术空间 · 一层展厅",
+            "rect": {
+              "x": 83,
+              "y": 723,
+              "w": 445,
+              "h": 43.5
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "报名方式",
+            "rect": {
+              "x": 83,
+              "y": 781.5,
+              "w": 914,
+              "h": 26
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "无需报名 · 示例活动",
+            "rect": {
+              "x": 83,
+              "y": 813.5,
+              "w": 914,
+              "h": 43.5
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "EventCraft Demo",
+            "rect": {
+              "x": 56,
+              "y": 958.5,
+              "w": 163.296875,
+              "h": 30
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动 / 2026.11.14",
+            "rect": {
+              "x": 880.6875,
+              "y": 965.5,
+              "w": 143.3125,
+              "h": 16
+            }
+          }
+        ],
+        "width": 1080,
+        "height": 1080,
+        "title_layout": "display",
+        "title_lines": 1,
+        "font_sizes": [
+          {
+            "field": "title",
+            "size": "96px"
+          },
+          {
+            "field": "subtitle",
+            "size": "29px"
+          },
+          {
+            "field": "",
+            "size": "27px"
+          },
+          {
+            "field": "speakers",
+            "size": "26px"
+          },
+          {
+            "field": "",
+            "size": "30px"
+          },
+          {
+            "field": "",
+            "size": "30px"
+          },
+          {
+            "field": "",
+            "size": "30px"
+          },
+          {
+            "field": "credit",
+            "size": "20px"
+          }
+        ],
+        "font_families": "\"Arial Black\", SimHei, \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
+        "browser_version": "154.0.8037.98",
+        "actual_fonts": [
+          {
+            "familyName": "SimHei",
+            "postScriptName": "SimHei",
+            "isCustomFont": false,
+            "glyphCount": 4
+          }
+        ]
+      },
+      "invitation": {
+        "passed": true,
+        "problems": [],
+        "text_boxes": [
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "INVITATION",
+            "rect": {
+              "x": 64,
+              "y": 69,
+              "w": 137.84375,
+              "h": 27
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "2026.11.14",
+            "rect": {
+              "x": 892.453125,
+              "y": 70.5,
+              "w": 123.546875,
+              "h": 24
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "诚邀莅临",
+            "rect": {
+              "x": 93,
+              "y": 181,
+              "w": 894,
+              "h": 39
+            }
+          },
+          {
+            "tag": "H1",
+            "field": "title",
+            "text": "灵感相遇",
+            "rect": {
+              "x": 93,
+              "y": 240,
+              "w": 894,
+              "h": 156.796875
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "在这里，让新的想法发生",
+            "rect": {
+              "x": 93,
+              "y": 416.796875,
+              "w": 894,
+              "h": 48
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "创作分享",
+            "rect": {
+              "x": 64,
+              "y": 644.109375,
+              "w": 158,
+              "h": 69
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "开放交流",
+            "rect": {
+              "x": 248,
+              "y": 644.109375,
+              "w": 158,
+              "h": 69
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "灵感实践",
+            "rect": {
+              "x": 432,
+              "y": 644.109375,
+              "w": 158,
+              "h": 69
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "日期 / 时间",
+            "rect": {
+              "x": 99,
+              "y": 771.109375,
+              "w": 882,
+              "h": 29
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "2026.11.14  14:00 – 17:00  (Asia/Shanghai)",
+            "rect": {
+              "x": 99,
+              "y": 809.109375,
+              "w": 882,
+              "h": 49.296875
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动地点",
+            "rect": {
+              "x": 99,
+              "y": 883.40625,
+              "w": 423.5,
+              "h": 29
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "示例艺术空间 · 一层展厅",
+            "rect": {
+              "x": 99,
+              "y": 921.40625,
+              "w": 423.5,
+              "h": 49.296875
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "报名方式",
+            "rect": {
+              "x": 99,
+              "y": 995.703125,
+              "w": 882,
+              "h": 29
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "无需报名 · 示例活动",
+            "rect": {
+              "x": 99,
+              "y": 1033.703125,
+              "w": 882,
+              "h": 49.296875
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "EventCraft Demo",
+            "rect": {
+              "x": 64,
+              "y": 1209.5,
+              "w": 195.953125,
+              "h": 36
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "邀请函",
+            "rect": {
+              "x": 959,
+              "y": 1217,
+              "w": 57,
+              "h": 21
+            }
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "title_layout": "display",
+        "title_lines": 1,
+        "font_sizes": [
+          {
+            "field": "title",
+            "size": "112px"
+          },
+          {
+            "field": "subtitle",
+            "size": "32px"
+          },
+          {
+            "field": "",
+            "size": "30px"
+          },
+          {
+            "field": "speakers",
+            "size": "29px"
+          },
+          {
+            "field": "",
+            "size": "34px"
+          },
+          {
+            "field": "",
+            "size": "34px"
+          },
+          {
+            "field": "",
+            "size": "34px"
+          },
+          {
+            "field": "credit",
+            "size": "24px"
+          }
+        ],
+        "font_families": "\"Arial Black\", SimHei, \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
+        "browser_version": "154.0.8037.98",
+        "actual_fonts": [
+          {
+            "familyName": "SimHei",
+            "postScriptName": "SimHei",
+            "isCustomFont": false,
+            "glyphCount": 4
+          }
+        ]
+      },
+      "poster_print": {
+        "passed": true,
+        "problems": [],
+        "text_boxes": [
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "COMMUNITY",
+            "rect": {
+              "x": 64,
+              "y": 69,
+              "w": 151.59375,
+              "h": 27
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "2026.11.14",
+            "rect": {
+              "x": 892.453125,
+              "y": 70.5,
+              "w": 123.546875,
+              "h": 24
+            }
+          },
+          {
+            "tag": "H1",
+            "field": "title",
+            "text": "灵感相遇",
+            "rect": {
+              "x": 93,
+              "y": 181,
+              "w": 894,
+              "h": 156.796875
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "在这里，让新的想法发生",
+            "rect": {
+              "x": 93,
+              "y": 357.796875,
+              "w": 894,
+              "h": 48
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "创作分享",
+            "rect": {
+              "x": 64,
+              "y": 821.109375,
+              "w": 158,
+              "h": 69
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "开放交流",
+            "rect": {
+              "x": 248,
+              "y": 821.109375,
+              "w": 158,
+              "h": 69
+            }
+          },
+          {
+            "tag": "LI",
+            "field": "",
+            "text": "灵感实践",
+            "rect": {
+              "x": 432,
+              "y": 821.109375,
+              "w": 158,
+              "h": 69
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "日期 / 时间",
+            "rect": {
+              "x": 99,
+              "y": 948.109375,
+              "w": 882,
+              "h": 29
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "2026.11.14  14:00 – 17:00  (Asia/Shanghai)",
+            "rect": {
+              "x": 99,
+              "y": 986.109375,
+              "w": 882,
+              "h": 49.296875
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动地点",
+            "rect": {
+              "x": 99,
+              "y": 1060.40625,
+              "w": 423.5,
+              "h": 29
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "示例艺术空间 · 一层展厅",
+            "rect": {
+              "x": 99,
+              "y": 1098.40625,
+              "w": 423.5,
+              "h": 49.296875
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "报名方式",
+            "rect": {
+              "x": 99,
+              "y": 1172.703125,
+              "w": 882,
+              "h": 29
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "无需报名 · 示例活动",
+            "rect": {
+              "x": 99,
+              "y": 1210.703125,
+              "w": 882,
+              "h": 49.296875
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "EventCraft Demo",
+            "rect": {
+              "x": 64,
+              "y": 1386.5,
+              "w": 195.953125,
+              "h": 36
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动 / 2026.11.14",
+            "rect": {
+              "x": 839.921875,
+              "y": 1394,
+              "w": 176.078125,
+              "h": 21
+            }
+          }
+        ],
+        "width": 1080,
+        "height": 1527,
+        "title_layout": "display",
+        "title_lines": 1,
+        "font_sizes": [
+          {
+            "field": "title",
+            "size": "112px"
+          },
+          {
+            "field": "subtitle",
+            "size": "32px"
+          },
+          {
+            "field": "",
+            "size": "30px"
+          },
+          {
+            "field": "speakers",
+            "size": "29px"
+          },
+          {
+            "field": "",
+            "size": "34px"
+          },
+          {
+            "field": "",
+            "size": "34px"
+          },
+          {
+            "field": "",
+            "size": "34px"
+          },
+          {
+            "field": "credit",
+            "size": "24px"
+          }
+        ],
+        "font_families": "\"Arial Black\", SimHei, \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
+        "browser_version": "154.0.8037.98",
+        "actual_fonts": [
+          {
+            "familyName": "SimHei",
+            "postScriptName": "SimHei",
+            "isCustomFont": false,
+            "glyphCount": 4
+          }
+        ]
+      }
+    },
+    "png_dimensions": true,
+    "pdf_pages": {
+      "poster_print.pdf": 1,
+      "invite_letter.pdf": 1
+    },
+    "contrast": 13.95,
+    "registration_url": "not-provided",
+    "qr": "absent"
+  },
+  "palette": [
+    "#ffe349",
+    "#171717",
+    "#8b3dde"
+  ]
+}

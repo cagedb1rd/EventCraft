@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "title": "奔向下一程",
+  "subtitle": "校园友谊跑 · 共同出发",
+  "category": "sports",
+  "subtype": "running",
+  "start": "2026-11-15T09:00",
+  "end": "2026-11-15T12:00",
+  "timezone": "Asia/Shanghai",
+  "venue": "示例大学 · 东区田径场",
+  "online_platform": null,
+  "venue_mode": "outdoor",
+  "organizer": "示例运动社",
+  "audience": [
+    "学生",
+    "运动员"
+  ],
+  "formality": "casual",
+  "atmosphere": [],
+  "keywords": [
+    "跑步",
+    "比赛"
+  ],
+  "channels": [],
+  "highlights": [
+    "校园友谊赛",
+    "一起向前"
+  ],
+  "speakers": [],
+  "teams": [],
+  "fee": "免费",
+  "registration": null,
+  "registration_url": "https://example.org/events/campus-run",
+  "deadline": null,
+  "contact": null,
+  "recipient": null,
+  "language": "zh",
+  "style": null,
+  "style_description": "",
+  "brand": {
+    "colors": [],
+    "forbidden_colors": [],
+    "forbidden_styles": [],
+    "high_contrast": false,
+    "preserve_logo": true
+  },
+  "assets": {
+    "logo": null,
+    "hero_image": null,
+    "speaker_photo": null,
+    "qr_image": null,
+    "style_reference": []
+  },
+  "sources": {
+    "title": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "subtitle": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "category": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "subtype": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "start": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "end": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "timezone": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue_mode": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "organizer": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "audience": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "formality": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "keywords": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "highlights": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "fee": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "registration_url": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "demo": {
+      "source": "sports.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    }
+  },
+  "confirmed_fields": [],
+  "uncertainties": [],
+  "demo": true
+}

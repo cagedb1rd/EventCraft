@@ -1,0 +1,69 @@
+{
+  "id": "editorial-minimal",
+  "name": "编辑杂志极简风",
+  "name_en": "Editorial minimal",
+  "palette": [
+    "#f6f1e7",
+    "#242621",
+    "#627363"
+  ],
+  "types": [
+    "exhibition",
+    "community",
+    "lecture",
+    "launch",
+    "wedding"
+  ],
+  "audience": [
+    "artists",
+    "designers",
+    "professionals"
+  ],
+  "formality": [
+    "professional",
+    "casual"
+  ],
+  "keywords": [
+    "艺术",
+    "art",
+    "文化",
+    "culture"
+  ],
+  "time": "day",
+  "density": "low",
+  "family": "editorial",
+  "hero": "optional",
+  "language": [
+    "zh",
+    "en",
+    "bilingual"
+  ],
+  "avoid": [],
+  "brand": {
+    "recolorable": true,
+    "preserve_logo": true,
+    "contrast_min": 4.5
+  },
+  "tokens": {
+    "grid_columns": 6,
+    "margin": 72,
+    "title_px": 140,
+    "body_px": 35,
+    "small_px": 24,
+    "invitation_title_px": 112,
+    "square_title_px": 96,
+    "heading_fonts": "Georgia, SimSun, Noto Serif CJK SC, Songti SC",
+    "heading_weight": 400,
+    "font": "serif",
+    "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
+    "cjk_serif": "SimSun, Noto Serif CJK SC, Songti SC",
+    "whitespace": "generous",
+    "alignment": "left"
+  },
+  "layout": {
+    "poster": "杂志刊头 / 偏置作品窗 / 编辑标题 / 页脚细栏",
+    "invitation": "开放式纸面，细线将邀请文字与实用信息分开"
+  },
+  "negative": "避免高饱和霓虹与厚边框",
+  "tradeoff": "留白丰富，长议程更适合附页"
+}

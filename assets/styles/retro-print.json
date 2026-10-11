@@ -1,0 +1,69 @@
+{
+  "id": "retro-print",
+  "name": "复古印刷风",
+  "name_en": "Retro print",
+  "palette": [
+    "#efe0bd",
+    "#3b3024",
+    "#9a3e29"
+  ],
+  "types": [
+    "market",
+    "night-party",
+    "community",
+    "opening",
+    "birthday"
+  ],
+  "audience": [
+    "creatives",
+    "artists",
+    "young"
+  ],
+  "formality": [
+    "casual"
+  ],
+  "keywords": [
+    "复古",
+    "retro",
+    "音乐",
+    "music",
+    "市集"
+  ],
+  "time": "any",
+  "density": "medium",
+  "family": "print",
+  "hero": "optional",
+  "language": [
+    "zh",
+    "en",
+    "bilingual"
+  ],
+  "avoid": [],
+  "brand": {
+    "recolorable": true,
+    "preserve_logo": true,
+    "contrast_min": 4.5
+  },
+  "tokens": {
+    "grid_columns": 6,
+    "margin": 72,
+    "title_px": 140,
+    "body_px": 35,
+    "small_px": 24,
+    "invitation_title_px": 112,
+    "square_title_px": 96,
+    "heading_fonts": "Georgia, SimSun, Noto Serif CJK SC, Songti SC",
+    "heading_weight": 700,
+    "font": "serif",
+    "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
+    "cjk_serif": "SimSun, Noto Serif CJK SC, Songti SC",
+    "whitespace": "balanced",
+    "alignment": "center"
+  },
+  "layout": {
+    "poster": "双线印刷边框 / 拱形日晕 / 衬线标题 / 半色调纸张 / 票券式底栏",
+    "invitation": "横向印刷徽记与邀请称谓，减少主视觉高度"
+  },
+  "negative": "纹理不能覆盖文字、不能虚构历史奖项",
+  "tradeoff": "温厚怀旧，色彩表现较柔和"
+}

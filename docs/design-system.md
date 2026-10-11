@@ -1,0 +1,19 @@
+# Ten authored visual systems
+
+The machine catalog is `assets/styles/style-profiles.json`, shipped at `eventcraft/data/style-profiles.json`. Each style has its own family, palette, font hierarchy, grid, alignment, whitespace, positive/negative scenarios and portrait/invitation layout description. Individual guides are in `references/style-guides/`.
+
+Swiss uses an indexing axis and asymmetry; editorial uses a publication masthead and offset composition; tech uses orbital depth and a contained information deck; academic uses a spine and labeled ruled rows; brutal uses hard-shadow blocks and sticker forms; retro uses double borders, arches and halftone dots; neon uses a glowing portal; playful uses original botanical linework and organic paper; luxury uses ceremony axis, fine filigree and serif hierarchy; sports uses diagonals and actual event-date numerals. These SVG constructs are authored in code, without downloaded illustration/font assets.
+
+The same facts feed all layouts. Invitations shorten visual ornaments and add a greeting, reflowing practical information rather than cropping portrait images. Square variants reduce safe margins and titles, compress the art area, preserve key facts. A4 posters use a dedicated 1080×1527 composition with precise print scaling; letters use flowing prose.
+
+Typography uses actual browser metrics. CJK headings require 1.4 line-height to accommodate the font's ascent/descent. Heading maximums vary between style and medium; fit never truncates titles, time, venue or registration. Extremely dense essential facts can exceed the finite format even at readable minimum sizes: the renderer returns an error. Optional illustrations can collapse, optional visual highlights are limited to three; full highlights/speakers remain in event data and copy.
+
+On 1080px-wide exports, portrait heading maximums are 140px for serif styles, 148px for sans styles and 162px for sports. Invitation/A4 heading maximums are 112px; square headings are 96px. Portrait practical facts start at 40px, with 24px labels and 35px highlights. Available space is measured before output: ornaments yield before type shrinks. These are source canvas sizes, not CSS sizes in the responsive Gallery thumbnails.
+
+Headings balance line lengths using `text-wrap: balance`. The browser measures the complete title in its actual display font, classifying its width relative to available space as display, balanced or compact. Dense titles in Swiss/sports portraits expand from side-by-side columns into a full-width heading; editorial, neon and luxury reduce their ornament row. The selected structure, final line count and actual platform fonts are recorded in each layout manifest. Different font stacks/weights provide geometric, editorial, technical, institutional, bold, retro, neon, calligraphic, ceremonial and condensed voices. Platform fallbacks mean exact glyph shapes can differ across operating systems.
+
+Short CJK script runs and Latin word groups that fit the available row are kept together, preserving phrases such as “AI Agent” and “实战分享会”. Longer runs retain natural wrapping. This is a measured typographic rule, not a claim of semantic understanding; original text content is unchanged.
+
+Text contrast ≥4.5:1 against palette background is enforced. Brand colors replace preset palette, original logos remain untouched. Accent colors used for small text also meet contrast. `hero_image` and `speaker_photo` are contained, preserving subject proportions; QR gets a white quiet zone. No URL means no generated QR; user QR content is preserved and marked unverified. The template never treats decorative graphics as organizer marks.
+
+Visual audit and corrected issues are in [verification](verification.md). Gallery pairs and five campaigns are actual outputs from the same renderer as the CLI.

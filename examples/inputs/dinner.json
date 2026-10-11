@@ -1,0 +1,16 @@
+{
+  "title": "相聚 · 星光晚宴",
+  "subtitle": "致每一次同行，和未完的故事",
+  "category": "dinner",
+  "start": "2026-11-21T18:30",
+  "end": "2026-11-21T21:30",
+  "timezone": "Asia/Shanghai",
+  "venue": "示例酒店 · 翡翠宴会厅",
+  "venue_mode": "indoor",
+  "organizer": "示例同行社群",
+  "audience": ["高管", "来宾"],
+  "formality": "ceremonial",
+  "keywords": ["晚宴", "VIP"],
+  "registration": "邀请制 · 请向原邀请渠道确认出席",
+  "demo": true
+}

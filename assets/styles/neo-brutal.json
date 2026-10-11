@@ -1,0 +1,70 @@
+{
+  "id": "neo-brutal",
+  "name": "年轻大胆风",
+  "name_en": "Neo brutal",
+  "palette": [
+    "#ffe349",
+    "#171717",
+    "#8b3dde"
+  ],
+  "types": [
+    "recruitment",
+    "market",
+    "community",
+    "opening",
+    "esports"
+  ],
+  "audience": [
+    "students",
+    "creatives",
+    "young"
+  ],
+  "formality": [
+    "casual"
+  ],
+  "keywords": [
+    "创意",
+    "creative",
+    "校园",
+    "campus"
+  ],
+  "time": "day",
+  "density": "medium",
+  "family": "blocks",
+  "hero": "optional",
+  "language": [
+    "zh",
+    "en",
+    "bilingual"
+  ],
+  "avoid": [
+    "ceremonial"
+  ],
+  "brand": {
+    "recolorable": true,
+    "preserve_logo": true,
+    "contrast_min": 4.5
+  },
+  "tokens": {
+    "grid_columns": 6,
+    "margin": 72,
+    "title_px": 148,
+    "body_px": 35,
+    "small_px": 24,
+    "invitation_title_px": 112,
+    "square_title_px": 96,
+    "heading_fonts": "Arial Black, SimHei, Noto Sans CJK SC, PingFang SC",
+    "heading_weight": 900,
+    "font": "sans",
+    "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
+    "cjk_serif": "SimSun, Noto Serif CJK SC, Songti SC",
+    "whitespace": "balanced",
+    "alignment": "left"
+  },
+  "layout": {
+    "poster": "顶部分裂标签 / 硬阴影标题块 / 错位圆形贴纸 / 黑色信息模块",
+    "invitation": "邀请标题做成票券，信息区保持硬边框"
+  },
+  "negative": "避免无序旋转正文或牺牲可读性",
+  "tradeoff": "年轻醒目，不适合庄重礼仪"
+}

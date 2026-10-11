@@ -1,0 +1,18 @@
+{
+  "title": "未来创作工具发布会",
+  "subtitle": "让每一个好想法，走得更远",
+  "category": "launch",
+  "start": "2026-11-06T15:00",
+  "end": "2026-11-06T17:00",
+  "timezone": "Asia/Shanghai",
+  "online_platform": "示例直播平台 · Demo 频道",
+  "venue_mode": "online",
+  "organizer": "示例创作实验室",
+  "audience": ["开发者", "设计师"],
+  "formality": "professional",
+  "keywords": ["科技", "digital", "AI"],
+  "highlights": ["新品演示", "工作流探索", "现场问答"],
+  "registration": "无需报名 · 示例线上活动",
+  "fee": "免费",
+  "demo": true
+}

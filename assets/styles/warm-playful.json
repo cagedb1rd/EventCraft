@@ -1,0 +1,70 @@
+{
+  "id": "warm-playful",
+  "name": "温暖手绘风",
+  "name_en": "Warm playful",
+  "palette": [
+    "#fff3db",
+    "#4e392b",
+    "#a84b36"
+  ],
+  "types": [
+    "birthday",
+    "workshop",
+    "community",
+    "market",
+    "wedding"
+  ],
+  "audience": [
+    "families",
+    "children",
+    "friends"
+  ],
+  "formality": [
+    "casual"
+  ],
+  "keywords": [
+    "生日",
+    "birthday",
+    "手作",
+    "craft",
+    "亲子",
+    "温暖"
+  ],
+  "time": "day",
+  "density": "medium",
+  "family": "organic",
+  "hero": "optional",
+  "language": [
+    "zh",
+    "en",
+    "bilingual"
+  ],
+  "avoid": [],
+  "brand": {
+    "recolorable": true,
+    "preserve_logo": true,
+    "contrast_min": 4.5
+  },
+  "tokens": {
+    "grid_columns": 6,
+    "margin": 72,
+    "title_px": 148,
+    "body_px": 35,
+    "small_px": 24,
+    "invitation_title_px": 112,
+    "square_title_px": 96,
+    "heading_fonts": "KaiTi, Kaiti SC, Noto Serif CJK SC, Georgia",
+    "heading_weight": 600,
+    "font": "sans",
+    "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
+    "cjk_serif": "SimSun, Noto Serif CJK SC, Songti SC",
+    "whitespace": "balanced",
+    "alignment": "left"
+  },
+  "layout": {
+    "poster": "顶部手绘枝叶 / 便笺式标题 / 花朵太阳插画 / 圆角邀请信纸",
+    "invitation": "短花边与亲切称谓，正文纸卡占比增加"
+  },
+  "negative": "避免伪手写中文字与幼稚化正式会议",
+  "tradeoff": "亲和温暖，正式商务气质较弱"
+}
