@@ -1,92 +1,165 @@
 # EventCraft
 
-**输入活动资料 → 十选三真实预览 → 选择一种 → 一次生成整套宣传物料。**
+**把活动资料变成一整套宣传物料：十套风格，智能三选一，确认后一次生成。**
 
-![真实三选一及最终物料](docs/images/selection-workflow.png)
+[English](README.en.md) · [Style Gallery](docs/style-gallery.md) · [Codex Skill 使用指南](docs/skill-usage.md) · [MIT License](LICENSE)
 
-以上来自项目自己的 Chromium 渲染器，活动为虚构 Demo。 [English](README.en.md) · [完整 Style Gallery](docs/style-gallery.md) · [验收结果](docs/verification.md)
+![从活动资料到真实推荐预览和整套物料](docs/images/selection-workflow.png)
 
-EventCraft 同时是可安装的 Agent Skill 和独立 Python CLI：不用 API Key 就能输出 1080×1920 主海报、1080×1080 方图、1080×1350 邀请函、A4 海报 PDF、正式邀请函 PDF、四类中英文文案、规范化事实、manifest 和离线预览页。十套设计有各自的结构、字体、装饰和信息排布，支持 Logo、主图、讲者照片、原始二维码及参考图偏好。
+EventCraft 是一个可安装的 Agent Skill，也提供独立 Python CLI。基础模式无需 API Key，通过原创 HTML/CSS/SVG 模板和 Chromium 生成海报、邀请函、PDF 与宣传文案。上图及仓库中的所有示例均由本项目真实生成，活动资料为虚构 Demo。
 
-## 三分钟开始
+## 可以生成什么
 
-需要 Python 3.11+、Chromium、中文字体。Windows 使用已有 Microsoft YaHei / SimSun；macOS 使用 PingFang / Songti；Linux 安装 `fonts-noto-cjk`。不随仓库分发系统字体。
+| 产物 | 格式 |
+|---|---|
+| 竖版主海报 | 1080 × 1920 PNG |
+| 社交媒体方图 | 1080 × 1080 PNG |
+| 数字邀请函 | 1080 × 1350 PNG |
+| 打印海报、正式邀请函 | A4 PDF |
+| 宣传文案 | 短文案、社媒帖、活动通知、邀请文字 |
+| 可编辑与可核验文件 | HTML 源、event.json、manifest.json、离线预览页 |
+
+- 从十套设计中推荐三个选项，附真实预览、推荐依据和取舍。
+- 支持选择、自动选择、换一批、直接指定风格，以及保存和恢复选择状态。
+- 海报、邀请函与文案读取同一份活动事实，缺失必填信息时集中确认。
+- 支持 Logo、主图、讲者照片、原始二维码和参考图片；标题按实际字宽自适应排版。
+
+## 安装与第一次生成
+
+需要 **Python 3.11+、Chromium 和中文字体**。Windows 通常已有 Microsoft YaHei / SimSun；macOS 使用系统中文字体；Linux 建议安装 Noto CJK。系统字体不随仓库分发。
+
+在本仓库点击 **Code → Download ZIP** 并解压，或复制仓库地址执行：
 
 ```sh
+git clone <YOUR_REPOSITORY_URL> eventcraft
+cd eventcraft
+```
+
+`<YOUR_REPOSITORY_URL>` 替换为本仓库的 Git 地址。以下命令均在包含 `pyproject.toml` 和 `SKILL.md` 的项目根目录运行。
+
+### Windows PowerShell
+
+无需激活虚拟环境，直接使用其中的可执行文件：
+
+```powershell
 python -m venv .venv
-# Windows PowerShell
-.\.venv\Scripts\Activate.ps1
-# macOS/Linux: source .venv/bin/activate
-python -m pip install -e '.[dev]'
+.\.venv\Scripts\python.exe -m pip install -e .
+.\.venv\Scripts\python.exe -m playwright install chromium
+.\.venv\Scripts\eventcraft.exe all examples/inputs/lecture.json --auto-style --output output/lecture
+Start-Process .\output\lecture\preview.html
+```
+
+### macOS / Linux
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .
 python -m playwright install chromium
 eventcraft all examples/inputs/lecture.json --auto-style --output output/lecture
 ```
 
-打开 `output/lecture/preview.html` 即可。模板生成过程完全离线；安装依赖/浏览器本身需要网络。Windows 已有 Chrome/Edge 可自动回退，也可用 `EVENTCRAFT_BROWSER` 指定浏览器路径。首次安装按系统策略可能需要激活 PowerShell 脚本，或直接运行 `.venv\Scripts\eventcraft.exe`。
+在浏览器打开 `output/lecture/preview.html` 查看全部成品。安装依赖和浏览器需要网络；基础模板生成完全在本地执行。Windows 可回退到已安装的 Chrome/Edge，也可通过 `EVENTCRAFT_BROWSER` 指定浏览器可执行文件。
 
-## 默认三选一：可执行、可恢复
+**下文 CLI 示例中的 `eventcraft`：Windows 请使用 `.\.venv\Scripts\eventcraft.exe`；macOS/Linux 在已激活的虚拟环境中直接使用。脚本示例中的 `python` 同样应使用项目虚拟环境。**
 
-```sh
-eventcraft recommend examples/inputs/lecture.json --output output/selection
-# 打开 output/selection/recommendations.html，看真实预览
-eventcraft all examples/inputs/lecture.json --select 2 --state output/selection --output output/chosen
+## 在 Codex 中使用
+
+先完成上面的 Python 依赖安装，再安装完整 Skill。Skill 包含运行代码、配置、设计规范和资源，不能只复制 `SKILL.md`。
+
+Windows PowerShell：
+
+```powershell
+.\.venv\Scripts\python.exe scripts/package_skill.py
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills" | Out-Null
+Expand-Archive -LiteralPath ".\dist\eventcraft-skill-1.0.0.zip" -DestinationPath "$env:USERPROFILE\.agents\skills"
 ```
 
-真实执行记录见 [recommendation-terminal.txt](docs/recommendation-terminal.txt)。本例首批为科技渐变、瑞士网格、学术专业，每项给出依据和取舍，选择后只调用一次批量入口。
+macOS/Linux，在已激活的虚拟环境中：
 
 ```sh
+python scripts/package_skill.py
+mkdir -p "$HOME/.agents/skills"
+unzip dist/eventcraft-skill-1.0.0.zip -d "$HOME/.agents/skills"
+```
+
+安装后应存在 `~/.agents/skills/eventcraft/SKILL.md`。这些命令用于首次安装；已有同名技能时，请先按[使用指南](docs/skill-usage.md)检查和更新。Codex 支持该用户技能目录；若安装后未出现，重启 Codex。[官方技能说明](https://learn.chatgpt.com/docs/build-skills)
+
+在 Codex 打开项目目录，发送：
+
+```text
+使用 $eventcraft。
+读取 examples/inputs/lecture.json，这是演示活动。
+先推荐三种风格并展示真实预览，我选择后再生成整套物料。
+运行 CLI 时使用当前项目的 .venv 虚拟环境。
+```
+
+看到预览后可回复“选第二个”“换一批”“自动选最优”或指定风格。创建自己的活动时，直接提供活动文字或附件；Agent 会确认必要事实，再推荐和生成。也可以不全局安装，在项目聊天里明确要求 Codex 阅读根目录的 `SKILL.md` 并按其流程执行。
+
+## CLI：推荐、选择与自己的活动
+
+```sh
+# 生成三个真实预览
+eventcraft recommend examples/inputs/lecture.json --output output/selection
+# 打开 output/selection/recommendations.html 后，选择第二项
+eventcraft all examples/inputs/lecture.json --select 2 --state output/selection --output output/chosen
+# 换一批，不重复当前选项
 eventcraft recommend examples/inputs/lecture.json --output output/selection --next
-eventcraft recommend examples/inputs/lecture.json --page 2 --output output/page2
-# 仅主动请求时看全部十套
-eventcraft recommend examples/inputs/lecture.json --all --output output/all-styles
-# 任意风格可以直接指定
+# 直接指定任意内置风格
 eventcraft render examples/inputs/lecture.json --style retro-print --output output/retro
 ```
 
-状态写入 `state.json`、评分和输入/config 摘要写入 `recommendations.json`；原资料变化后数字选择失效。自动模式从满足硬约束的全体风格选最高分，换批按稳定次序不重复。评分是工程规则，不是审美科学。自定义权重使用 `--weights weights.json`。详见 [推荐算法](docs/style-recommendation.md)。
+推荐结果与当前编号保存在选择目录中。活动资料修改后，旧编号选择会失效，需要重新推荐。默认展示三个选项；主动传入 `--all` 才展示全部。评分为可解释的工程规则，支持品牌禁止色/风格等硬约束及自定义权重。[推荐算法](docs/style-recommendation.md) · [真实 CLI 运行记录](docs/recommendation-terminal.txt)
 
-## 资料输入与事实确认
+自己的资料建议放在已被 Git 忽略的 `private/` 中。可以参考 [JSON 样例](examples/inputs/lecture.json) 和[数据契约](references/event-schema.md)，提供真实标题、日期、时间、IANA 时区、地点或线上平台、报名方式。删除不适用的示例字段，替换 `example.org` 链接；正式活动将 `demo` 设为 `false`。
 
 ```sh
+eventcraft all private/event.json --auto-style --output output/my-event
+# 从已有文档抽取资料，并集中补充缺失信息
 eventcraft extract examples/inputs/lecture.md --output output/extracted/event.json
 eventcraft all examples/inputs/lecture.md --interactive --output output/interactive
 ```
 
-支持文本、Markdown、TXT、DOCX、带文本层 PDF，以及可选 Tesseract OCR 的截图。CLI 无模型时采用字段标签和保守正则，不宣称理解隐含语义。`extract` 生成 `questions.json`，缺年份/时间/时区/地点/报名方式或存在冲突时，最终生成返回明确错误。交互一次集中接受 JSON 补充；Agent 模式以自然语言集中提问。允许 `--draft`，会带草稿标记，manifest 不标为可发布。示例无任何真实个人信息，`example.org` 地址仅测试二维码。
+支持 JSON、文本、Markdown、TXT、DOCX、带文本层 PDF，以及可选 Tesseract OCR 截图。无模型的抽取采用字段标签和保守正则；隐含信息与冲突需要确认。`--draft` 允许生成明确标记的草稿。中文默认，`--language en` 使用英文标签与文案；`bilingual` 接受用户提供的中英混排内容，活动事实不会自动翻译。
 
-中文默认；`--language en` 使用英文标签和英文文案，保留原活动事实，不擅自翻译名称地址。`bilingual` 支持用户自带中英混排内容。 [数据契约](references/event-schema.md)
+## 十套独立视觉设计系统
 
-## 十套独立视觉系统
+![十套风格真实海报与邀请函](docs/images/style-contact-sheet.png)
 
-![十风格真实渲染概览](docs/images/style-contact-sheet.png)
-
-| ID | 中文名称 | 结构与用途 |
+| ID | 风格 | 结构与适用场景 |
 |---|---|---|
-| swiss-grid | 瑞士网格设计 | 索引轴线、不对称网格、讲座/论坛 |
-| editorial-minimal | 编辑杂志极简风 | 刊头、编辑留白、艺术/文化 |
-| tech-gradient | 现代科技渐变风 | 空间轨道、信息卡片、AI/发布 |
-| academic-clean | 学术专业风 | 机构书脊、细分隔线、学术/培训 |
-| neo-brutal | 年轻大胆风 | 硬边模块、撞色贴纸、招新/市集 |
-| retro-print | 复古印刷风 | 拱形日晕、纸纹票券、复古/音乐 |
-| neon-night | 霓虹夜生活风 | 发光门框、夜间音乐/电竞派对 |
-| warm-playful | 温暖手绘风 | 原创植物线稿、便笺纸卡、生日/亲子 |
-| luxury-elegant | 奢华典雅风 | 礼仪中轴、细线花结、婚礼/晚宴 |
-| sports-dynamic | 运动竞技风 | 斜切速度线、真实日期数字、体育/竞技 |
+| swiss-grid | 瑞士网格设计 | 索引轴线、不对称网格；讲座、论坛 |
+| editorial-minimal | 编辑杂志极简风 | 刊头、偏置构图、编辑留白；艺术、文化 |
+| tech-gradient | 现代科技渐变风 | 空间轨道、信息卡片；科技、发布 |
+| academic-clean | 学术专业风 | 机构书脊、细分隔线；学术、培训 |
+| neo-brutal | 年轻大胆风 | 硬边模块、撞色贴纸；招新、市集 |
+| retro-print | 复古印刷风 | 拱形日晕、纸纹票券；复古、音乐 |
+| neon-night | 霓虹夜生活风 | 发光门框、居中标题；夜间音乐、派对 |
+| warm-playful | 温暖手绘风 | 原创植物线稿、便笺纸卡；生日、亲子 |
+| luxury-elegant | 奢华典雅风 | 礼仪中轴、细线花结；婚礼、晚宴 |
+| sports-dynamic | 运动竞技风 | 斜切速度线、真实日期数字；体育、竞技 |
 
-[十套海报 + 邀请函](docs/style-gallery.md)。重新生成：`eventcraft gallery --output output/gallery`；开源 Gallery 固定样例：`python scripts/generate_style_gallery.py`。五套完整物料：`python scripts/generate_examples.py`。
+每套风格均有真实海报与邀请函：[完整 Style Gallery](docs/style-gallery.md)。标题使用不同字体栈和字重，按字宽调整结构、平衡换行，保留能放入一行的短词组。[标题长度自适应对照](docs/images/title-adaptation.png)
 
-标题字体按风格使用不同字体栈与字重，并根据真实字宽平衡换行。短标题保持醒目；长标题先展开阅读区、压缩装饰，再收缩字号。[短/中/长标题真实对照](docs/images/title-adaptation.png)，重现：`python scripts/build_title_showcase.py`。每个 manifest 记录实际字体、标题行数与布局选择。
-
-## 参考图、自有素材与可选 Provider
+五套完整案例：[校园讲座](examples/generated/lecture/preview.html) · [科技发布](examples/generated/launch/preview.html) · [生日聚会](examples/generated/birthday/preview.html) · [典雅晚宴](examples/generated/dinner/preview.html) · [运动赛事](examples/generated/sports/preview.html)。GitHub 不会直接执行这些 HTML；下载后可离线打开，PNG 和 PDF 可直接查看。
 
 ```sh
-# 可运行的原创参考色板样例；其图片仅提供色彩，版式显式指定
+eventcraft gallery --output output/gallery
+# 重现仓库中的固定案例、画廊与标题对照
+python scripts/generate_examples.py
+python scripts/generate_style_gallery.py
+python scripts/build_title_showcase.py
+```
+
+## 参考图与可选 AI 功能
+
+```sh
 eventcraft render examples/inputs/dinner.json --style luxury-elegant --style-reference examples/inputs/palette.png --style-description '奢华典雅风，细线与留白' --output output/custom
 ```
 
-`--style-reference` 可重复最多五次；参考图与 `assets.hero_image` 分开。无视觉模型只分析颜色，明确报告无法理解网格、字体和构图；使用 `--style` 或命名风格的描述指定原创基础布局。输出 `style_override.json` 记录 palette、基础布局、描述和 hashes，可直接重渲染，私人原图不写入成品。品牌颜色优先，正文对比度至少 4.5:1。用户照片/Logo 用 contain，原始二维码不改内容；真实 URL 可生成二维码，缺 URL 不造二维码。
+参考图片最多五张。基础模式只提取颜色；布局通过内置风格 ID 或文字偏好指定。`style_override.json` 保存可重放的设计参数与参考哈希，参考原图不会嵌入成品。用户 Logo/照片保留比例，原始二维码保留内容；提供报名 URL 时可以生成真实二维码。
 
-可选官方 OpenAI Provider，需要 `OPENAI_API_KEY` 环境变量、账户可用模型权限，并可能产生 API 费用。所有请求均需 `--allow-network`：
+可选官方 OpenAI Provider 支持资料理解、参考图视觉分析和抽象主图生成，需要 `OPENAI_API_KEY` 环境变量及显式 `--allow-network`，可能产生 API 费用。
 
 ```sh
 eventcraft extract examples/inputs/lecture.md --llm --allow-network --output output/model-event.json
@@ -94,36 +167,44 @@ eventcraft render examples/inputs/dinner.json --style-reference examples/inputs/
 eventcraft render examples/inputs/launch.json --auto-style --generate-hero 'Original abstract orbital sculpture, no text' --allow-network --output output/with-art
 ```
 
-默认理解模型 `gpt-4.1-mini` 可用 `--model` 覆盖；图像适配器使用官方 Images API 的 `gpt-image-1`。生成主图仅作抽象图像，日期、文字、二维码仍由 HTML 排版。这里交付的示例全部是确定性模板，没有冒称 AI 生成图像。外部 API 的网络格式/错误分支有离线契约测试；未使用真实凭据执行付费调用。参见 [Provider 限制](docs/providers.md)。
+模板示例不依赖付费 API。外部请求格式与错误分支有离线契约测试，真实付费调用尚未验证。配置与支持范围见 [Provider 文档](docs/providers.md)。
 
-## 输出与检查
+## 输出与质量检查
 
 ```text
-output/<slug>/
-  poster_portrait.png       poster_square.png       invitation.png
-  poster_print.pdf          invite_letter.pdf
-  copy/{short.txt,social.md,formal.md,invitation.txt}
-  event.json                manifest.json           preview.html
-  *.html                    registration_qr.png     style_override.json
+output/<activity>/
+├── poster_portrait.png、poster_square.png、invitation.png
+├── poster_print.pdf、invite_letter.pdf
+├── copy/
+│   └── short.txt、social.md、formal.md、invitation.txt
+├── event.json、manifest.json、preview.html
+├── *.html
+└── registration_qr.png、style_override.json  # 按需要生成
 ```
 
-最后两个文件按需要产生。各 HTML 源可编辑；manifest 记录大小、哈希、尺寸、实际字体、文字边界、事实检查、评分/选择和二维码来源。打印版为 A4 RGB PDF，嵌入文字；不是印刷厂 CMYK/出血工艺文件。关键字段过长导致字号降到下限仍溢出会失败，不悄悄裁掉地点、日期或报名方式。
+manifest 记录文件哈希、尺寸、实际字体、标题布局/行数、文字边界、事实检查和选择状态。检查覆盖文字越界、模块重叠、图片加载、PDF 页面与对比度。长内容达到最小字号仍放不下时会明确报错。
+
+[验收记录](docs/verification.md)：Windows/Python 3.12/Chrome 下 86 项完整测试通过；五套示例与十风格 Gallery 共 45 张成品 PNG、30 个 PDF。Linux/macOS、真实 OCR、远端 CI 与付费 API 的验证状态详见该报告。
+
+## 隐私、限制与常见问题
+
+- 基础渲染不联网加载素材。`private/`、`output/` 和 `.env` 被 Git 忽略；自己新建的其他资料路径需自行检查是否会被提交。
+- `--input-root` 可以限制资料与素材路径；图片和文档有大小上限。报名 URL 只做语法验证，不自动检查业务有效性。
+- 扫描 PDF 需要 Agent 视觉或先转录；截图 OCR 需要可选依赖及 Tesseract 的 `chi_sim+eng` 语言包，本机 OCR 验收尚未完成。
+- 中文显示异常时安装可用的 CJK 字体。不同平台字体回退会改变字形和换行。
+- A4 PDF 是 RGB 浏览器打印文件，保留矢量文字；不提供印刷厂 CMYK、出血和色彩校准。
+- 编号选择失效时重新运行 `recommend`。原资料有歧义时，补充规范 JSON 或使用 Agent 集中确认。
+
+## 开发与贡献
 
 ```sh
-ruff check eventcraft scripts tests
+python -m pip install -e '.[dev]'
+python -m ruff check eventcraft scripts tests
 python scripts/validate_skill.py
-pytest -q
+python -m pytest -q
 python -m build
 ```
 
-[验收报告](docs/verification.md) 记录本机真实运行结果。CI 在 Ubuntu 配置 Noto CJK 并运行全部测试和无密钥烟测；远端 CI 需你发布后触发。
+GitHub Actions 在 push/PR 时运行 lint、Skill 校验、测试、无密钥生成烟测和构建。精确开发依赖见 `requirements-dev.lock`。[贡献指南](CONTRIBUTING.md) · [架构](docs/architecture.md) · [设计系统](docs/design-system.md) · [设计研究](docs/design-research.md) · [维护者发布指南](docs/release.md)
 
-## Agent Skill 安装、隐私与发布
-
-将项目目录作为 `eventcraft` Skill 安装/链接到客户端技能目录，安装其 Python CLI，然后调用 `$eventcraft`。 [安装和实际对话](docs/skill-usage.md)。不同 Agent 的文件/OCR/视觉能力不同；不假设所有客户端都有相同图像 API。
-
-用户输入和 `output/` 默认不提交，`.env` 禁止跟踪。`--input-root` 限制输入路径和素材；文件、图片、DOCX/PDF 有大小上限。不会主动联网检查报名 URL，不将敏感数据写日志。参考研究没有下载或复制任何第三方素材；原创 SVG 和代码 MIT，依赖各自保留许可。 [第三方声明](THIRD_PARTY_NOTICES.md)
-
-常见问题：无中文字体请安装系统 CJK；扫描 PDF 需 Agent 视觉或先转录；截图 OCR 需可选依赖和 Tesseract `chi_sim+eng`；数字选择错误先重新 recommend；原始文件有歧义请补充规范 JSON。
-
-已准备本地仓库、MIT、CI、发布清单。**本次没有创建 GitHub 仓库或上传任何文件。** 由维护者按 [发布指南](docs/release.md) 自行发布。 [贡献规范](CONTRIBUTING.md) · [架构](docs/architecture.md) · [设计研究](docs/design-research.md)
+代码与原创图形采用 [MIT License](LICENSE)。系统字体和第三方艺术素材不随项目分发；依赖保留各自许可证。[第三方声明](THIRD_PARTY_NOTICES.md)
