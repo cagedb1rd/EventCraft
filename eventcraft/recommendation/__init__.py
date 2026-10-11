@@ -25,8 +25,12 @@ def profiles() -> dict:
 
 
 def resolve_style(value: str) -> str:
+    aliases = {"academic professional": "academic-clean", "neo-brutalism": "neo-brutal",
+               "neon nightlife": "neon-night", "warm illustrated": "warm-playful"}
+    if value.casefold() in aliases:
+        return aliases[value.casefold()]
     for sid, p in profiles().items():
-        if value in {sid, p["name"], p["name_en"]}:
+        if value.casefold() in {sid.casefold(), p["name"].casefold(), p["name_en"].casefold()}:
             return sid
     raise ValueError("Unknown style; use eventcraft gallery or a documented style ID")
 

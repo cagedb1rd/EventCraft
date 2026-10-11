@@ -2,8 +2,8 @@
   {
     "title": "灵感相遇",
     "layout": "display",
-    "lines": 2,
-    "size": "148px",
+    "lines": 1,
+    "size": "156px",
     "passed": true,
     "fonts": [
       {
@@ -16,9 +16,9 @@
   },
   {
     "title": "AI Agent 实战分享会",
-    "layout": "expanded",
+    "layout": "balanced",
     "lines": 2,
-    "size": "148px",
+    "size": "156px",
     "passed": true,
     "fonts": [
       {
@@ -38,8 +38,8 @@
   {
     "title": "人工智能时代的创作实践：从灵感探索到跨学科协作",
     "layout": "expanded",
-    "lines": 4,
-    "size": "122px",
+    "lines": 3,
+    "size": "100px",
     "passed": true,
     "fonts": [
       {

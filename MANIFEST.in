@@ -2,6 +2,8 @@ include SKILL.md LICENSE THIRD_PARTY_NOTICES.md README.md README.en.md CONTRIBUT
 recursive-include agents *.yaml
 recursive-include references *.md
 recursive-include assets *.json
+recursive-include eventcraft/data/art *.png
+recursive-include assets/campaigns *.png
 recursive-include scripts *.py
 recursive-include docs *.md *.json *.txt *.png *.html *.xml
 recursive-include examples *.json *.md *.txt *.png *.html *.pdf

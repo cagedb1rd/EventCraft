@@ -14,6 +14,7 @@ from eventcraft.providers.reference import analyze_references
 from eventcraft.recommendation import profiles, rank
 from eventcraft.recommendation.state import choose
 from eventcraft.renderer import batch_render, palette_for, prepare, render_preview
+from eventcraft.renderer.campaigns import INVITATION_SIZES, invitation_format
 from eventcraft.renderer.templates import sheet_html
 from eventcraft.schema import facts
 from eventcraft.security import digest
@@ -49,7 +50,12 @@ def test_all_layouts_and_text_bounds(style, variant, event, chromium, tmp_path):
                 actual = float(check["font_sizes"][0]["size"].removesuffix("px"))
                 assert actual >= {"portrait": 100, "invitation": 80, "square": 68}[kind]
             text = page.locator(".sheet").text_content()
-            assert all(facts(event)[key] in text for key in ["title", "when", "where", "registration"])
+            assert all(facts(event)[key] in text for key in ["title", "when", "where"])
+            if kind == "invitation":
+                assert facts(event)["registration"] in text
+            else:
+                assert page.locator('.summary li').count() == 0
+                assert page.locator('[data-field="cta"]').count() == 1
             screenshot = tmp_path / f"{style}-{kind}.png"
             page.screenshot(path=str(screenshot))
             with Image.open(screenshot) as image:
@@ -61,11 +67,12 @@ def test_all_layouts_and_text_bounds(style, variant, event, chromium, tmp_path):
 @pytest.mark.parametrize("name", ["lecture", "launch", "birthday", "dinner", "sports"])
 def test_five_complete_campaigns(name, chromium, tmp_path):
     event = extract(ROOT / f"examples/inputs/{name}.json")
+    event.qr_policy = 'show' if event.registration_url else 'auto'
     style = rank(event)["style_scores"][0]["style_id"]
     manifest = batch_render(event, tmp_path / name, style, instance=chromium)
     assert manifest["batch_entry_calls"] == 1
     assert manifest["checks"]["facts"]
-    for output, dimensions in [("poster_portrait.png", (1080, 1920)), ("poster_square.png", (1080, 1080)), ("invitation.png", (1080, 1350))]:
+    for output, dimensions in [("poster_portrait.png", (1080, 1920)), ("poster_square.png", (1080, 1080)), ("invitation.png", INVITATION_SIZES[invitation_format(event, style)])]:
         with Image.open(tmp_path / name / output) as image:
             assert image.size == dimensions
             image.verify()

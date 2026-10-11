@@ -1,0 +1,2147 @@
+{
+  "campaigns": [
+    "examples\\visual-v3\\academic-clean",
+    "examples\\visual-v3\\basketball",
+    "examples\\visual-v3\\editorial-minimal",
+    "examples\\visual-v3\\installed-runtime",
+    "examples\\visual-v3\\invitations\\boarding-pass",
+    "examples\\visual-v3\\invitations\\folded",
+    "examples\\visual-v3\\invitations\\formal-card",
+    "examples\\visual-v3\\invitations\\ticket-stub",
+    "examples\\visual-v3\\luxury-elegant",
+    "examples\\visual-v3\\neo-brutal",
+    "examples\\visual-v3\\neon-night",
+    "examples\\visual-v3\\retro-print",
+    "examples\\visual-v3\\sports-dynamic",
+    "examples\\visual-v3\\swiss-grid",
+    "examples\\visual-v3\\tech-gradient",
+    "examples\\visual-v3\\warm-playful"
+  ],
+  "pdf_count": 60,
+  "pdf_pages": 66,
+  "composed_qr": [
+    {
+      "file": "examples\\visual-v3\\basketball\\poster_portrait.png",
+      "decoded": "https://example.org/fictional/basketball"
+    },
+    {
+      "file": "examples\\visual-v3\\basketball\\poster_square.png",
+      "decoded": "https://example.org/fictional/basketball"
+    },
+    {
+      "file": "examples\\visual-v3\\basketball\\invitation.png",
+      "decoded": "https://example.org/fictional/basketball"
+    }
+  ],
+  "references_unchanged": 14,
+  "pdfs": [
+    {
+      "file": "examples\\visual-v3\\academic-clean\\invitation_folded_print.pdf",
+      "pages": 2,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\academic-clean\\invitation_outside.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\academic-clean\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\academic-clean\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\academic-clean\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\basketball\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\basketball\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\basketball\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\editorial-minimal\\invitation_folded_print.pdf",
+      "pages": 2,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\editorial-minimal\\invitation_outside.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\editorial-minimal\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\editorial-minimal\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\editorial-minimal\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\installed-runtime\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\installed-runtime\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\installed-runtime\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\boarding-pass\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\boarding-pass\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\boarding-pass\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\folded\\invitation_folded_print.pdf",
+      "pages": 2,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\folded\\invitation_outside.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\folded\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\folded\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\folded\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\formal-card\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\formal-card\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\formal-card\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\ticket-stub\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\ticket-stub\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\invitations\\ticket-stub\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\luxury-elegant\\invitation_folded_print.pdf",
+      "pages": 2,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\luxury-elegant\\invitation_outside.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\luxury-elegant\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\luxury-elegant\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\luxury-elegant\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\neo-brutal\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\neo-brutal\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\neo-brutal\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\neon-night\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\neon-night\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\neon-night\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\retro-print\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\retro-print\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\retro-print\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\sports-dynamic\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\sports-dynamic\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\sports-dynamic\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\swiss-grid\\invitation_folded_print.pdf",
+      "pages": 2,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\swiss-grid\\invitation_outside.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\swiss-grid\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\swiss-grid\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\swiss-grid\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\tech-gradient\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\tech-gradient\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\tech-gradient\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\warm-playful\\invitation_folded_print.pdf",
+      "pages": 2,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\warm-playful\\invitation_outside.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\warm-playful\\invitation_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\warm-playful\\invite_letter.pdf",
+      "pages": 1,
+      "rasterized": true
+    },
+    {
+      "file": "examples\\visual-v3\\warm-playful\\poster_print.pdf",
+      "pages": 1,
+      "rasterized": true
+    }
+  ],
+  "background_readability": [
+    {
+      "campaign": "examples\\visual-v3\\academic-clean",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 12.13,
+          "mean": 12.58,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.19,
+          "mean": 12.6,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 3.69,
+          "mean": 12.0,
+          "passing_fraction": 0.967,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 5.63,
+          "mean": 11.91,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\academic-clean",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 12.32,
+          "mean": 12.81,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.08,
+          "mean": 12.91,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 4.61,
+          "mean": 12.23,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 4.44,
+          "mean": 11.28,
+          "passing_fraction": 0.983,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\academic-clean",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 12.02,
+          "mean": 12.6,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 9.95,
+          "mean": 12.41,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 3.11,
+          "mean": 11.49,
+          "passing_fraction": 0.95,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 5.23,
+          "mean": 11.03,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\basketball",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 8.32,
+          "mean": 17.61,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 1.27,
+          "mean": 16.81,
+          "passing_fraction": 0.983,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 17.91,
+          "mean": 18.01,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 17.8,
+          "mean": 18.06,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "cta",
+          "minimum": 17.93,
+          "mean": 18.09,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\basketball",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 15.47,
+          "mean": 17.92,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 4.93,
+          "mean": 17.27,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 15.38,
+          "mean": 17.95,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 18.04,
+          "mean": 18.15,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "cta",
+          "minimum": 18.15,
+          "mean": 18.15,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\basketball",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 2.58,
+          "mean": 17.79,
+          "passing_fraction": 0.983,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 2.32,
+          "mean": 15.72,
+          "passing_fraction": 0.967,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 14.81,
+          "mean": 17.91,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 17.91,
+          "mean": 18.09,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "cta",
+          "minimum": 17.96,
+          "mean": 18.15,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\editorial-minimal",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 14.85,
+          "mean": 15.14,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 14.85,
+          "mean": 15.15,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 15.02,
+          "mean": 15.19,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 15.01,
+          "mean": 15.22,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\editorial-minimal",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 14.28,
+          "mean": 14.93,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 14.75,
+          "mean": 14.94,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 14.75,
+          "mean": 14.97,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 14.75,
+          "mean": 15.17,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\editorial-minimal",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 14.75,
+          "mean": 15.13,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 14.75,
+          "mean": 15.12,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 14.75,
+          "mean": 15.14,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 14.97,
+          "mean": 15.19,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\installed-runtime",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 2.44,
+          "mean": 17.24,
+          "passing_fraction": 0.983,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 14.83,
+          "mean": 18.18,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 18.46,
+          "mean": 18.63,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 18.54,
+          "mean": 18.64,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\installed-runtime",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 14.95,
+          "mean": 18.29,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 7.92,
+          "mean": 17.14,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 18.15,
+          "mean": 18.37,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 18.46,
+          "mean": 18.62,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\installed-runtime",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 10.45,
+          "mean": 18.35,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 13.32,
+          "mean": 17.55,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 18.15,
+          "mean": 18.6,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 18.48,
+          "mean": 18.63,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\boarding-pass",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 17.32,
+          "mean": 17.71,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 17.35,
+          "mean": 17.69,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 17.61,
+          "mean": 17.74,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 17.32,
+          "mean": 17.73,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\boarding-pass",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 17.63,
+          "mean": 17.98,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 17.65,
+          "mean": 18.03,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 17.61,
+          "mean": 18.02,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 17.43,
+          "mean": 17.81,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\boarding-pass",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 17.47,
+          "mean": 17.81,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 17.45,
+          "mean": 17.8,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 17.63,
+          "mean": 17.84,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 17.38,
+          "mean": 17.74,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\folded",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 14.85,
+          "mean": 15.14,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 14.85,
+          "mean": 15.15,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 15.02,
+          "mean": 15.19,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 15.01,
+          "mean": 15.22,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\folded",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 14.28,
+          "mean": 14.93,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 14.75,
+          "mean": 14.94,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 14.75,
+          "mean": 14.97,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 14.75,
+          "mean": 15.17,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\folded",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 14.75,
+          "mean": 15.13,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 14.75,
+          "mean": 15.12,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 14.75,
+          "mean": 15.14,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 14.97,
+          "mean": 15.19,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\formal-card",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 12.14,
+          "mean": 13.04,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.26,
+          "mean": 13.01,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 13.01,
+          "mean": 13.4,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.85,
+          "mean": 13.35,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\formal-card",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 11.7,
+          "mean": 12.52,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 11.71,
+          "mean": 12.63,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 12.87,
+          "mean": 13.32,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.87,
+          "mean": 13.39,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\formal-card",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 1.94,
+          "mean": 12.82,
+          "passing_fraction": 0.983,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.13,
+          "mean": 13.0,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 12.83,
+          "mean": 13.41,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.6,
+          "mean": 13.39,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\ticket-stub",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 8.94,
+          "mean": 9.31,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 8.86,
+          "mean": 9.35,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 8.88,
+          "mean": 9.34,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 8.69,
+          "mean": 9.29,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged.",
+      "heading_alignment": "flex-start"
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\ticket-stub",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 9.02,
+          "mean": 9.35,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 8.68,
+          "mean": 9.23,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 8.83,
+          "mean": 9.81,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 8.8,
+          "mean": 9.39,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged.",
+      "heading_alignment": "flex-start"
+    },
+    {
+      "campaign": "examples\\visual-v3\\invitations\\ticket-stub",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 8.85,
+          "mean": 9.4,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 8.71,
+          "mean": 9.32,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 8.65,
+          "mean": 9.37,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 8.77,
+          "mean": 9.29,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged.",
+      "heading_alignment": "flex-start"
+    },
+    {
+      "campaign": "examples\\visual-v3\\luxury-elegant",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 12.14,
+          "mean": 13.04,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.26,
+          "mean": 13.01,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 13.01,
+          "mean": 13.4,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.85,
+          "mean": 13.35,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\luxury-elegant",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 11.7,
+          "mean": 12.52,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 11.71,
+          "mean": 12.63,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 12.87,
+          "mean": 13.32,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.87,
+          "mean": 13.39,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\luxury-elegant",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 1.94,
+          "mean": 12.82,
+          "passing_fraction": 0.983,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.13,
+          "mean": 13.0,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 12.83,
+          "mean": 13.41,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.6,
+          "mean": 13.39,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\neo-brutal",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 15.49,
+          "mean": 15.71,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 15.49,
+          "mean": 15.73,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 15.46,
+          "mean": 15.73,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 15.38,
+          "mean": 15.73,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged.",
+      "heading_alignment": "flex-start"
+    },
+    {
+      "campaign": "examples\\visual-v3\\neo-brutal",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 15.46,
+          "mean": 15.91,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 4.92,
+          "mean": 15.26,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 15.63,
+          "mean": 16.06,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 15.46,
+          "mean": 15.8,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\neo-brutal",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 15.57,
+          "mean": 15.77,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 1.02,
+          "mean": 15.02,
+          "passing_fraction": 0.95,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 15.57,
+          "mean": 15.77,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 15.49,
+          "mean": 15.74,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\neon-night",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 18.66,
+          "mean": 18.9,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 17.59,
+          "mean": 18.34,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 18.59,
+          "mean": 18.9,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 18.46,
+          "mean": 18.65,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\neon-night",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 16.2,
+          "mean": 18.74,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 2.08,
+          "mean": 12.99,
+          "passing_fraction": 0.9,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 18.59,
+          "mean": 18.79,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 18.52,
+          "mean": 18.69,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\neon-night",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 18.72,
+          "mean": 18.92,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 17.72,
+          "mean": 18.37,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 18.59,
+          "mean": 18.95,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 18.5,
+          "mean": 18.68,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\retro-print",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 8.94,
+          "mean": 9.31,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 8.86,
+          "mean": 9.35,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 8.88,
+          "mean": 9.34,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 8.69,
+          "mean": 9.29,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged.",
+      "heading_alignment": "flex-start"
+    },
+    {
+      "campaign": "examples\\visual-v3\\retro-print",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 9.02,
+          "mean": 9.35,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 8.68,
+          "mean": 9.23,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 8.83,
+          "mean": 9.81,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 8.8,
+          "mean": 9.39,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged.",
+      "heading_alignment": "flex-start"
+    },
+    {
+      "campaign": "examples\\visual-v3\\retro-print",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 8.85,
+          "mean": 9.4,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 8.71,
+          "mean": 9.32,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 8.65,
+          "mean": 9.37,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 8.77,
+          "mean": 9.29,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged.",
+      "heading_alignment": "flex-start"
+    },
+    {
+      "campaign": "examples\\visual-v3\\sports-dynamic",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 12.31,
+          "mean": 12.62,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.31,
+          "mean": 12.62,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 12.45,
+          "mean": 12.62,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.43,
+          "mean": 12.58,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\sports-dynamic",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 12.44,
+          "mean": 12.86,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.43,
+          "mean": 12.89,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 12.45,
+          "mean": 12.96,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.28,
+          "mean": 12.62,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\sports-dynamic",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 12.43,
+          "mean": 12.65,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 12.44,
+          "mean": 12.65,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 12.43,
+          "mean": 12.65,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 12.31,
+          "mean": 12.55,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\swiss-grid",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 4.24,
+          "mean": 4.42,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 4.58,
+          "mean": 4.72,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 4.62,
+          "mean": 4.72,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 4.7,
+          "mean": 4.76,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\swiss-grid",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 1.11,
+          "mean": 4.45,
+          "passing_fraction": 0.983,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 4.52,
+          "mean": 6.24,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 4.52,
+          "mean": 4.62,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 4.52,
+          "mean": 4.77,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\swiss-grid",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 3.81,
+          "mean": 4.42,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 4.52,
+          "mean": 6.13,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 4.52,
+          "mean": 4.74,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 4.67,
+          "mean": 4.78,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\tech-gradient",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 17.32,
+          "mean": 17.71,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 17.35,
+          "mean": 17.69,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 17.61,
+          "mean": 17.74,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 17.32,
+          "mean": 17.73,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\tech-gradient",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 17.68,
+          "mean": 17.8,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 17.7,
+          "mean": 17.88,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 17.58,
+          "mean": 17.84,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 17.68,
+          "mean": 17.83,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\tech-gradient",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 17.47,
+          "mean": 17.81,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 17.45,
+          "mean": 17.8,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 17.63,
+          "mean": 17.84,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 17.38,
+          "mean": 17.74,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\warm-playful",
+      "output": "poster_portrait",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 7.88,
+          "mean": 8.22,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 2.11,
+          "mean": 8.05,
+          "passing_fraction": 0.967,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 7.83,
+          "mean": 8.33,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 8.02,
+          "mean": 8.28,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    },
+    {
+      "campaign": "examples\\visual-v3\\warm-playful",
+      "output": "poster_square",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 7.96,
+          "mean": 8.41,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 7.91,
+          "mean": 8.46,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 6.05,
+          "mean": 8.45,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 8.03,
+          "mean": 8.31,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged.",
+      "heading_alignment": "flex-start"
+    },
+    {
+      "campaign": "examples\\visual-v3\\warm-playful",
+      "output": "poster_print",
+      "method": "60 background samples per actual text-line range with lettering hidden",
+      "regions": [
+        {
+          "field": "title",
+          "minimum": 7.81,
+          "mean": 8.22,
+          "passing_fraction": 1.0,
+          "target": 3
+        },
+        {
+          "field": "subtitle",
+          "minimum": 1.97,
+          "mean": 8.07,
+          "passing_fraction": 0.967,
+          "target": 4.5
+        },
+        {
+          "field": "when",
+          "minimum": 3.64,
+          "mean": 8.09,
+          "passing_fraction": 0.983,
+          "target": 4.5
+        },
+        {
+          "field": "where",
+          "minimum": 7.96,
+          "mean": 8.29,
+          "passing_fraction": 1.0,
+          "target": 4.5
+        }
+      ],
+      "needs_visual_review": false,
+      "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+    }
+  ],
+  "visual_review_required": 0
+}

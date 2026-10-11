@@ -140,7 +140,9 @@ def parse_text(text: str, source: str = "text") -> Event:
     elif data.get("category") in {"academic", "forum", "lecture", "workshop"}:
         data["formality"] = "professional"
         data["sources"]["formality"] = Evidence(source=source, excerpt=data["category"], confidence=0.7, status="inferred")
-    data["keywords"] = [word for word in ["AI", "Agent", "科技", "艺术", "手作", "音乐", "设计"] if word.lower() in text.lower()]
+    data["keywords"] = [word for word in ["AI", "Agent"]
+                        if re.search(r'(?<![A-Za-z0-9])'+word+r'(?![A-Za-z0-9])',text,re.I)]
+    data['keywords'] += [word for word in ['科技','艺术','手作','音乐','设计'] if word in text]
     data["demo"] = bool(re.search(r"虚构活动|fictional event|^demo\s*[:：]\s*true", text, re.I | re.M))
     return Event.model_validate(data)
 
@@ -150,6 +152,14 @@ def extract(path: str | Path, root: Path | None = None, ocr: bool = False) -> Ev
     if path.suffix.lower() == ".json":
         raw = json.loads(path.read_text(encoding="utf-8-sig"))
         event = Event.model_validate(raw)
+        if event.assets.visual_receipt:
+            asset_path = Path(event.assets.visual_receipt)
+            if not asset_path.is_absolute():
+                event.assets.visual_receipt = str((path.parent / asset_path).resolve())
+        for ratio, value in event.assets.visual_variants.items():
+            asset_path = Path(value)
+            if not asset_path.is_absolute():
+                event.assets.visual_variants[ratio] = str((path.parent / asset_path).resolve())
         for key, value in raw.items():
             if value and key not in {"sources", "confirmed_fields", "uncertainties", "schema_version"}:
                 event.sources.setdefault(key, Evidence(source=path.name, confidence=1))

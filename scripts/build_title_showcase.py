@@ -3,7 +3,7 @@
 from pathlib import Path
 
 from eventcraft.extractors import extract
-from eventcraft.renderer import browser, palette_for, prepare
+from eventcraft.renderer import asset_images, browser, palette_for, prepare
 from eventcraft.renderer.templates import escape, sheet_html
 from eventcraft.security import write_json
 
@@ -24,7 +24,7 @@ def main():
         for name, title in titles:
             sample = event.model_copy(deep=True)
             sample.title = title
-            source = sheet_html(sample, "swiss-grid", 1080, 1920, "portrait", palette_for(sample, "swiss-grid"), {})
+            source = sheet_html(sample, "swiss-grid", 1080, 1920, "portrait", palette_for(sample, "swiss-grid"), asset_images(sample, style="swiss-grid"))
             rendered, report = prepare(page, source, 1080, 1920)
             (destination / f"title-{name}.html").write_text(rendered, encoding="utf-8")
             page.screenshot(path=str(destination / f"title-{name}.png"))

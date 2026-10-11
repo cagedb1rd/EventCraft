@@ -2,6 +2,31 @@
   "$defs": {
     "Assets": {
       "properties": {
+        "visual_receipt": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Visual Receipt"
+        },
+        "visual_variants": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "propertyNames": {
+            "enum": [
+              "square",
+              "print"
+            ]
+          },
+          "title": "Visual Variants",
+          "type": "object"
+        },
         "logo": {
           "anyOf": [
             {
@@ -410,6 +435,59 @@
       "default": "",
       "title": "Style Description",
       "type": "string"
+    },
+    "invitation_format": {
+      "default": "auto",
+      "enum": [
+        "auto",
+        "boarding-pass",
+        "ticket-stub",
+        "formal-card",
+        "folded"
+      ],
+      "title": "Invitation Format",
+      "type": "string"
+    },
+    "show_timezone": {
+      "default": false,
+      "title": "Show Timezone",
+      "type": "boolean"
+    },
+    "timezone_label": {
+      "anyOf": [
+        {
+          "maxLength": 50,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Timezone Label"
+    },
+    "qr_policy": {
+      "default": "auto",
+      "enum": [
+        "auto",
+        "show",
+        "hide"
+      ],
+      "title": "Qr Policy",
+      "type": "string"
+    },
+    "poster_cta": {
+      "anyOf": [
+        {
+          "maxLength": 100,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Poster Cta"
     },
     "brand": {
       "$ref": "#/$defs/Brand"

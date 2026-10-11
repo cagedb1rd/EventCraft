@@ -3,9 +3,9 @@
   "name": "霓虹夜生活风",
   "name_en": "Neon night",
   "palette": [
-    "#130e25",
-    "#faf4ff",
-    "#ef75f3"
+    "#060e18",
+    "#e7ffff",
+    "#a5ff4d"
   ],
   "types": [
     "night-party",
@@ -31,7 +31,7 @@
   "time": "night",
   "density": "low",
   "family": "neon",
-  "hero": "optional",
+  "hero": "event-specific-host-art; explicitly identified reusable preview fallback",
   "language": [
     "zh",
     "en",
@@ -47,13 +47,13 @@
   },
   "tokens": {
     "grid_columns": 6,
-    "margin": 72,
-    "title_px": 148,
-    "body_px": 35,
-    "small_px": 24,
-    "invitation_title_px": 112,
-    "square_title_px": 96,
-    "heading_fonts": "Bahnschrift, Microsoft JhengHei, Noto Sans CJK SC, PingFang SC",
+    "margin": 64,
+    "title_px": 144,
+    "body_px": 34,
+    "small_px": 19,
+    "invitation_title_px": 86,
+    "square_title_px": 92,
+    "heading_fonts": "Agency FB, Bahnschrift, Microsoft JhengHei, Noto Sans SC, Microsoft YaHei, PingFang SC, Noto Sans CJK SC",
     "heading_weight": 700,
     "font": "sans",
     "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
@@ -62,9 +62,55 @@
     "alignment": "center"
   },
   "layout": {
-    "poster": "左上夜场标签 / 发光门框 / 下部居中强标题 / 时间地点发光线",
-    "invitation": "门框缩为横向霓虹边线，称谓与细节上下分组"
+    "poster": "radial-night-scene / 自然留白与低纹理文字区 / 按主题与标题长度动态构图",
+    "invitation": "按活动自动选择登机牌、票券、正式卡或折页；共享原创主视觉与配色，独立构图"
   },
   "negative": "日间体育不应默认使用；不让正文字体发虚",
-  "tradeoff": "夜间吸睛，不适合密集学术信息"
+  "tradeoff": "夜间吸睛，不适合密集学术信息",
+  "composition": "radial-night-scene",
+  "typography": {
+    "zh_title": [
+      "Microsoft JhengHei",
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "en_title": [
+      "Agency FB",
+      "Bahnschrift"
+    ],
+    "subtitle": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "information": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "numbers": [
+      "Bahnschrift",
+      "Arial"
+    ],
+    "weight": 700,
+    "shape": "normal",
+    "tracking": 0.035,
+    "leading": 1.2,
+    "alignment": "center",
+    "generic": "sans-serif",
+    "scale": {
+      "title": 1,
+      "subtitle": 0.23,
+      "information": 0.25,
+      "labels": 0.13
+    },
+    "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+    "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+    "title_image_relation": "radial-night-scene",
+    "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+  }
 }

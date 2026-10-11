@@ -1,0 +1,33 @@
+*{box-sizing:border-box}html,body{margin:0;padding:0}.sheet{width:var(--w);height:var(--h);position:relative;overflow:hidden;isolation:isolate;background:var(--bg);color:var(--fg);font-family:"Noto Sans SC","Microsoft YaHei",sans-serif}
+.art-backdrop{position:absolute;inset:0;z-index:-2}.campaign-art{width:100%;height:100%;object-fit:cover;display:block}
+/* Reading space belongs to generated art, with no opaque information panels. */
+.poster>section,.poster>footer{position:absolute;min-width:0;background:transparent}.heading{display:flex;flex-direction:column;justify-content:center;gap:20px}
+h1{font-size:145px;margin:0;overflow-wrap:anywhere}.title-word{display:inline-block;white-space:nowrap}.subtitle{font-size:31px;line-height:1.5;margin:0;overflow-wrap:anywhere}.subtitle:empty{display:none}
+header{position:absolute;top:4%;left:7%;width:86%;height:4%;display:flex;justify-content:flex-end}.logo{max-width:100px;max-height:70px;object-fit:contain}.status{position:absolute;left:7%;top:2%;font-size:13px;letter-spacing:2px;line-height:1.5}.status:empty{display:none}
+.details{display:grid;grid-template-columns:1.25fr 1fr;gap:36px;align-content:center}.fact{min-width:0}.fact span{font-size:16px;letter-spacing:3px;line-height:1.5;display:block;opacity:.85}.fact p{font-size:32px;line-height:1.5;margin:6px 0 0;overflow-wrap:anywhere}
+footer{display:flex;align-items:center;justify-content:space-between;gap:30px}.footer-copy{min-width:0;flex:1}.cta{font-size:25px;font-weight:600;line-height:1.5;margin:0;overflow-wrap:anywhere}.credit{font-size:19px;line-height:1.5;overflow-wrap:anywhere}.cta:empty,.credit:empty{display:none}.qr{padding:5px;background:white}.qr img{width:128px;height:128px;object-fit:contain;image-rendering:pixelated;display:block}
+.summary,.visual:empty{display:none}.visual{left:7%;top:43%;width:86%;height:28%;display:flex;gap:20px;justify-content:center}.visual img{max-width:45%;height:100%;object-fit:contain}
+.swiss-grid h1{font-size:165px}.swiss-grid .heading{width:78%!important}.swiss-grid .details{grid-template-columns:1.2fr 1fr;border-top:2px solid currentColor;padding-top:18px}
+.swiss-grid .subtitle,.swiss-grid .details,.swiss-grid footer{color:var(--accent)}
+.editorial-minimal h1{font-size:134px}.editorial-minimal .heading{border-top:1px solid var(--accent);padding-top:22px}.editorial-minimal .subtitle{font-style:italic;font-size:30px}
+.tech-gradient h1{font-size:157px}.tech-gradient .subtitle{letter-spacing:1px}.tech-gradient .details{border-top:1px solid var(--accent);padding-top:18px}
+.academic-clean h1{font-size:125px}.academic-clean .details{grid-template-columns:1.25fr 1fr;border-top:3px solid var(--accent);padding-top:18px}.academic-clean .fact span{font-weight:700}
+.neo-brutal h1{font-size:176px;text-transform:uppercase}.neo-brutal .heading{border-left:12px solid var(--accent);padding-left:22px}.neo-brutal .fact p{font-weight:700}
+.retro-print{text-align:center}.retro-print h1{font-size:157px}.retro-print .subtitle{font-size:30px}.retro-print .details{text-align:left;border-top:4px double var(--fg);padding-top:18px}.retro-print .art-backdrop:after{content:'';position:absolute;inset:24px;border:3px double var(--fg);pointer-events:none}
+.neon-night{text-align:center}.neon-night h1{font-size:164px;text-shadow:0 0 14px #1fc89d66}.neon-night .details{text-align:left}.neon-night .subtitle{letter-spacing:3px}
+.warm-playful h1{font-size:155px}.warm-playful .subtitle{font-size:34px}.warm-playful .details{gap:44px}.warm-playful .fact p{font-size:31px}
+.luxury-elegant{text-align:center}.luxury-elegant h1{font-size:119px}.luxury-elegant .heading{left:13%!important;width:74%!important}.luxury-elegant .details{grid-template-columns:1fr;gap:12px;top:74%!important;height:16%!important}.luxury-elegant .fact p{font-size:25px;margin:0}.luxury-elegant .fact span{font-size:13px;letter-spacing:4px}.luxury-elegant footer{justify-content:center}.luxury-elegant .credit{font-size:17px}.luxury-elegant .subtitle{font-size:26px}
+.sports-dynamic h1{font-size:170px}.sports-dynamic .heading{border-left:8px solid var(--accent);padding-left:24px}.sports-dynamic .fact p{font-weight:600}.sports-dynamic .details{border-top:1px solid var(--accent);padding-top:18px}
+.poster.square h1{font-size:99px}.poster.square .subtitle{font-size:24px}.poster.square .heading{gap:12px}.poster.square .fact p{font-size:24px}.poster.square .fact span{font-size:13px}.poster.square .credit{font-size:16px}.poster.square .cta{font-size:20px}.poster.square .qr img{width:100px;height:100px}.poster.square .details{padding-top:9px;gap:25px}.poster.square.luxury-elegant .details{top:74%!important;height:17%!important;gap:8px}.poster.square.luxury-elegant .fact p{font-size:22px}.poster.square.luxury-elegant h1{font-size:88px}
+.poster.print h1{font-size:126px}.poster.print .subtitle{font-size:28px}.poster.print .fact p{font-size:29px}.poster.print .qr img{width:110px;height:110px}.poster.print .credit{font-size:18px}
+/* Preserve designed negative space for alternate exports when no ratio-specific art was supplied. */
+.poster.square.portrait-art .campaign-art,.poster.print.portrait-art .campaign-art{object-fit:contain}
+/* Scan intent reserves a real QR corner and narrows facts before typesetting. */
+.poster.has-qr .details{width:65%;top:79%;height:13%;grid-template-columns:1fr;gap:12px}
+.poster.has-qr footer{top:94%;height:4%;align-items:center}
+.poster.has-qr .qr{position:absolute;right:0;bottom:0}
+.poster.has-qr .qr img{width:164px;height:164px}
+.poster.has-qr .footer-copy{max-width:70%}
+.poster.square.has-qr .details,.poster.print.has-qr .details{top:76%;height:16%;gap:10px}
+.poster.square.has-qr .qr img,.poster.print.has-qr .qr img{width:150px;height:150px}
+@media print{@page{size:A4;margin:0}.sheet.print{zoom:.7349;-webkit-print-color-adjust:exact;print-color-adjust:exact}}

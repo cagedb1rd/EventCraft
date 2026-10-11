@@ -1,112 +1,147 @@
 {
-  "packages": 15,
-  "png_campaign_images": 45,
-  "pdf_files": 30,
-  "layouts_verified": 60,
+  "packages": 20,
+  "png_campaign_images": 84,
+  "pdf_files": 72,
+  "layouts_verified": 86,
   "gallery_pairs": 10,
   "results": [
     {
       "package": "examples/gallery/academic-clean",
       "style": "academic-clean",
-      "files": 16,
-      "layouts": 4,
+      "files": 22,
+      "layouts": 5,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/editorial-minimal",
       "style": "editorial-minimal",
-      "files": 16,
+      "files": 22,
+      "layouts": 5,
+      "checks": "passed"
+    },
+    {
+      "package": "examples/gallery/invitations/boarding-pass",
+      "style": "tech-gradient",
+      "files": 18,
+      "layouts": 4,
+      "checks": "passed"
+    },
+    {
+      "package": "examples/gallery/invitations/folded",
+      "style": "editorial-minimal",
+      "files": 22,
+      "layouts": 5,
+      "checks": "passed"
+    },
+    {
+      "package": "examples/gallery/invitations/formal-card",
+      "style": "luxury-elegant",
+      "files": 18,
+      "layouts": 4,
+      "checks": "passed"
+    },
+    {
+      "package": "examples/gallery/invitations/ticket-stub",
+      "style": "retro-print",
+      "files": 18,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/luxury-elegant",
       "style": "luxury-elegant",
-      "files": 16,
-      "layouts": 4,
+      "files": 22,
+      "layouts": 5,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/neo-brutal",
       "style": "neo-brutal",
-      "files": 16,
+      "files": 18,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/neon-night",
       "style": "neon-night",
-      "files": 16,
+      "files": 18,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/retro-print",
       "style": "retro-print",
-      "files": 16,
+      "files": 18,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/sports-dynamic",
       "style": "sports-dynamic",
-      "files": 16,
+      "files": 18,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/swiss-grid",
       "style": "swiss-grid",
-      "files": 16,
-      "layouts": 4,
+      "files": 22,
+      "layouts": 5,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/tech-gradient",
       "style": "tech-gradient",
-      "files": 16,
+      "files": 18,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/gallery/warm-playful",
       "style": "warm-playful",
-      "files": 16,
-      "layouts": 4,
+      "files": 22,
+      "layouts": 5,
       "checks": "passed"
     },
     {
       "package": "examples/generated/birthday",
       "style": "warm-playful",
-      "files": 16,
+      "files": 17,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/generated/dinner",
       "style": "luxury-elegant",
-      "files": 16,
+      "files": 17,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/generated/launch",
       "style": "tech-gradient",
-      "files": 16,
+      "files": 17,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/generated/lecture",
       "style": "tech-gradient",
-      "files": 17,
+      "files": 18,
       "layouts": 4,
       "checks": "passed"
     },
     {
       "package": "examples/generated/sports",
       "style": "sports-dynamic",
-      "files": 17,
+      "files": 18,
+      "layouts": 4,
+      "checks": "passed"
+    },
+    {
+      "package": "examples/visual-v2/web-summit",
+      "style": "tech-gradient",
+      "files": 20,
       "layouts": 4,
       "checks": "passed"
     }

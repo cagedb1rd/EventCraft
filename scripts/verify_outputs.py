@@ -31,15 +31,15 @@ def main():
             if file.suffix == ".pdf":
                 assert len(PdfReader(file).pages) >= 1
         assert all(layout["passed"] for layout in manifest["checks"]["layouts"].values())
-        assert len(manifest["checks"]["layouts"]) == 4
+        assert len(manifest["checks"]["layouts"]) >= 4
         for text in (path.parent / "copy").iterdir():
             value = text.read_text(encoding="utf-8")
             assert all(facts(event)[field] in value for field in ["when", "where", "registration"])
         results.append({"package": path.parent.relative_to(ROOT).as_posix(), "style": manifest["base_style"],
-                        "files": len(manifest["files"]), "layouts": 4, "checks": "passed"})
+                        "files": len(manifest["files"]), "layouts": len(manifest["checks"]["layouts"]), "checks": "passed"})
     assert len(results) >= 15, "Five examples and ten gallery campaigns required"
-    report = {"packages": len(results), "png_campaign_images": len(results) * 3,
-              "pdf_files": len(results) * 2, "layouts_verified": len(results) * 4,
+    report = {"packages": len(results), "png_campaign_images": sum(1 for p in (ROOT / "examples").rglob("*.png") if p.parent.joinpath("manifest.json").is_file()),
+              "pdf_files": sum(1 for p in (ROOT / "examples").rglob("*.pdf") if p.parent.joinpath("manifest.json").is_file()), "layouts_verified": sum(r["layouts"] for r in results),
               "gallery_pairs": 10, "results": results}
     write_json(ROOT / "docs/artifact-audit.json", report)
     print(f"Reopened and verified {len(results)} complete public packages")

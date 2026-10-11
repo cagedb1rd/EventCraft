@@ -1,0 +1,1126 @@
+{
+  "composed_qr_count": 57,
+  "pdf_count": 72,
+  "references_unchanged": 14,
+  "qr": [
+    {
+      "path": "examples/gallery/academic-clean/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/academic-clean/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/academic-clean/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/academic-clean/invitation_outside.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/invitation_outside.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/boarding-pass/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/boarding-pass/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/boarding-pass/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/folded/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/folded/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/folded/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/folded/invitation_outside.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/formal-card/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/formal-card/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/formal-card/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/ticket-stub/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/ticket-stub/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/invitations/ticket-stub/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/invitation_outside.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/neo-brutal/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/neo-brutal/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/neo-brutal/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/neon-night/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/neon-night/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/neon-night/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/retro-print/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/retro-print/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/retro-print/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/sports-dynamic/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/sports-dynamic/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/sports-dynamic/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/swiss-grid/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/swiss-grid/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/swiss-grid/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/swiss-grid/invitation_outside.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/tech-gradient/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/tech-gradient/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/tech-gradient/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/warm-playful/poster_portrait.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/warm-playful/poster_square.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/warm-playful/invitation.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/gallery/warm-playful/invitation_outside.png",
+      "decoded": "https://example.org/events/inspiration-demo"
+    },
+    {
+      "path": "examples/generated/lecture/poster_portrait.png",
+      "decoded": "https://example.org/events/agent-lab"
+    },
+    {
+      "path": "examples/generated/lecture/poster_square.png",
+      "decoded": "https://example.org/events/agent-lab"
+    },
+    {
+      "path": "examples/generated/lecture/invitation.png",
+      "decoded": "https://example.org/events/agent-lab"
+    },
+    {
+      "path": "examples/generated/sports/poster_portrait.png",
+      "decoded": "https://example.org/events/campus-run"
+    },
+    {
+      "path": "examples/generated/sports/poster_square.png",
+      "decoded": "https://example.org/events/campus-run"
+    },
+    {
+      "path": "examples/generated/sports/invitation.png",
+      "decoded": "https://example.org/events/campus-run"
+    },
+    {
+      "path": "examples/visual-v2/web-summit/poster_portrait.png",
+      "decoded": "https://example.org/events/web-summit-demo"
+    },
+    {
+      "path": "examples/visual-v2/web-summit/poster_square.png",
+      "decoded": "https://example.org/events/web-summit-demo"
+    },
+    {
+      "path": "examples/visual-v2/web-summit/invitation.png",
+      "decoded": "https://example.org/events/web-summit-demo"
+    }
+  ],
+  "pdf": [
+    {
+      "path": "examples/gallery/academic-clean/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/academic-clean/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/academic-clean/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/academic-clean/invitation_outside.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/academic-clean/invitation_folded_print.pdf",
+      "pages": 2,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ],
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/invitation_outside.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/editorial-minimal/invitation_folded_print.pdf",
+      "pages": 2,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ],
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/boarding-pass/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/boarding-pass/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/boarding-pass/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          135.13
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/folded/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/folded/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/folded/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/folded/invitation_outside.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/folded/invitation_folded_print.pdf",
+      "pages": 2,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ],
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/formal-card/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/formal-card/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/formal-card/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          210.23,
+          262.81
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/ticket-stub/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/ticket-stub/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/invitations/ticket-stub/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          118.19
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/invitation_outside.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/luxury-elegant/invitation_folded_print.pdf",
+      "pages": 2,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ],
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/neo-brutal/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/neo-brutal/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/neo-brutal/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          118.19
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/neon-night/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/neon-night/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/neon-night/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          118.19
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/retro-print/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/retro-print/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/retro-print/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          118.19
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/sports-dynamic/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/sports-dynamic/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/sports-dynamic/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          118.19
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/swiss-grid/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/swiss-grid/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/swiss-grid/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/swiss-grid/invitation_outside.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/swiss-grid/invitation_folded_print.pdf",
+      "pages": 2,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ],
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/tech-gradient/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/tech-gradient/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/tech-gradient/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          135.13
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/warm-playful/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/warm-playful/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/warm-playful/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/warm-playful/invitation_outside.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/gallery/warm-playful/invitation_folded_print.pdf",
+      "pages": 2,
+      "page_mm": [
+        [
+          297.01,
+          165.1
+        ],
+        [
+          297.01,
+          165.1
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/birthday/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/birthday/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/birthday/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          210.23,
+          262.81
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/dinner/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/dinner/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/dinner/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          210.23,
+          262.81
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/launch/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/launch/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/launch/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          135.13
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/lecture/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/lecture/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/lecture/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          135.13
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/sports/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/sports/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/generated/sports/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          118.19
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/visual-v2/web-summit/poster_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/visual-v2/web-summit/invite_letter.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          209.89,
+          297.01
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    },
+    {
+      "path": "examples/visual-v2/web-summit/invitation_print.pdf",
+      "pages": 1,
+      "page_mm": [
+        [
+          270.26,
+          135.13
+        ]
+      ],
+      "text_layer": true,
+      "poppler_rendered": true
+    }
+  ],
+  "limits": "QR is a demo URL. PDF text/Poppler checks do not certify commercial print color."
+}

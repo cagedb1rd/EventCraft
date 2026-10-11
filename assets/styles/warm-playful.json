@@ -3,9 +3,9 @@
   "name": "温暖手绘风",
   "name_en": "Warm playful",
   "palette": [
-    "#fff3db",
-    "#4e392b",
-    "#a84b36"
+    "#f9eccc",
+    "#29483c",
+    "#bd503b"
   ],
   "types": [
     "birthday",
@@ -33,7 +33,7 @@
   "time": "day",
   "density": "medium",
   "family": "organic",
-  "hero": "optional",
+  "hero": "event-specific-host-art; explicitly identified reusable preview fallback",
   "language": [
     "zh",
     "en",
@@ -47,13 +47,13 @@
   },
   "tokens": {
     "grid_columns": 6,
-    "margin": 72,
-    "title_px": 148,
-    "body_px": 35,
-    "small_px": 24,
-    "invitation_title_px": 112,
-    "square_title_px": 96,
-    "heading_fonts": "KaiTi, Kaiti SC, Noto Serif CJK SC, Georgia",
+    "margin": 64,
+    "title_px": 140,
+    "body_px": 34,
+    "small_px": 19,
+    "invitation_title_px": 86,
+    "square_title_px": 92,
+    "heading_fonts": "Gabriola, Georgia, KaiTi, Kaiti SC, Noto Serif SC, SimSun, Songti SC, Noto Serif CJK SC",
     "heading_weight": 600,
     "font": "sans",
     "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
@@ -62,9 +62,56 @@
     "alignment": "left"
   },
   "layout": {
-    "poster": "顶部手绘枝叶 / 便笺式标题 / 花朵太阳插画 / 圆角邀请信纸",
-    "invitation": "短花边与亲切称谓，正文纸卡占比增加"
+    "poster": "illustrated-landscape / 自然留白与低纹理文字区 / 按主题与标题长度动态构图",
+    "invitation": "按活动自动选择登机牌、票券、正式卡或折页；共享原创主视觉与配色，独立构图"
   },
   "negative": "避免伪手写中文字与幼稚化正式会议",
-  "tradeoff": "亲和温暖，正式商务气质较弱"
+  "tradeoff": "亲和温暖，正式商务气质较弱",
+  "composition": "illustrated-landscape",
+  "typography": {
+    "zh_title": [
+      "KaiTi",
+      "Kaiti SC",
+      "Noto Serif SC",
+      "SimSun",
+      "Songti SC",
+      "Noto Serif CJK SC"
+    ],
+    "en_title": [
+      "Gabriola",
+      "Georgia"
+    ],
+    "subtitle": [
+      "Noto Serif SC",
+      "SimSun",
+      "Songti SC",
+      "Noto Serif CJK SC"
+    ],
+    "information": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "numbers": [
+      "Arial",
+      "Noto Sans SC"
+    ],
+    "weight": 600,
+    "shape": "normal",
+    "tracking": 0.03,
+    "leading": 1.3,
+    "alignment": "left",
+    "generic": "serif",
+    "scale": {
+      "title": 1,
+      "subtitle": 0.23,
+      "information": 0.25,
+      "labels": 0.13
+    },
+    "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+    "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+    "title_image_relation": "illustrated-landscape",
+    "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+  }
 }

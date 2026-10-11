@@ -3,9 +3,9 @@
   "name": "年轻大胆风",
   "name_en": "Neo brutal",
   "palette": [
-    "#ffe349",
-    "#171717",
-    "#8b3dde"
+    "#dfff00",
+    "#121411",
+    "#6640e8"
   ],
   "types": [
     "recruitment",
@@ -31,7 +31,7 @@
   "time": "day",
   "density": "medium",
   "family": "blocks",
-  "hero": "optional",
+  "hero": "event-specific-host-art; explicitly identified reusable preview fallback",
   "language": [
     "zh",
     "en",
@@ -47,13 +47,13 @@
   },
   "tokens": {
     "grid_columns": 6,
-    "margin": 72,
-    "title_px": 148,
-    "body_px": 35,
-    "small_px": 24,
-    "invitation_title_px": 112,
-    "square_title_px": 96,
-    "heading_fonts": "Arial Black, SimHei, Noto Sans CJK SC, PingFang SC",
+    "margin": 64,
+    "title_px": 140,
+    "body_px": 34,
+    "small_px": 19,
+    "invitation_title_px": 86,
+    "square_title_px": 92,
+    "heading_fonts": "Impact, Arial Black, SimHei, Noto Sans SC, Microsoft YaHei, PingFang SC, Noto Sans CJK SC",
     "heading_weight": 900,
     "font": "sans",
     "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
@@ -62,9 +62,55 @@
     "alignment": "left"
   },
   "layout": {
-    "poster": "顶部分裂标签 / 硬阴影标题块 / 错位圆形贴纸 / 黑色信息模块",
-    "invitation": "邀请标题做成票券，信息区保持硬边框"
+    "poster": "acid-cutout-collage / 自然留白与低纹理文字区 / 按主题与标题长度动态构图",
+    "invitation": "按活动自动选择登机牌、票券、正式卡或折页；共享原创主视觉与配色，独立构图"
   },
   "negative": "避免无序旋转正文或牺牲可读性",
-  "tradeoff": "年轻醒目，不适合庄重礼仪"
+  "tradeoff": "年轻醒目，不适合庄重礼仪",
+  "composition": "acid-cutout-collage",
+  "typography": {
+    "zh_title": [
+      "SimHei",
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "en_title": [
+      "Impact",
+      "Arial Black"
+    ],
+    "subtitle": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "information": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "numbers": [
+      "Arial",
+      "Noto Sans SC"
+    ],
+    "weight": 900,
+    "shape": "normal",
+    "tracking": -0.035,
+    "leading": 1.4,
+    "alignment": "left",
+    "generic": "sans-serif",
+    "scale": {
+      "title": 1,
+      "subtitle": 0.23,
+      "information": 0.25,
+      "labels": 0.13
+    },
+    "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+    "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+    "title_image_relation": "acid-cutout-collage",
+    "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+  }
 }

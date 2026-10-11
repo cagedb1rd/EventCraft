@@ -39,6 +39,7 @@
   "language": "zh",
   "style": null,
   "style_description": "",
+  "invitation_format": "auto",
   "brand": {
     "colors": [],
     "forbidden_colors": [],
@@ -47,6 +48,7 @@
     "preserve_logo": true
   },
   "assets": {
+    "visual_receipt": null,
     "logo": null,
     "hero_image": null,
     "speaker_photo": null,

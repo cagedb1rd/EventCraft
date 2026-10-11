@@ -1,5 +1,17 @@
 # Executable workflow
 
+The current Agent workflow is [SKILL.md](../SKILL.md): after selection, actually call built-in image_gen through [the host asset bridge](image-generation.md). CLI preview reuse needs no API key. Final poster text uses natural low-complexity image regions and only title/short supplied subtitle/time/location/optional CTA/QR/organizer. No universal opaque rescue panels. Timezones are hidden and QR requires explicit scan intent. Invitations/copy retain detail.
+
+```sh
+eventcraft art-plan event.json --style tech-gradient --output output/art-plan.json
+# Real host image_gen invocation by the Agent, followed by inspection.
+eventcraft art-import output/art-plan.json --image /real/generated/image.png --output output/art-v1
+eventcraft all event.json --select 2 --state output/selection --visual-receipt output/art-v1/receipt.json --require-art --output output/selected
+eventcraft all event.json --style luxury-elegant --invitation-format formal-card --output output/card
+```
+
+`--invitation-format` accepts `auto`, `boarding-pass`, `ticket-stub`, `formal-card`, `folded`. Visual invitation PNG/PDF are primary outputs; the text letter is additional. Folded output includes inside/outside PNGs and a two-page print file. Fresh artwork is facts/style/hash bound. Exported art/receipt paths are relative for relocatable replay. Do not alter event facts between numbered recommendation and selection without regenerating state.
+
 ```sh
 eventcraft extract examples/inputs/lecture.md --output output/extracted/event.json
 eventcraft recommend examples/inputs/lecture.json --output output/selection

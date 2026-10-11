@@ -24,14 +24,15 @@
   "speakers": [],
   "teams": [],
   "fee": null,
-  "registration": "无需报名 · 示例活动",
-  "registration_url": null,
+  "registration": "示例报名链接",
+  "registration_url": "https://example.org/events/inspiration-demo",
   "deadline": null,
   "contact": null,
   "recipient": null,
   "language": "zh",
   "style": null,
   "style_description": "",
+  "invitation_format": "auto",
   "brand": {
     "colors": [],
     "forbidden_colors": [],
@@ -40,6 +41,7 @@
     "preserve_logo": true
   },
   "assets": {
+    "visual_receipt": null,
     "logo": null,
     "hero_image": null,
     "speaker_photo": null,

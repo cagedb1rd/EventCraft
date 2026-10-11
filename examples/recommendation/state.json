@@ -1,5 +1,5 @@
 {
-  "ranking_version": "1.0.0",
+  "ranking_version": "2.0.0",
   "weights": {
     "type": 30,
     "audience": 20,
@@ -9,8 +9,8 @@
     "brand": 10,
     "readability": 5
   },
-  "input_digest": "c232e575657e482f8cf9bc1fc5be32afccd68a644e70ab65058b6b86ce4ce8c2",
-  "profile_digest": "319eff2351fb461dec166a6bdbcfcf297cc775b00e1138619687dcddd4d6348d",
+  "input_digest": "8c6e2b8a2d78cc761ff6ac460e5dfadb467859f3c346b3246c8e847b2481688f",
+  "profile_digest": "11add928fa1dad47ed8e9e892ed726e26e11bcd190dcd7c34730429aa2dbfdfa",
   "input_summary": {
     "category": "lecture",
     "language": "zh",
@@ -38,7 +38,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；主题含 AI；日间时段。采用顶部坐标 / 左对齐标题 / 轨道光环主视觉 / 底部半透明信息区。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；主题含 AI；日间时段。采用全幅玻璃神经雕塑 / 深色标题承载层 / 中部主视觉 / 简洁报名底栏。",
       "tradeoff": "科技氛围强，正文应控制密度",
       "preview_path": null,
       "family": "space"
@@ -57,7 +57,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用左侧窄索引栏 / 大字号标题 / 右侧几何圆 / 底部横向信息表。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用不对称大字 / 红黑白丝网印刷几何 / 右向视觉重心 / 独立底部事实栏。",
       "tradeoff": "构图鲜明，超长标题需要压缩字号",
       "preview_path": null,
       "family": "grid"
@@ -76,7 +76,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用顶部细色带 / 左侧书脊 / 编号主题 / 水平知识图形 / 结构化事实表。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用黑白城市全景 / 撕纸建筑蓝图 / 浅蓝研究标题区 / 双列核心事实。",
       "tradeoff": "专业可信，视觉表达相对克制",
       "preview_path": null,
       "family": "institutional"
@@ -95,7 +95,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用杂志刊头 / 偏置作品窗 / 编辑标题 / 页脚细栏。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用上部黑白雕像裁切摄影 / 下部衬线编辑标题 / 大留白 / 细信息底栏。",
       "tradeoff": "留白丰富，长议程更适合附页",
       "preview_path": null,
       "family": "editorial"
@@ -114,7 +114,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用右侧巨大日期数字 / 斜切速度带 / 左侧竞技标题 / 对抗队伍栏 / 硬信息底块。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用大幅运动人物 / 橙黄动势笔触 / 下部斜体竞技标题 / 深色信息底栏。",
       "tradeoff": "速度感强，仪式性活动适配较弱",
       "preview_path": null,
       "family": "diagonal"
@@ -133,7 +133,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用顶部分裂标签 / 硬阴影标题块 / 错位圆形贴纸 / 黑色信息模块。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用荧光黄剪贴拼贴 / 硬边黑色标题块 / 紫色错位阴影 / 实色核心信息区。",
       "tradeoff": "年轻醒目，不适合庄重礼仪",
       "preview_path": null,
       "family": "blocks"
@@ -152,7 +152,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用双层细线框 / 精致几何花结 / 衬线主标题 / 中轴留白 / 礼仪信息组。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用金箔 Art Deco 框 / 墨绿礼仪中轴 / 衬线标题 / 居中精简核心信息。",
       "tradeoff": "礼仪感突出，长文本会降低高级留白感",
       "preview_path": null,
       "family": "ceremony"
@@ -171,7 +171,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用双线印刷边框 / 拱形日晕 / 衬线标题 / 半色调纸张 / 票券式底栏。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用粗衬线活字 / 怀旧纸张 / 原创半色调肖像 / 双线印刷边框与短底栏。",
       "tradeoff": "温厚怀旧，色彩表现较柔和",
       "preview_path": null,
       "family": "print"
@@ -190,7 +190,7 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用顶部手绘枝叶 / 便笺式标题 / 花朵太阳插画 / 圆角邀请信纸。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用手绘市集场景 / 奶油纸标题留白 / 绿松石与暖阳 / 开放式事实底栏。",
       "tradeoff": "亲和温暖，正式商务气质较弱",
       "preview_path": null,
       "family": "organic"
@@ -209,13 +209,13 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用左上夜场标签 / 发光门框 / 下部居中强标题 / 时间地点发光线。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用径向霓虹隧道 / 下部夜场标题板 / 深色阅读层 / 清晰二维码底栏。",
       "tradeoff": "夜间吸睛，不适合密集学术信息",
       "preview_path": null,
       "family": "neon"
     }
   ],
-  "event_digest": "c232e575657e482f8cf9bc1fc5be32afccd68a644e70ab65058b6b86ce4ce8c2",
+  "event_digest": "8c6e2b8a2d78cc761ff6ac460e5dfadb467859f3c346b3246c8e847b2481688f",
   "page": 1,
   "recommendations": [
     {
@@ -232,14 +232,14 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；主题含 AI；日间时段。采用顶部坐标 / 左对齐标题 / 轨道光环主视觉 / 底部半透明信息区。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；主题含 AI；日间时段。采用全幅玻璃神经雕塑 / 深色标题承载层 / 中部主视觉 / 简洁报名底栏。",
       "tradeoff": "科技氛围强，正文应控制密度",
       "preview_path": "previews/tech-gradient.png",
       "family": "space",
       "rank": 1,
       "position": 1,
       "role": "最适合",
-      "preview_event_digest": "c232e575657e482f8cf9bc1fc5be32afccd68a644e70ab65058b6b86ce4ce8c2",
+      "preview_event_digest": "8c6e2b8a2d78cc761ff6ac460e5dfadb467859f3c346b3246c8e847b2481688f",
       "preview_checks": {
         "passed": true,
         "problems": [],
@@ -247,23 +247,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "LECTURE",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 56,
-              "y": 66,
-              "w": 96.5625,
-              "h": 18
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.10.26",
-            "rect": {
-              "x": 923.921875,
-              "y": 66,
-              "w": 100.078125,
-              "h": 18
+              "x": 42,
+              "y": 10,
+              "w": 127.359375,
+              "h": 21
             }
           },
           {
@@ -271,10 +260,10 @@
             "field": "title",
             "text": "AI Agent 实战分享会",
             "rect": {
-              "x": 56,
-              "y": 130,
-              "w": 929.265625,
-              "h": 130.1875
+              "x": 65,
+              "y": 116,
+              "w": 955,
+              "h": 128.796875
             }
           },
           {
@@ -282,54 +271,10 @@
             "field": "",
             "text": "从想法到工作流，探索创作的新可能",
             "rect": {
-              "x": 56,
-              "y": 275.1875,
-              "w": 929.265625,
-              "h": 39
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工作流实战",
-            "rect": {
-              "x": 56,
-              "y": 354.1875,
-              "w": 120,
-              "h": 52
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工具与创作",
-            "rect": {
-              "x": 202,
-              "y": 354.1875,
-              "w": 120,
-              "h": 52
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "开放交流",
-            "rect": {
-              "x": 348,
-              "y": 354.1875,
-              "w": 96,
-              "h": 52
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "主讲人 · 示例讲者",
-            "rect": {
-              "x": 56,
-              "y": 429.1875,
-              "w": 968,
-              "h": 34.5
+              "x": 65,
+              "y": 254.796875,
+              "w": 955,
+              "h": 37.5
             }
           },
           {
@@ -337,10 +282,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 79,
-              "y": 529.6875,
-              "w": 922,
-              "h": 26
+              "x": 62,
+              "y": 813,
+              "w": 510.53125,
+              "h": 25.5
             }
           },
           {
@@ -348,10 +293,10 @@
             "field": "",
             "text": "2026.10.26  14:00 – 16:30  (Asia/Shanghai)",
             "rect": {
-              "x": 79,
-              "y": 561.6875,
-              "w": 922,
-              "h": 39.140625
+              "x": 62,
+              "y": 839.5,
+              "w": 510.53125,
+              "h": 37.5
             }
           },
           {
@@ -359,10 +304,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 79,
-              "y": 615.828125,
-              "w": 449,
-              "h": 26
+              "x": 592.53125,
+              "y": 813,
+              "w": 425.453125,
+              "h": 25.5
             }
           },
           {
@@ -370,54 +315,21 @@
             "field": "",
             "text": "示例大学 · 创新楼报告厅",
             "rect": {
-              "x": 79,
-              "y": 647.828125,
-              "w": 449,
-              "h": 39.140625
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 79,
-              "y": 701.96875,
-              "w": 922,
-              "h": 26
+              "x": 592.53125,
+              "y": 839.5,
+              "w": 425.453125,
+              "h": 37.5
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/agent-lab",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 79,
-              "y": 733.96875,
-              "w": 922,
-              "h": 40.59375
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 79,
-              "y": 789.5625,
-              "w": 449,
-              "h": 26
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 79,
-              "y": 821.5625,
-              "w": 449,
-              "h": 40.59375
+              "x": 62,
+              "y": 932.25,
+              "w": 808,
+              "h": 37.5
             }
           },
           {
@@ -425,21 +337,10 @@
             "field": "",
             "text": "示例大学创作社",
             "rect": {
-              "x": 56,
-              "y": 959.65625,
-              "w": 126,
+              "x": 62,
+              "y": 981.75,
+              "w": 808,
               "h": 27
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.10.26",
-            "rect": {
-              "x": 880.6875,
-              "y": 965.15625,
-              "w": 143.3125,
-              "h": 16
             }
           }
         ],
@@ -447,38 +348,73 @@
         "height": 1080,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(9, 11, 33)",
+            "color": "rgb(245, 247, 255)",
+            "rect": {
+              "x": 42,
+              "y": 104,
+              "width": 996,
+              "height": 200.296875,
+              "top": 104,
+              "right": 1038,
+              "bottom": 304.296875,
+              "left": 42
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(9, 11, 33)",
+            "color": "rgb(245, 247, 255)",
+            "rect": {
+              "x": 42,
+              "y": 799,
+              "width": 996,
+              "height": 90,
+              "top": 799,
+              "right": 1038,
+              "bottom": 889,
+              "left": 42
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(9, 11, 33)",
+            "color": "rgb(245, 247, 255)",
+            "rect": {
+              "x": 42,
+              "y": 903,
+              "width": 996,
+              "height": 135,
+              "top": 903,
+              "right": 1038,
+              "bottom": 1038,
+              "left": 42
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "93px"
+            "size": "92px"
           },
           {
             "field": "subtitle",
-            "size": "26px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "24px"
-          },
-          {
-            "field": "speakers",
-            "size": "23px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "27px"
+            "size": "25px"
           },
           {
-            "field": "",
-            "size": "27px"
-          },
-          {
-            "field": "",
-            "size": "28px"
-          },
-          {
-            "field": "",
-            "size": "28px"
+            "field": "cta",
+            "size": "25px"
           },
           {
             "field": "credit",
@@ -517,14 +453,14 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用左侧窄索引栏 / 大字号标题 / 右侧几何圆 / 底部横向信息表。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用不对称大字 / 红黑白丝网印刷几何 / 右向视觉重心 / 独立底部事实栏。",
       "tradeoff": "构图鲜明，超长标题需要压缩字号",
       "preview_path": "previews/swiss-grid.png",
       "family": "grid",
       "rank": 2,
       "position": 2,
       "role": "稳妥替代",
-      "preview_event_digest": "c232e575657e482f8cf9bc1fc5be32afccd68a644e70ab65058b6b86ce4ce8c2",
+      "preview_event_digest": "8c6e2b8a2d78cc761ff6ac460e5dfadb467859f3c346b3246c8e847b2481688f",
       "preview_checks": {
         "passed": true,
         "problems": [],
@@ -532,23 +468,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "LECTURE",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 95,
-              "y": 64.5,
-              "w": 92.421875,
+              "x": 42,
+              "y": 10,
+              "w": 127.359375,
               "h": 21
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.10.26",
-            "rect": {
-              "x": 923.921875,
-              "y": 66,
-              "w": 100.078125,
-              "h": 18
             }
           },
           {
@@ -556,10 +481,10 @@
             "field": "title",
             "text": "AI Agent 实战分享会",
             "rect": {
-              "x": 95,
-              "y": 130,
-              "w": 929,
-              "h": 127.390625
+              "x": 60,
+              "y": 116,
+              "w": 960,
+              "h": 128.796875
             }
           },
           {
@@ -567,54 +492,10 @@
             "field": "",
             "text": "从想法到工作流，探索创作的新可能",
             "rect": {
-              "x": 95,
-              "y": 272.390625,
-              "w": 929,
-              "h": 36
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工作流实战",
-            "rect": {
-              "x": 95,
-              "y": 383.390625,
-              "w": 115,
-              "h": 50.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工具与创作",
-            "rect": {
-              "x": 236,
-              "y": 383.390625,
-              "w": 115,
-              "h": 50.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "开放交流",
-            "rect": {
-              "x": 377,
-              "y": 383.390625,
-              "w": 92,
-              "h": 50.5
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "主讲人 · 示例讲者",
-            "rect": {
-              "x": 95,
-              "y": 455.890625,
-              "w": 929,
-              "h": 33
+              "x": 60,
+              "y": 254.796875,
+              "w": 960,
+              "h": 37.5
             }
           },
           {
@@ -622,10 +503,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 95,
-              "y": 560.890625,
-              "w": 929,
-              "h": 26
+              "x": 62,
+              "y": 813,
+              "w": 510.53125,
+              "h": 25.5
             }
           },
           {
@@ -633,10 +514,10 @@
             "field": "",
             "text": "2026.10.26  14:00 – 16:30  (Asia/Shanghai)",
             "rect": {
-              "x": 95,
-              "y": 592.890625,
-              "w": 929,
-              "h": 37.6875
+              "x": 62,
+              "y": 839.5,
+              "w": 510.53125,
+              "h": 37.5
             }
           },
           {
@@ -644,10 +525,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 95,
-              "y": 645.578125,
-              "w": 452.5,
-              "h": 26
+              "x": 592.53125,
+              "y": 813,
+              "w": 425.453125,
+              "h": 25.5
             }
           },
           {
@@ -655,54 +536,21 @@
             "field": "",
             "text": "示例大学 · 创新楼报告厅",
             "rect": {
-              "x": 95,
-              "y": 677.578125,
-              "w": 452.5,
-              "h": 37.6875
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 95,
-              "y": 730.265625,
-              "w": 929,
-              "h": 26
+              "x": 592.53125,
+              "y": 839.5,
+              "w": 425.453125,
+              "h": 37.5
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/agent-lab",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 95,
-              "y": 762.265625,
-              "w": 929,
-              "h": 37.6875
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 95,
-              "y": 814.953125,
-              "w": 452.5,
-              "h": 26
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 95,
-              "y": 846.953125,
-              "w": 452.5,
-              "h": 37.6875
+              "x": 62,
+              "y": 933.75,
+              "w": 808,
+              "h": 37.5
             }
           },
           {
@@ -710,21 +558,10 @@
             "field": "",
             "text": "示例大学创作社",
             "rect": {
-              "x": 95,
-              "y": 959.140625,
-              "w": 126,
+              "x": 62,
+              "y": 983.25,
+              "w": 808,
               "h": 27
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.10.26",
-            "rect": {
-              "x": 880.6875,
-              "y": 964.640625,
-              "w": 143.3125,
-              "h": 16
             }
           }
         ],
@@ -732,38 +569,73 @@
         "height": 1080,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(227, 35, 25)",
+            "color": "rgb(255, 255, 255)",
+            "rect": {
+              "x": 42,
+              "y": 104,
+              "width": 996,
+              "height": 200.296875,
+              "top": 104,
+              "right": 1038,
+              "bottom": 304.296875,
+              "left": 42
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(227, 35, 25)",
+            "color": "rgb(255, 255, 255)",
+            "rect": {
+              "x": 42,
+              "y": 801,
+              "width": 996,
+              "height": 88,
+              "top": 801,
+              "right": 1038,
+              "bottom": 889,
+              "left": 42
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(227, 35, 25)",
+            "color": "rgb(255, 255, 255)",
+            "rect": {
+              "x": 42,
+              "y": 903,
+              "width": 996,
+              "height": 135,
+              "top": 903,
+              "right": 1038,
+              "bottom": 1038,
+              "left": 42
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "91px"
+            "size": "92px"
           },
           {
             "field": "subtitle",
-            "size": "24px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "23px"
-          },
-          {
-            "field": "speakers",
-            "size": "22px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "26px"
+            "size": "25px"
           },
           {
-            "field": "",
-            "size": "26px"
-          },
-          {
-            "field": "",
-            "size": "26px"
-          },
-          {
-            "field": "",
-            "size": "26px"
+            "field": "cta",
+            "size": "25px"
           },
           {
             "field": "credit",
@@ -802,14 +674,14 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用顶部细色带 / 左侧书脊 / 编号主题 / 水平知识图形 / 结构化事实表。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用黑白城市全景 / 撕纸建筑蓝图 / 浅蓝研究标题区 / 双列核心事实。",
       "tradeoff": "专业可信，视觉表达相对克制",
       "preview_path": "previews/academic-clean.png",
       "family": "institutional",
       "rank": 3,
       "position": 3,
       "role": "更有创意",
-      "preview_event_digest": "c232e575657e482f8cf9bc1fc5be32afccd68a644e70ab65058b6b86ce4ce8c2",
+      "preview_event_digest": "8c6e2b8a2d78cc761ff6ac460e5dfadb467859f3c346b3246c8e847b2481688f",
       "preview_checks": {
         "passed": true,
         "problems": [],
@@ -817,23 +689,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "LECTURE",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 96,
-              "y": 63,
-              "w": 92.421875,
+              "x": 42,
+              "y": 10,
+              "w": 127.359375,
               "h": 21
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.10.26",
-            "rect": {
-              "x": 923.921875,
-              "y": 64.5,
-              "w": 100.078125,
-              "h": 18
             }
           },
           {
@@ -841,10 +702,10 @@
             "field": "title",
             "text": "AI Agent 实战分享会",
             "rect": {
-              "x": 133,
-              "y": 130,
-              "w": 891,
-              "h": 134.390625
+              "x": 60,
+              "y": 116,
+              "w": 960,
+              "h": 128.796875
             }
           },
           {
@@ -852,54 +713,10 @@
             "field": "",
             "text": "从想法到工作流，探索创作的新可能",
             "rect": {
-              "x": 133,
-              "y": 279.390625,
-              "w": 891,
-              "h": 43.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工作流实战",
-            "rect": {
-              "x": 96,
-              "y": 445.5,
-              "w": 135,
-              "h": 54.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工具与创作",
-            "rect": {
-              "x": 253,
-              "y": 445.5,
-              "w": 135,
-              "h": 54.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "开放交流",
-            "rect": {
-              "x": 410,
-              "y": 445.5,
-              "w": 108,
-              "h": 54.5
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "主讲人 · 示例讲者",
-            "rect": {
-              "x": 96,
-              "y": 526,
-              "w": 928,
-              "h": 39
+              "x": 60,
+              "y": 254.796875,
+              "w": 960,
+              "h": 37.5
             }
           },
           {
@@ -907,10 +724,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 96,
-              "y": 636,
-              "w": 160,
-              "h": 26
+              "x": 62,
+              "y": 813,
+              "w": 510.53125,
+              "h": 25.5
             }
           },
           {
@@ -918,10 +735,10 @@
             "field": "",
             "text": "2026.10.26  14:00 – 16:30  (Asia/Shanghai)",
             "rect": {
-              "x": 256,
-              "y": 624,
-              "w": 768,
-              "h": 43.5
+              "x": 62,
+              "y": 839.5,
+              "w": 510.53125,
+              "h": 37.5
             }
           },
           {
@@ -929,10 +746,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 96,
-              "y": 708,
-              "w": 160,
-              "h": 26
+              "x": 592.53125,
+              "y": 813,
+              "w": 425.453125,
+              "h": 25.5
             }
           },
           {
@@ -940,54 +757,21 @@
             "field": "",
             "text": "示例大学 · 创新楼报告厅",
             "rect": {
-              "x": 256,
-              "y": 696,
-              "w": 768,
-              "h": 43.5
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 96,
-              "y": 780,
-              "w": 160,
-              "h": 26
+              "x": 592.53125,
+              "y": 839.5,
+              "w": 425.453125,
+              "h": 37.5
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/agent-lab",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 256,
-              "y": 768,
-              "w": 768,
-              "h": 43.5
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 96,
-              "y": 852,
-              "w": 160,
-              "h": 26
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 256,
-              "y": 840,
-              "w": 768,
-              "h": 43.5
+              "x": 62,
+              "y": 932.25,
+              "w": 808,
+              "h": 37.5
             }
           },
           {
@@ -995,21 +779,10 @@
             "field": "",
             "text": "示例大学创作社",
             "rect": {
-              "x": 96,
-              "y": 957,
-              "w": 140,
-              "h": 30
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.10.26",
-            "rect": {
-              "x": 880.6875,
-              "y": 964,
-              "w": 143.3125,
-              "h": 16
+              "x": 62,
+              "y": 981.75,
+              "w": 808,
+              "h": 27
             }
           }
         ],
@@ -1017,42 +790,77 @@
         "height": 1080,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(213, 234, 251)",
+            "color": "rgb(18, 34, 45)",
+            "rect": {
+              "x": 42,
+              "y": 104,
+              "width": 996,
+              "height": 200.296875,
+              "top": 104,
+              "right": 1038,
+              "bottom": 304.296875,
+              "left": 42
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(213, 234, 251)",
+            "color": "rgb(18, 34, 45)",
+            "rect": {
+              "x": 42,
+              "y": 799,
+              "width": 996,
+              "height": 90,
+              "top": 799,
+              "right": 1038,
+              "bottom": 889,
+              "left": 42
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(213, 234, 251)",
+            "color": "rgb(18, 34, 45)",
+            "rect": {
+              "x": 42,
+              "y": 903,
+              "width": 996,
+              "height": 135,
+              "top": 903,
+              "right": 1038,
+              "bottom": 1038,
+              "left": 42
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "96px"
+            "size": "92px"
           },
           {
             "field": "subtitle",
-            "size": "29px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "27px"
-          },
-          {
-            "field": "speakers",
-            "size": "26px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "30px"
+            "size": "25px"
           },
           {
-            "field": "",
-            "size": "30px"
-          },
-          {
-            "field": "",
-            "size": "30px"
-          },
-          {
-            "field": "",
-            "size": "30px"
+            "field": "cta",
+            "size": "25px"
           },
           {
             "field": "credit",
-            "size": "20px"
+            "size": "18px"
           }
         ],
         "font_families": "DengXian, \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
@@ -1088,14 +896,14 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；主题含 AI；日间时段。采用顶部坐标 / 左对齐标题 / 轨道光环主视觉 / 底部半透明信息区。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；主题含 AI；日间时段。采用全幅玻璃神经雕塑 / 深色标题承载层 / 中部主视觉 / 简洁报名底栏。",
       "tradeoff": "科技氛围强，正文应控制密度",
       "preview_path": "previews/tech-gradient.png",
       "family": "space",
       "rank": 1,
       "position": 1,
       "role": "最适合",
-      "preview_event_digest": "c232e575657e482f8cf9bc1fc5be32afccd68a644e70ab65058b6b86ce4ce8c2",
+      "preview_event_digest": "8c6e2b8a2d78cc761ff6ac460e5dfadb467859f3c346b3246c8e847b2481688f",
       "preview_checks": {
         "passed": true,
         "problems": [],
@@ -1103,23 +911,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "LECTURE",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 56,
-              "y": 66,
-              "w": 96.5625,
-              "h": 18
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.10.26",
-            "rect": {
-              "x": 923.921875,
-              "y": 66,
-              "w": 100.078125,
-              "h": 18
+              "x": 42,
+              "y": 10,
+              "w": 127.359375,
+              "h": 21
             }
           },
           {
@@ -1127,10 +924,10 @@
             "field": "title",
             "text": "AI Agent 实战分享会",
             "rect": {
-              "x": 56,
-              "y": 130,
-              "w": 929.265625,
-              "h": 130.1875
+              "x": 65,
+              "y": 116,
+              "w": 955,
+              "h": 128.796875
             }
           },
           {
@@ -1138,54 +935,10 @@
             "field": "",
             "text": "从想法到工作流，探索创作的新可能",
             "rect": {
-              "x": 56,
-              "y": 275.1875,
-              "w": 929.265625,
-              "h": 39
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工作流实战",
-            "rect": {
-              "x": 56,
-              "y": 354.1875,
-              "w": 120,
-              "h": 52
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工具与创作",
-            "rect": {
-              "x": 202,
-              "y": 354.1875,
-              "w": 120,
-              "h": 52
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "开放交流",
-            "rect": {
-              "x": 348,
-              "y": 354.1875,
-              "w": 96,
-              "h": 52
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "主讲人 · 示例讲者",
-            "rect": {
-              "x": 56,
-              "y": 429.1875,
-              "w": 968,
-              "h": 34.5
+              "x": 65,
+              "y": 254.796875,
+              "w": 955,
+              "h": 37.5
             }
           },
           {
@@ -1193,10 +946,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 79,
-              "y": 529.6875,
-              "w": 922,
-              "h": 26
+              "x": 62,
+              "y": 813,
+              "w": 510.53125,
+              "h": 25.5
             }
           },
           {
@@ -1204,10 +957,10 @@
             "field": "",
             "text": "2026.10.26  14:00 – 16:30  (Asia/Shanghai)",
             "rect": {
-              "x": 79,
-              "y": 561.6875,
-              "w": 922,
-              "h": 39.140625
+              "x": 62,
+              "y": 839.5,
+              "w": 510.53125,
+              "h": 37.5
             }
           },
           {
@@ -1215,10 +968,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 79,
-              "y": 615.828125,
-              "w": 449,
-              "h": 26
+              "x": 592.53125,
+              "y": 813,
+              "w": 425.453125,
+              "h": 25.5
             }
           },
           {
@@ -1226,54 +979,21 @@
             "field": "",
             "text": "示例大学 · 创新楼报告厅",
             "rect": {
-              "x": 79,
-              "y": 647.828125,
-              "w": 449,
-              "h": 39.140625
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 79,
-              "y": 701.96875,
-              "w": 922,
-              "h": 26
+              "x": 592.53125,
+              "y": 839.5,
+              "w": 425.453125,
+              "h": 37.5
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/agent-lab",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 79,
-              "y": 733.96875,
-              "w": 922,
-              "h": 40.59375
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 79,
-              "y": 789.5625,
-              "w": 449,
-              "h": 26
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 79,
-              "y": 821.5625,
-              "w": 449,
-              "h": 40.59375
+              "x": 62,
+              "y": 932.25,
+              "w": 808,
+              "h": 37.5
             }
           },
           {
@@ -1281,21 +1001,10 @@
             "field": "",
             "text": "示例大学创作社",
             "rect": {
-              "x": 56,
-              "y": 959.65625,
-              "w": 126,
+              "x": 62,
+              "y": 981.75,
+              "w": 808,
               "h": 27
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.10.26",
-            "rect": {
-              "x": 880.6875,
-              "y": 965.15625,
-              "w": 143.3125,
-              "h": 16
             }
           }
         ],
@@ -1303,38 +1012,73 @@
         "height": 1080,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(9, 11, 33)",
+            "color": "rgb(245, 247, 255)",
+            "rect": {
+              "x": 42,
+              "y": 104,
+              "width": 996,
+              "height": 200.296875,
+              "top": 104,
+              "right": 1038,
+              "bottom": 304.296875,
+              "left": 42
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(9, 11, 33)",
+            "color": "rgb(245, 247, 255)",
+            "rect": {
+              "x": 42,
+              "y": 799,
+              "width": 996,
+              "height": 90,
+              "top": 799,
+              "right": 1038,
+              "bottom": 889,
+              "left": 42
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(9, 11, 33)",
+            "color": "rgb(245, 247, 255)",
+            "rect": {
+              "x": 42,
+              "y": 903,
+              "width": 996,
+              "height": 135,
+              "top": 903,
+              "right": 1038,
+              "bottom": 1038,
+              "left": 42
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "93px"
+            "size": "92px"
           },
           {
             "field": "subtitle",
-            "size": "26px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "24px"
-          },
-          {
-            "field": "speakers",
-            "size": "23px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "27px"
+            "size": "25px"
           },
           {
-            "field": "",
-            "size": "27px"
-          },
-          {
-            "field": "",
-            "size": "28px"
-          },
-          {
-            "field": "",
-            "size": "28px"
+            "field": "cta",
+            "size": "25px"
           },
           {
             "field": "credit",
@@ -1373,14 +1117,14 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用左侧窄索引栏 / 大字号标题 / 右侧几何圆 / 底部横向信息表。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用不对称大字 / 红黑白丝网印刷几何 / 右向视觉重心 / 独立底部事实栏。",
       "tradeoff": "构图鲜明，超长标题需要压缩字号",
       "preview_path": "previews/swiss-grid.png",
       "family": "grid",
       "rank": 2,
       "position": 2,
       "role": "稳妥替代",
-      "preview_event_digest": "c232e575657e482f8cf9bc1fc5be32afccd68a644e70ab65058b6b86ce4ce8c2",
+      "preview_event_digest": "8c6e2b8a2d78cc761ff6ac460e5dfadb467859f3c346b3246c8e847b2481688f",
       "preview_checks": {
         "passed": true,
         "problems": [],
@@ -1388,23 +1132,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "LECTURE",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 95,
-              "y": 64.5,
-              "w": 92.421875,
+              "x": 42,
+              "y": 10,
+              "w": 127.359375,
               "h": 21
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.10.26",
-            "rect": {
-              "x": 923.921875,
-              "y": 66,
-              "w": 100.078125,
-              "h": 18
             }
           },
           {
@@ -1412,10 +1145,10 @@
             "field": "title",
             "text": "AI Agent 实战分享会",
             "rect": {
-              "x": 95,
-              "y": 130,
-              "w": 929,
-              "h": 127.390625
+              "x": 60,
+              "y": 116,
+              "w": 960,
+              "h": 128.796875
             }
           },
           {
@@ -1423,54 +1156,10 @@
             "field": "",
             "text": "从想法到工作流，探索创作的新可能",
             "rect": {
-              "x": 95,
-              "y": 272.390625,
-              "w": 929,
-              "h": 36
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工作流实战",
-            "rect": {
-              "x": 95,
-              "y": 383.390625,
-              "w": 115,
-              "h": 50.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工具与创作",
-            "rect": {
-              "x": 236,
-              "y": 383.390625,
-              "w": 115,
-              "h": 50.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "开放交流",
-            "rect": {
-              "x": 377,
-              "y": 383.390625,
-              "w": 92,
-              "h": 50.5
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "主讲人 · 示例讲者",
-            "rect": {
-              "x": 95,
-              "y": 455.890625,
-              "w": 929,
-              "h": 33
+              "x": 60,
+              "y": 254.796875,
+              "w": 960,
+              "h": 37.5
             }
           },
           {
@@ -1478,10 +1167,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 95,
-              "y": 560.890625,
-              "w": 929,
-              "h": 26
+              "x": 62,
+              "y": 813,
+              "w": 510.53125,
+              "h": 25.5
             }
           },
           {
@@ -1489,10 +1178,10 @@
             "field": "",
             "text": "2026.10.26  14:00 – 16:30  (Asia/Shanghai)",
             "rect": {
-              "x": 95,
-              "y": 592.890625,
-              "w": 929,
-              "h": 37.6875
+              "x": 62,
+              "y": 839.5,
+              "w": 510.53125,
+              "h": 37.5
             }
           },
           {
@@ -1500,10 +1189,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 95,
-              "y": 645.578125,
-              "w": 452.5,
-              "h": 26
+              "x": 592.53125,
+              "y": 813,
+              "w": 425.453125,
+              "h": 25.5
             }
           },
           {
@@ -1511,54 +1200,21 @@
             "field": "",
             "text": "示例大学 · 创新楼报告厅",
             "rect": {
-              "x": 95,
-              "y": 677.578125,
-              "w": 452.5,
-              "h": 37.6875
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 95,
-              "y": 730.265625,
-              "w": 929,
-              "h": 26
+              "x": 592.53125,
+              "y": 839.5,
+              "w": 425.453125,
+              "h": 37.5
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/agent-lab",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 95,
-              "y": 762.265625,
-              "w": 929,
-              "h": 37.6875
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 95,
-              "y": 814.953125,
-              "w": 452.5,
-              "h": 26
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 95,
-              "y": 846.953125,
-              "w": 452.5,
-              "h": 37.6875
+              "x": 62,
+              "y": 933.75,
+              "w": 808,
+              "h": 37.5
             }
           },
           {
@@ -1566,21 +1222,10 @@
             "field": "",
             "text": "示例大学创作社",
             "rect": {
-              "x": 95,
-              "y": 959.140625,
-              "w": 126,
+              "x": 62,
+              "y": 983.25,
+              "w": 808,
               "h": 27
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.10.26",
-            "rect": {
-              "x": 880.6875,
-              "y": 964.640625,
-              "w": 143.3125,
-              "h": 16
             }
           }
         ],
@@ -1588,38 +1233,73 @@
         "height": 1080,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(227, 35, 25)",
+            "color": "rgb(255, 255, 255)",
+            "rect": {
+              "x": 42,
+              "y": 104,
+              "width": 996,
+              "height": 200.296875,
+              "top": 104,
+              "right": 1038,
+              "bottom": 304.296875,
+              "left": 42
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(227, 35, 25)",
+            "color": "rgb(255, 255, 255)",
+            "rect": {
+              "x": 42,
+              "y": 801,
+              "width": 996,
+              "height": 88,
+              "top": 801,
+              "right": 1038,
+              "bottom": 889,
+              "left": 42
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(227, 35, 25)",
+            "color": "rgb(255, 255, 255)",
+            "rect": {
+              "x": 42,
+              "y": 903,
+              "width": 996,
+              "height": 135,
+              "top": 903,
+              "right": 1038,
+              "bottom": 1038,
+              "left": 42
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "91px"
+            "size": "92px"
           },
           {
             "field": "subtitle",
-            "size": "24px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "23px"
-          },
-          {
-            "field": "speakers",
-            "size": "22px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "26px"
+            "size": "25px"
           },
           {
-            "field": "",
-            "size": "26px"
-          },
-          {
-            "field": "",
-            "size": "26px"
-          },
-          {
-            "field": "",
-            "size": "26px"
+            "field": "cta",
+            "size": "25px"
           },
           {
             "field": "credit",
@@ -1658,14 +1338,14 @@
         "brand": 10,
         "readability": 5
       },
-      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用顶部细色带 / 左侧书脊 / 编号主题 / 水平知识图形 / 结构化事实表。",
+      "reason": "活动「AI Agent 实战分享会」；类型 lecture；面向 学生、开发者；气质 professional；日间时段。采用黑白城市全景 / 撕纸建筑蓝图 / 浅蓝研究标题区 / 双列核心事实。",
       "tradeoff": "专业可信，视觉表达相对克制",
       "preview_path": "previews/academic-clean.png",
       "family": "institutional",
       "rank": 3,
       "position": 3,
       "role": "更有创意",
-      "preview_event_digest": "c232e575657e482f8cf9bc1fc5be32afccd68a644e70ab65058b6b86ce4ce8c2",
+      "preview_event_digest": "8c6e2b8a2d78cc761ff6ac460e5dfadb467859f3c346b3246c8e847b2481688f",
       "preview_checks": {
         "passed": true,
         "problems": [],
@@ -1673,23 +1353,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "LECTURE",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 96,
-              "y": 63,
-              "w": 92.421875,
+              "x": 42,
+              "y": 10,
+              "w": 127.359375,
               "h": 21
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.10.26",
-            "rect": {
-              "x": 923.921875,
-              "y": 64.5,
-              "w": 100.078125,
-              "h": 18
             }
           },
           {
@@ -1697,10 +1366,10 @@
             "field": "title",
             "text": "AI Agent 实战分享会",
             "rect": {
-              "x": 133,
-              "y": 130,
-              "w": 891,
-              "h": 134.390625
+              "x": 60,
+              "y": 116,
+              "w": 960,
+              "h": 128.796875
             }
           },
           {
@@ -1708,54 +1377,10 @@
             "field": "",
             "text": "从想法到工作流，探索创作的新可能",
             "rect": {
-              "x": 133,
-              "y": 279.390625,
-              "w": 891,
-              "h": 43.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工作流实战",
-            "rect": {
-              "x": 96,
-              "y": 445.5,
-              "w": 135,
-              "h": 54.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "工具与创作",
-            "rect": {
-              "x": 253,
-              "y": 445.5,
-              "w": 135,
-              "h": 54.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "开放交流",
-            "rect": {
-              "x": 410,
-              "y": 445.5,
-              "w": 108,
-              "h": 54.5
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "主讲人 · 示例讲者",
-            "rect": {
-              "x": 96,
-              "y": 526,
-              "w": 928,
-              "h": 39
+              "x": 60,
+              "y": 254.796875,
+              "w": 960,
+              "h": 37.5
             }
           },
           {
@@ -1763,10 +1388,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 96,
-              "y": 636,
-              "w": 160,
-              "h": 26
+              "x": 62,
+              "y": 813,
+              "w": 510.53125,
+              "h": 25.5
             }
           },
           {
@@ -1774,10 +1399,10 @@
             "field": "",
             "text": "2026.10.26  14:00 – 16:30  (Asia/Shanghai)",
             "rect": {
-              "x": 256,
-              "y": 624,
-              "w": 768,
-              "h": 43.5
+              "x": 62,
+              "y": 839.5,
+              "w": 510.53125,
+              "h": 37.5
             }
           },
           {
@@ -1785,10 +1410,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 96,
-              "y": 708,
-              "w": 160,
-              "h": 26
+              "x": 592.53125,
+              "y": 813,
+              "w": 425.453125,
+              "h": 25.5
             }
           },
           {
@@ -1796,54 +1421,21 @@
             "field": "",
             "text": "示例大学 · 创新楼报告厅",
             "rect": {
-              "x": 256,
-              "y": 696,
-              "w": 768,
-              "h": 43.5
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 96,
-              "y": 780,
-              "w": 160,
-              "h": 26
+              "x": 592.53125,
+              "y": 839.5,
+              "w": 425.453125,
+              "h": 37.5
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/agent-lab",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 256,
-              "y": 768,
-              "w": 768,
-              "h": 43.5
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 96,
-              "y": 852,
-              "w": 160,
-              "h": 26
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 256,
-              "y": 840,
-              "w": 768,
-              "h": 43.5
+              "x": 62,
+              "y": 932.25,
+              "w": 808,
+              "h": 37.5
             }
           },
           {
@@ -1851,21 +1443,10 @@
             "field": "",
             "text": "示例大学创作社",
             "rect": {
-              "x": 96,
-              "y": 957,
-              "w": 140,
-              "h": 30
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.10.26",
-            "rect": {
-              "x": 880.6875,
-              "y": 964,
-              "w": 143.3125,
-              "h": 16
+              "x": 62,
+              "y": 981.75,
+              "w": 808,
+              "h": 27
             }
           }
         ],
@@ -1873,42 +1454,77 @@
         "height": 1080,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(213, 234, 251)",
+            "color": "rgb(18, 34, 45)",
+            "rect": {
+              "x": 42,
+              "y": 104,
+              "width": 996,
+              "height": 200.296875,
+              "top": 104,
+              "right": 1038,
+              "bottom": 304.296875,
+              "left": 42
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(213, 234, 251)",
+            "color": "rgb(18, 34, 45)",
+            "rect": {
+              "x": 42,
+              "y": 799,
+              "width": 996,
+              "height": 90,
+              "top": 799,
+              "right": 1038,
+              "bottom": 889,
+              "left": 42
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(213, 234, 251)",
+            "color": "rgb(18, 34, 45)",
+            "rect": {
+              "x": 42,
+              "y": 903,
+              "width": 996,
+              "height": 135,
+              "top": 903,
+              "right": 1038,
+              "bottom": 1038,
+              "left": 42
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "96px"
+            "size": "92px"
           },
           {
             "field": "subtitle",
-            "size": "29px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "27px"
-          },
-          {
-            "field": "speakers",
-            "size": "26px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "30px"
+            "size": "25px"
           },
           {
-            "field": "",
-            "size": "30px"
-          },
-          {
-            "field": "",
-            "size": "30px"
-          },
-          {
-            "field": "",
-            "size": "30px"
+            "field": "cta",
+            "size": "25px"
           },
           {
             "field": "credit",
-            "size": "20px"
+            "size": "18px"
           }
         ],
         "font_families": "DengXian, \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",

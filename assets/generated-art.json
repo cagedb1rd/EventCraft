@@ -1,0 +1,92 @@
+{
+  "tech-gradient": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for EventCraft technology conference campaign, portrait 2:3. Create a premium art-directed 3D sculpture of a translucent cobalt glass human profile facing left, interwoven with a sculptural magnesium and magenta polygonal neural lattice, dramatically illuminated cyan from below. Dark ink navy studio with tangible black depth. Monumental head occupies right 65% in middle of frame, sharp physical glass reflections, extreme detail, floating sculptural ribbon fragments. Top 25% and bottom 20% remain calm dark navy negative space for precise typography added later. Rich volumetric sculptural image, not a gradient texture, no small dots as focal point. Palette navy #090b21 electric cyan violet fuchsia. No text, letters, numbers, logos, watermark, boxes, cards, QR or UI. Original composition; do not reproduce an existing poster.",
+    "asset": "eventcraft/data/art/tech-gradient.png",
+    "sha256": "8b3157f8ff54eda32512a9710b7df0529afdca9437a6e0dc8f383b08d3c25feb",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "swiss-grid": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. A museum-grade abstract Swiss modernist silkscreen composition, oversized cropped intersecting black and warm white diagonal strips and red concentric discs on vermilion paper. Radically asymmetric, flat ink, subtle tactile paper, precise edges, offset lithography, no faux 3D. Portrait 2:3. Artwork strongest in central third, calm red top third and bottom quarter reserved for typography. No letters or words. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/swiss-grid.png",
+    "sha256": "12719c6e38166f2bfbf2429e4a2622b878ba07f7bb4fc43b6c36dcd228c33e18",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "editorial-minimal": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. Fine-art editorial black and white photograph of an anonymous sculpted plaster face, dramatic angled crop showing one eye and cheek, expressive cracked marble texture, oblique spotlight, deep charcoal gallery shadows. An architectural paper cut aperture frames the fragment, upper half of portrait 2:3 image. Lower half quiet charcoal. Analog silver gelatin grain, premium exhibition art direction, restrained and poetic. No words or letters. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/editorial-minimal.png",
+    "sha256": "3bfa6d6086e554df32ba5c9cef6ec84181b915c505b66fc156e502ff33dce0b0",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "academic-clean": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. Architectural research editorial collage. Upper half monochrome panoramic photograph of an imaginary dense coastal city with modernist towers, tiny urban details, silver gelatin. Middle torn zigzag paper edge reveals cyan blueprint drawing of an abstract folded architectural model. Lower half flat pale icy blue empty paper for typesetting. Portrait 2:3, scholarly archival texture, rigorous photography and architectural drafting, not a chart. No text, no labels, no logos. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/academic-clean.png",
+    "sha256": "2451db1e34d513568adaae7e3fd8824c14faef32c8cc6b59eba5336a86625d6d",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "neo-brutal": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. Original punk zine photocopy collage on fluorescent acid yellow paper, monumental black and white cutout hand making a two-finger gesture at right, torn paper lightning strips, irregular black ink splashes framing edges, violet rough marker loops, surreal crumpled foil shapes, dense tactile screenprint. Portrait 2:3. Top quarter and bottom fifth have calm acid-yellow space for type. No words, no lettering, no symbols implying sponsors. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/neo-brutal.png",
+    "sha256": "462fb0bfc2c78ba15b6abab8462454e0b5151894a3eede36ca4cf1ca5782df31",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "retro-print": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. Vintage 1950s letterpress event art on aged warm ochre uncoated paper. Bottom half contains an original sepia halftone portrait of an anonymous smiling jazz pianist beside abstract piano keys, woodcut black ink shadows. Upper half muted burnt orange with a bold cream starburst, calm enough for big typography. Slight ink misregistration, paper fibers, distressed printed border. Portrait 2:3. No text, numbers, logos or signatures. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/retro-print.png",
+    "sha256": "d231837ec0abff9ce2f3a8f5b10c7711be5a477dffa0b4f25753322f8a99d4ca",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "neon-night": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. Immersive rave key visual: elaborate circular mirrored futuristic tunnel receding to cyan laser vanishing point, glossy black chrome robotic beetle sculpture in central lower half, emerald and acid-lime light ribs, magenta reflections, fantastical photoreal CG with complex physical depth. Portrait 2:3, clean dark top quarter and dark lower fifth for typography. Strong radial symmetry, wild energy, no text, no signage, no UI. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/neon-night.png",
+    "sha256": "3de961f608a2d30dcb41055c1a6f43a3ade1cb4139dae76ca5076f0ba732b32d",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "warm-playful": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. Joyful contemporary gouache illustration for a makers community festival. Handmade patterned stalls, striped parasols, diverse anonymous small people chatting and crafting, leafy plants, oversized warm sun, turquoise sky and ochre coral sage colors. Screenprinted irregular cut-paper shapes with brushy pigment and charming human detail. Landscape scene occupying lower two thirds of portrait 2:3, top third pale cream for typography. No text, lettering, signs or logos. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/warm-playful.png",
+    "sha256": "70a07fc5ebe40ce6130b702a60ed09d0eaee87a981f7ae623378f2512654c773",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "luxury-elegant": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. Luxurious original Art Deco gala stationery artwork, flat straight-on portrait 2:3 on deep emerald-black textured cotton paper. Elaborate finely embossed metallic gold stepped geometric border, symmetrical sunburst fans in corners, delicate concentric arches and angular braided lines, substantial negative space in center. Subtle real gold foil catching studio light, not a gold gradient. Center 70% stays unadorned emerald. No text, monograms, logos, symbols or watermark. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/luxury-elegant.png",
+    "sha256": "5d1c9005ba36be303cd9c2460d359af973bbc6651fed22c3245dbce8c9772181",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  },
+  "sports-dynamic": {
+    "generator": "codex-imagegen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free key visual for an EventCraft event campaign. High-energy original athletics poster illustration, dramatic low-angle sprinters in motion, anonymous runners with powerful anatomy in dark petrol blue, sweeping vivid orange and golden yellow brush strokes and diagonal speed marks exploding behind them. Main runner dominates upper right, teammates smaller at left, woodcut-meets-editorial sport painting. Portrait 2:3. Bottom third dark petrol negative space for bold typography. No text, numbers, brands or logos. Constraints: no words, letters, numbers, logos, watermark, QR codes, rounded cards, UI or website panels. Create original art, no reference copying. Professional print art direction, crisp detailed materials.",
+    "asset": "eventcraft/data/art/sports-dynamic.png",
+    "sha256": "91c154765986462f22e4e2a426f5bbcf7208dc00c78babc4ff9c6d67b286c817",
+    "reference_policy": "Original art based on design-language study; no reference embedded.",
+    "prompt_scope": "actual-host-call",
+    "transparent_background": false
+  }
+}

@@ -9,7 +9,7 @@ def campaign(event: Event) -> dict[str, str]:
     labels = ["When", "Where", "Registration", "Fee", "Organizer"] if en else ["时间", "地点", "报名", "费用", "主办方"]
     rows = [f"{label}：{f[key]}" for label, key in zip(labels, ["when", "where", "registration", "fee", "organizer"], strict=True) if f[key]]
     if event.deadline:
-        rows.append(("Deadline: " if en else "报名截止：") + event.deadline)
+        rows.append(("Deadline: " if en else "报名截止：") + f['deadline'])
     if event.contact:
         rows.append(("Contact: " if en else "联系方式：") + event.contact)
     body = "\n".join(rows)

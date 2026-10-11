@@ -1,11 +1,17 @@
 # Contributing
 
-Use Python 3.11+ and an isolated environment. Install `.[dev]`, Chromium and CJK fonts. Run `ruff check eventcraft scripts tests`, `python scripts/validate_skill.py`, `pytest -q` and `python -m build`.
+Use Python 3.11+, an isolated environment, Chromium and system CJK fonts. Install `.[dev]`, then run `ruff check eventcraft scripts tests`, `python scripts/validate_skill.py`, `python scripts/release_check.py`, `pytest -q` and `python -m build`.
 
-New designs need independent structure, tokens/profile/guide consistency, genuine previews and all three-format bounds tests. Preserve the ten existing public IDs. Catalog/guide edits originate in `scripts/build_design_assets.py`, then regenerate both asset and package copies. Do not replace layouts with color-only variants.
+## Design sources
 
-Ranking edits must retain determinism, fact-grounded reasons, hard exclusions, cross-turn state and versioned config. Add behavioral regression cases when resolving actual bugs. New extractors need evidence and conservative uncertainty; never infer sensitive/event facts from preference cues.
+Preserve the ten public style IDs. Artistic media/composition language live in `eventcraft/data/visual-systems.json`; native typography contracts live in `eventcraft/data/typography.json`; ranking profiles live in `eventcraft/data/style-profiles.json`. Keep the public `assets/styles` mirrors and `references/style-guides` consistent. `scripts/build_design_assets.py` synchronizes the current canonical catalog and guides; it must not restore old fixed-subject or opaque-panel definitions.
 
-Keep private inputs, references, keys and generated user campaigns out of Git. Only clearly fictional public examples go in `examples/`. Link research sources without bundling unlicensed photos/fonts/templates. All contributed code and original artwork is MIT. Provider contract mocks must be described as mocks, never live verification.
+New visual work needs an event-specific semantic brief, composition planning before actual generation, final-image inspection and correction when needed. A prompt or receipt alone is not proof of a real tool call. Use the public renderer and preserve accurate facts. Transparent natural reading areas, native Chinese typography and distinct invitation structures are required; color-only variants are insufficient.
 
-Reproduce public assets with the scripts; inspect contact sheets and PDF pages after layout changes. Document observable verification and actual limitations in `docs/verification.md`. A maintainer chooses repository visibility and publishes; no automated publish step exists.
+Ranking edits retain determinism, fact-grounded reasons, brand exclusions and saved selection state. Add behavioral regressions for actual bugs. Extraction must retain evidence and uncertainty; never infer event facts from preference cues.
+
+## Public files and evidence
+
+Keep private inputs, references, keys and generated user campaigns out of Git. Only explicitly fictional public examples belong in `examples/`. Do not alter the user's local `/image/` research files or bundle commercial fonts. Provider mocks must be described as mocks. Archive packaging defaults to the runtime Skill; `--with-examples` is for complete development material.
+
+Inspect contact sheets and PDF pages after visual changes. Record the actual environment, tool calls, test snapshots and unverified limits; do not merge separate test runs into a fictional new full-suite result. Current visual evidence is [v3 verification](docs/verification-visual-v3.md); older reports remain historical. The maintainer controls commits, pushes and releases; no automatic publishing step exists.

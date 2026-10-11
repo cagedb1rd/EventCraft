@@ -3,15 +3,16 @@
   "name": "学术专业风",
   "name_en": "Academic clean",
   "palette": [
-    "#eef3f4",
-    "#183f4b",
-    "#315c69"
+    "#d5eafb",
+    "#12222d",
+    "#1f68a0"
   ],
   "types": [
     "academic",
     "workshop",
     "forum",
-    "lecture"
+    "lecture",
+    "conference"
   ],
   "audience": [
     "researchers",
@@ -31,7 +32,7 @@
   "time": "day",
   "density": "high",
   "family": "institutional",
-  "hero": "optional",
+  "hero": "event-specific-host-art; explicitly identified reusable preview fallback",
   "language": [
     "zh",
     "en",
@@ -45,13 +46,13 @@
   },
   "tokens": {
     "grid_columns": 6,
-    "margin": 72,
-    "title_px": 148,
-    "body_px": 35,
-    "small_px": 24,
-    "invitation_title_px": 112,
-    "square_title_px": 96,
-    "heading_fonts": "DengXian, Noto Sans CJK SC, PingFang SC",
+    "margin": 64,
+    "title_px": 122,
+    "body_px": 34,
+    "small_px": 19,
+    "invitation_title_px": 86,
+    "square_title_px": 92,
+    "heading_fonts": "Cambria, Georgia, FangSong, Noto Serif SC, SimSun, Songti SC, Noto Serif CJK SC",
     "heading_weight": 500,
     "font": "sans",
     "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
@@ -60,9 +61,55 @@
     "alignment": "left"
   },
   "layout": {
-    "poster": "顶部细色带 / 左侧书脊 / 编号主题 / 水平知识图形 / 结构化事实表",
-    "invitation": "邀请正文与日程信息置于分隔线之间"
+    "poster": "panorama-research-band / 自然留白与低纹理文字区 / 按主题与标题长度动态构图",
+    "invitation": "按活动自动选择登机牌、票券、正式卡或折页；共享原创主视觉与配色，独立构图"
   },
   "negative": "避免臆造学校徽章和过度宣传",
-  "tradeoff": "专业可信，视觉表达相对克制"
+  "tradeoff": "专业可信，视觉表达相对克制",
+  "composition": "panorama-research-band",
+  "typography": {
+    "zh_title": [
+      "FangSong",
+      "Noto Serif SC",
+      "SimSun",
+      "Songti SC",
+      "Noto Serif CJK SC"
+    ],
+    "en_title": [
+      "Cambria",
+      "Georgia"
+    ],
+    "subtitle": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "information": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "numbers": [
+      "Arial",
+      "Noto Sans SC"
+    ],
+    "weight": 500,
+    "shape": "normal",
+    "tracking": 0.01,
+    "leading": 1.28,
+    "alignment": "left",
+    "generic": "sans-serif",
+    "scale": {
+      "title": 1,
+      "subtitle": 0.23,
+      "information": 0.25,
+      "labels": 0.13
+    },
+    "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+    "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+    "title_image_relation": "panorama-research-band",
+    "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+  }
 }

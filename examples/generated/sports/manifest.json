@@ -1,11 +1,21 @@
 {
-  "generator": "EventCraft 1.0.0",
-  "event_digest": "b6b10282a0546b625371f8c4e049377945226837f91e6b6f450b1a1d2870ea11",
+  "generator": "EventCraft visual system 2",
+  "event_digest": "efd959684da18dcf7f2148bd212d17f5329f434b27b804a8d4822048b78950df",
+  "source_event_digest": "efd959684da18dcf7f2148bd212d17f5329f434b27b804a8d4822048b78950df",
   "language": "zh",
   "style": "sports-dynamic",
   "base_style": "sports-dynamic",
-  "generation_mode": "deterministic-html-chromium",
+  "generation_mode": "host-imagegen-plus-deterministic-typesetting",
   "draft": false,
+  "artwork": {
+    "generator": "codex-imagegen",
+    "provenance": "bundled-original-art",
+    "style": "sports-dynamic",
+    "sha256": "91c154765986462f22e4e2a426f5bbcf7208dc00c78babc4ff9c6d67b286c817",
+    "note": "Reusable original style art; generate event-specific art with the host tool for a bespoke campaign."
+  },
+  "composition": "action-and-diagonal-type",
+  "invitation_format": "ticket-stub",
   "publishable": false,
   "batch_entry_calls": 1,
   "files": [
@@ -31,42 +41,47 @@
     },
     {
       "path": "event.json",
-      "bytes": 3582,
-      "sha256": "dc6014fa0616ef7153e1cf86fd54d3eb80fdba01f4d629af6a64f0677cce9c53"
+      "bytes": 3643,
+      "sha256": "f6f637863d07e95d8f91131f6f1831d5d1f49bb75747b2ed9d84d38f598700f8"
     },
     {
       "path": "invitation.html",
-      "bytes": 23445,
-      "sha256": "1cf6156e7947d79b48e4fe2b830c93a4a12b53dca33849a22b079721dd08476b"
+      "bytes": 7346812,
+      "sha256": "7bf49dd04325c76dd84d829d34f1f8ff4152ac018da0d51d15f8a87657f6a01f"
     },
     {
       "path": "invitation.png",
-      "bytes": 83425,
-      "sha256": "521225594b503783263cf9386bcb590800f26d697e79b2f3f7f454a75306b82d",
+      "bytes": 300829,
+      "sha256": "ca125695d2a78abdae1a465acbf4ea0006efb7d0d485ef9c5a3ba7198800bd4e",
       "dimensions": [
-        1080,
-        1350
+        1600,
+        700
       ]
+    },
+    {
+      "path": "invitation_print.pdf",
+      "bytes": 1004825,
+      "sha256": "b16bc79dfe61001ea86917bd79aecf3f1b59613643dbda8345d25882312b3d92"
     },
     {
       "path": "invite_letter.html",
       "bytes": 1078,
-      "sha256": "b25c384e23ab6705f7daf3214f68c4b11d3ecb589e54882ae9dfc233430967d3"
+      "sha256": "f01ca75ef7a0505805e2719dcf97473033b76d679a04afcbcb075bbcab17ed5c"
     },
     {
       "path": "invite_letter.pdf",
-      "bytes": 43366,
-      "sha256": "a90cfe995eb5f151ca2985c16d6ccefae52a6da0ce1269515ba56eee0cc9775c"
+      "bytes": 43359,
+      "sha256": "35cd92c082e4d1ba1abf3b875d0496b4a18b16ac1b708961f53ddc9e6b77d946"
     },
     {
       "path": "poster_portrait.html",
-      "bytes": 23406,
-      "sha256": "209f39d374bd5edcd5332ad525a0d9a4574da65385a7ca819be6c12712c55fa5"
+      "bytes": 3686938,
+      "sha256": "c95daf5104a919abb001c94186880dd929e915f561501ed40c0c83165e0bacfc"
     },
     {
       "path": "poster_portrait.png",
-      "bytes": 106852,
-      "sha256": "8b47d574e0fcb65cb69a5e93e40042b2052d608f873ec4aa3e7127e752ab736c",
+      "bytes": 2381947,
+      "sha256": "6de0d92df9574f86905d6d7d9896897012c86c2b68cfa07ba3db800868ac9217",
       "dimensions": [
         1080,
         1920
@@ -74,23 +89,23 @@
     },
     {
       "path": "poster_print.html",
-      "bytes": 23434,
-      "sha256": "1817e1a7493433242818acc9ebb7a9feb2975bd20deef32dad04bcfb25a7e238"
+      "bytes": 3686935,
+      "sha256": "bc3685e77cda146ce6ea44107e8e7191e44b82aed3dfc007ffb150b9e4f263c5"
     },
     {
       "path": "poster_print.pdf",
-      "bytes": 81400,
-      "sha256": "b3a576ee4499741e47413e1d1489ab4f7b9eaff3900ee632181ca6396a2109b9"
+      "bytes": 2669467,
+      "sha256": "b08aac1b5199da2e7b13b88e7c91a54d47384eb26a929581ba37245c086f86e8"
     },
     {
       "path": "poster_square.html",
-      "bytes": 23536,
-      "sha256": "7e2ec8356c76bebb1e722cd2356689a3f46839747cdfd3df8a2838e3d2f40bb3"
+      "bytes": 3686936,
+      "sha256": "b6c9a1a72bf746ece2d961c1364dd558fdb0ab8867c3aa051a102b587fc874a7"
     },
     {
       "path": "poster_square.png",
-      "bytes": 63720,
-      "sha256": "3c2d57e882be8af55d309b23c21affc68a776c56022a668bba5484cc001e483a",
+      "bytes": 1395289,
+      "sha256": "710c21ce764cc0c4e266a02f080bc2501cf1a6cecab743263f1eb603d86aaffd",
       "dimensions": [
         1080,
         1080
@@ -98,8 +113,8 @@
     },
     {
       "path": "preview.html",
-      "bytes": 2555,
-      "sha256": "10d9c83083c55ea1565052bd862369de37c9ef844ff873ce98ad619d0a245cd4"
+      "bytes": 2634,
+      "sha256": "da44a9313ce8cb9278d78fb21e0a691f46d4cf9ed3a93fc7e17eafd9c4215d4d"
     },
     {
       "path": "registration_qr.png",
@@ -112,7 +127,7 @@
     }
   ],
   "selection": {
-    "ranking_version": "1.0.0",
+    "ranking_version": "2.0.0",
     "weights": {
       "type": 30,
       "audience": 20,
@@ -122,8 +137,8 @@
       "brand": 10,
       "readability": 5
     },
-    "input_digest": "b6b10282a0546b625371f8c4e049377945226837f91e6b6f450b1a1d2870ea11",
-    "profile_digest": "319eff2351fb461dec166a6bdbcfcf297cc775b00e1138619687dcddd4d6348d",
+    "input_digest": "efd959684da18dcf7f2148bd212d17f5329f434b27b804a8d4822048b78950df",
+    "profile_digest": "11add928fa1dad47ed8e9e892ed726e26e11bcd190dcd7c34730429aa2dbfdfa",
     "input_summary": {
       "category": "sports",
       "language": "zh",
@@ -151,7 +166,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；主题含 跑步；日间时段。采用右侧巨大日期数字 / 斜切速度带 / 左侧竞技标题 / 对抗队伍栏 / 硬信息底块。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；主题含 跑步；日间时段。采用大幅运动人物 / 橙黄动势笔触 / 下部斜体竞技标题 / 深色信息底栏。",
         "tradeoff": "速度感强，仪式性活动适配较弱",
         "preview_path": null,
         "family": "diagonal"
@@ -170,7 +185,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；主题含 校园；日间时段。采用顶部分裂标签 / 硬阴影标题块 / 错位圆形贴纸 / 黑色信息模块。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；主题含 校园；日间时段。采用荧光黄剪贴拼贴 / 硬边黑色标题块 / 紫色错位阴影 / 实色核心信息区。",
         "tradeoff": "年轻醒目，不适合庄重礼仪",
         "preview_path": null,
         "family": "blocks"
@@ -189,7 +204,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用左侧窄索引栏 / 大字号标题 / 右侧几何圆 / 底部横向信息表。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用不对称大字 / 红黑白丝网印刷几何 / 右向视觉重心 / 独立底部事实栏。",
         "tradeoff": "构图鲜明，超长标题需要压缩字号",
         "preview_path": null,
         "family": "grid"
@@ -208,7 +223,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用顶部坐标 / 左对齐标题 / 轨道光环主视觉 / 底部半透明信息区。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用全幅玻璃神经雕塑 / 深色标题承载层 / 中部主视觉 / 简洁报名底栏。",
         "tradeoff": "科技氛围强，正文应控制密度",
         "preview_path": null,
         "family": "space"
@@ -227,7 +242,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用顶部手绘枝叶 / 便笺式标题 / 花朵太阳插画 / 圆角邀请信纸。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用手绘市集场景 / 奶油纸标题留白 / 绿松石与暖阳 / 开放式事实底栏。",
         "tradeoff": "亲和温暖，正式商务气质较弱",
         "preview_path": null,
         "family": "organic"
@@ -246,7 +261,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用顶部细色带 / 左侧书脊 / 编号主题 / 水平知识图形 / 结构化事实表。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用黑白城市全景 / 撕纸建筑蓝图 / 浅蓝研究标题区 / 双列核心事实。",
         "tradeoff": "专业可信，视觉表达相对克制",
         "preview_path": null,
         "family": "institutional"
@@ -265,7 +280,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用杂志刊头 / 偏置作品窗 / 编辑标题 / 页脚细栏。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用上部黑白雕像裁切摄影 / 下部衬线编辑标题 / 大留白 / 细信息底栏。",
         "tradeoff": "留白丰富，长议程更适合附页",
         "preview_path": null,
         "family": "editorial"
@@ -284,7 +299,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用双线印刷边框 / 拱形日晕 / 衬线标题 / 半色调纸张 / 票券式底栏。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用粗衬线活字 / 怀旧纸张 / 原创半色调肖像 / 双线印刷边框与短底栏。",
         "tradeoff": "温厚怀旧，色彩表现较柔和",
         "preview_path": null,
         "family": "print"
@@ -303,7 +318,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用左上夜场标签 / 发光门框 / 下部居中强标题 / 时间地点发光线。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用径向霓虹隧道 / 下部夜场标题板 / 深色阅读层 / 清晰二维码底栏。",
         "tradeoff": "夜间吸睛，不适合密集学术信息",
         "preview_path": null,
         "family": "neon"
@@ -322,7 +337,7 @@
           "brand": 10,
           "readability": 5
         },
-        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用双层细线框 / 精致几何花结 / 衬线主标题 / 中轴留白 / 礼仪信息组。",
+        "reason": "活动「奔向下一程」；类型 sports；面向 学生、运动员；气质 casual；日间时段。采用金箔 Art Deco 框 / 墨绿礼仪中轴 / 衬线标题 / 居中精简核心信息。",
         "tradeoff": "礼仪感突出，长文本会降低高级留白感",
         "preview_path": null,
         "family": "ceremony"
@@ -342,23 +357,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "SPORTS",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 72,
-              "y": 85.5,
-              "w": 117.515625,
-              "h": 33
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.11.15",
-            "rect": {
-              "x": 837.9375,
-              "y": 84,
-              "w": 170.0625,
-              "h": 36
+              "x": 64,
+              "y": 20,
+              "w": 151.71875,
+              "h": 25
             }
           },
           {
@@ -366,10 +370,10 @@
             "field": "title",
             "text": "奔向下一程",
             "rect": {
-              "x": 127,
-              "y": 305.453125,
-              "w": 487.390625,
-              "h": 453.59375
+              "x": 106,
+              "y": 1131.5,
+              "w": 886,
+              "h": 224
             }
           },
           {
@@ -377,32 +381,10 @@
             "field": "",
             "text": "校园友谊跑 · 共同出发",
             "rect": {
-              "x": 127,
-              "y": 785.046875,
-              "w": 487.390625,
-              "h": 57
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "校园友谊赛",
-            "rect": {
-              "x": 72,
-              "y": 987.5,
-              "w": 235,
-              "h": 88.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "一起向前",
-            "rect": {
-              "x": 327,
-              "y": 987.5,
-              "w": 200,
-              "h": 88.5
+              "x": 106,
+              "y": 1371.5,
+              "w": 886,
+              "h": 48
             }
           },
           {
@@ -410,10 +392,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 72,
-              "y": 1147,
-              "w": 936,
-              "h": 31
+              "x": 88,
+              "y": 1511.5,
+              "w": 500.921875,
+              "h": 28.5
             }
           },
           {
@@ -421,10 +403,10 @@
             "field": "",
             "text": "2026.11.15  09:00 – 12:00  (Asia/Shanghai)",
             "rect": {
-              "x": 72,
-              "y": 1187,
-              "w": 936,
-              "h": 58
+              "x": 88,
+              "y": 1545,
+              "w": 500.921875,
+              "h": 102
             }
           },
           {
@@ -432,10 +414,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 72,
-              "y": 1270,
-              "w": 450.5,
-              "h": 31
+              "x": 620.921875,
+              "y": 1511.5,
+              "w": 371.078125,
+              "h": 28.5
             }
           },
           {
@@ -443,54 +425,21 @@
             "field": "",
             "text": "示例大学 · 东区田径场",
             "rect": {
-              "x": 72,
-              "y": 1310,
-              "w": 450.5,
-              "h": 58
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 72,
-              "y": 1393,
-              "w": 936,
-              "h": 31
+              "x": 620.921875,
+              "y": 1545,
+              "w": 371.078125,
+              "h": 51
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/campus-run",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 72,
-              "y": 1433,
-              "w": 936,
-              "h": 58
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 72,
-              "y": 1516,
-              "w": 450.5,
-              "h": 31
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 72,
-              "y": 1556,
-              "w": 450.5,
-              "h": 58
+              "x": 88,
+              "y": 1730,
+              "w": 728,
+              "h": 45
             }
           },
           {
@@ -498,64 +447,88 @@
             "field": "",
             "text": "示例运动社",
             "rect": {
-              "x": 72,
-              "y": 1757.5,
-              "w": 120,
-              "h": 36
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.11.15",
-            "rect": {
-              "x": 831.921875,
-              "y": 1765,
-              "w": 176.078125,
-              "h": 21
+              "x": 88,
+              "y": 1787,
+              "w": 728,
+              "h": 30
             }
           }
         ],
         "width": 1080,
         "height": 1920,
-        "title_layout": "balanced",
-        "title_lines": 2,
+        "title_layout": "display",
+        "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 64,
+              "y": 1111.5,
+              "width": 952,
+              "height": 328,
+              "top": 1111.5,
+              "right": 1016,
+              "bottom": 1439.5,
+              "left": 64
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 64,
+              "y": 1479.5,
+              "width": 952,
+              "height": 191.5,
+              "top": 1479.5,
+              "right": 1016,
+              "bottom": 1671,
+              "left": 64
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 64,
+              "y": 1691,
+              "width": 952,
+              "height": 165,
+              "top": 1691,
+              "right": 1016,
+              "bottom": 1856,
+              "left": 64
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "162px"
+            "size": "160px"
           },
           {
             "field": "subtitle",
-            "size": "38px"
-          },
-          {
-            "field": "",
-            "size": "35px"
-          },
-          {
-            "field": "speakers",
             "size": "32px"
           },
           {
             "field": "",
-            "size": "40px"
+            "size": "34px"
           },
           {
             "field": "",
-            "size": "40px"
+            "size": "34px"
           },
           {
-            "field": "",
-            "size": "40px"
-          },
-          {
-            "field": "",
-            "size": "40px"
+            "field": "cta",
+            "size": "30px"
           },
           {
             "field": "credit",
-            "size": "24px"
+            "size": "20px"
           }
         ],
         "font_families": "\"Arial Narrow\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
@@ -576,23 +549,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "SPORTS",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 56,
-              "y": 77,
-              "w": 81.6875,
+              "x": 42,
+              "y": 10,
+              "w": 127.359375,
               "h": 21
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.11.15",
-            "rect": {
-              "x": 907.96875,
-              "y": 76,
-              "w": 116.03125,
-              "h": 23
             }
           },
           {
@@ -600,10 +562,10 @@
             "field": "title",
             "text": "奔向下一程",
             "rect": {
-              "x": 91,
-              "y": 142,
-              "w": 933,
-              "h": 133
+              "x": 78,
+              "y": 596.703125,
+              "w": 942,
+              "h": 128.796875
             }
           },
           {
@@ -611,32 +573,10 @@
             "field": "",
             "text": "校园友谊跑 · 共同出发",
             "rect": {
-              "x": 91,
-              "y": 290,
-              "w": 933,
-              "h": 42
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "校园友谊赛",
-            "rect": {
-              "x": 56,
-              "y": 372,
-              "w": 195,
-              "h": 76.5
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "一起向前",
-            "rect": {
-              "x": 271,
-              "y": 372,
-              "w": 168,
-              "h": 76.5
+              "x": 78,
+              "y": 735.5,
+              "w": 942,
+              "h": 37.5
             }
           },
           {
@@ -644,10 +584,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 56,
-              "y": 507.5,
-              "w": 968,
-              "h": 26
+              "x": 62,
+              "y": 813,
+              "w": 510.53125,
+              "h": 25.5
             }
           },
           {
@@ -655,10 +595,10 @@
             "field": "",
             "text": "2026.11.15  09:00 – 12:00  (Asia/Shanghai)",
             "rect": {
-              "x": 56,
-              "y": 539.5,
-              "w": 968,
-              "h": 43.5
+              "x": 62,
+              "y": 839.5,
+              "w": 510.53125,
+              "h": 37.5
             }
           },
           {
@@ -666,10 +606,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 56,
-              "y": 598,
-              "w": 472,
-              "h": 26
+              "x": 592.53125,
+              "y": 813,
+              "w": 425.453125,
+              "h": 25.5
             }
           },
           {
@@ -677,54 +617,21 @@
             "field": "",
             "text": "示例大学 · 东区田径场",
             "rect": {
-              "x": 56,
-              "y": 630,
-              "w": 472,
-              "h": 43.5
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 56,
-              "y": 688.5,
-              "w": 968,
-              "h": 26
+              "x": 592.53125,
+              "y": 839.5,
+              "w": 425.453125,
+              "h": 37.5
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/campus-run",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 56,
-              "y": 720.5,
-              "w": 968,
-              "h": 43.5
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 56,
-              "y": 779,
-              "w": 472,
-              "h": 26
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 56,
-              "y": 811,
-              "w": 472,
-              "h": 43.5
+              "x": 62,
+              "y": 932.25,
+              "w": 808,
+              "h": 37.5
             }
           },
           {
@@ -732,21 +639,10 @@
             "field": "",
             "text": "示例运动社",
             "rect": {
-              "x": 56,
-              "y": 958.5,
-              "w": 100,
-              "h": 30
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.11.15",
-            "rect": {
-              "x": 880.6875,
-              "y": 965.5,
-              "w": 143.3125,
-              "h": 16
+              "x": 62,
+              "y": 981.75,
+              "w": 808,
+              "h": 27
             }
           }
         ],
@@ -754,42 +650,77 @@
         "height": 1080,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 42,
+              "y": 584.703125,
+              "width": 996,
+              "height": 200.296875,
+              "top": 584.703125,
+              "right": 1038,
+              "bottom": 785,
+              "left": 42
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 42,
+              "y": 799,
+              "width": 996,
+              "height": 90,
+              "top": 799,
+              "right": 1038,
+              "bottom": 889,
+              "left": 42
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 42,
+              "y": 903,
+              "width": 996,
+              "height": 135,
+              "top": 903,
+              "right": 1038,
+              "bottom": 1038,
+              "left": 42
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "95px"
+            "size": "92px"
           },
           {
             "field": "subtitle",
-            "size": "28px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "27px"
-          },
-          {
-            "field": "speakers",
-            "size": "26px"
+            "size": "25px"
           },
           {
             "field": "",
-            "size": "30px"
+            "size": "25px"
           },
           {
-            "field": "",
-            "size": "30px"
-          },
-          {
-            "field": "",
-            "size": "30px"
-          },
-          {
-            "field": "",
-            "size": "30px"
+            "field": "cta",
+            "size": "25px"
           },
           {
             "field": "credit",
-            "size": "20px"
+            "size": "18px"
           }
         ],
         "font_families": "\"Arial Narrow\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
@@ -810,12 +741,34 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "INVITATION",
+            "text": "DEMO / 虚构活动",
             "rect": {
-              "x": 64,
-              "y": 75,
-              "w": 157.84375,
-              "h": 27
+              "x": 49,
+              "y": 29,
+              "w": 131.5625,
+              "h": 22
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "贵宾邀请函",
+            "rect": {
+              "x": 59,
+              "y": 52.625,
+              "w": 125,
+              "h": 26
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "TICKET STUB",
+            "rect": {
+              "x": 56,
+              "y": 121.625,
+              "w": 137.90625,
+              "h": 24
             }
           },
           {
@@ -823,10 +776,10 @@
             "field": "",
             "text": "2026.11.15",
             "rect": {
-              "x": 869.953125,
-              "y": 73.5,
-              "w": 146.046875,
-              "h": 30
+              "x": 1083.234375,
+              "y": 120.125,
+              "w": 114.921875,
+              "h": 27
             }
           },
           {
@@ -834,10 +787,10 @@
             "field": "",
             "text": "诚邀莅临",
             "rect": {
-              "x": 119,
-              "y": 156,
-              "w": 897,
-              "h": 39
+              "x": 56,
+              "y": 158.625,
+              "w": 1142.15625,
+              "h": 27
             }
           },
           {
@@ -845,10 +798,10 @@
             "field": "title",
             "text": "奔向下一程",
             "rect": {
-              "x": 119,
-              "y": 215,
-              "w": 897,
-              "h": 156.796875
+              "x": 56,
+              "y": 192.625,
+              "w": 1142.15625,
+              "h": 114.796875
             }
           },
           {
@@ -856,32 +809,10 @@
             "field": "",
             "text": "校园友谊跑 · 共同出发",
             "rect": {
-              "x": 119,
-              "y": 391.796875,
-              "w": 897,
-              "h": 48
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "校园友谊赛",
-            "rect": {
-              "x": 64,
-              "y": 520.8125,
-              "w": 210,
-              "h": 81
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "一起向前",
-            "rect": {
-              "x": 294,
-              "y": 520.8125,
-              "w": 180,
-              "h": 81
+              "x": 56,
+              "y": 315.421875,
+              "w": 1142.15625,
+              "h": 33.34375
             }
           },
           {
@@ -889,10 +820,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 64,
-              "y": 663.8125,
-              "w": 952,
-              "h": 29
+              "x": 56,
+              "y": 490,
+              "w": 618.96875,
+              "h": 21
             }
           },
           {
@@ -900,10 +831,10 @@
             "field": "",
             "text": "2026.11.15  09:00 – 12:00  (Asia/Shanghai)",
             "rect": {
-              "x": 64,
-              "y": 701.8125,
-              "w": 952,
-              "h": 49.296875
+              "x": 56,
+              "y": 514,
+              "w": 618.96875,
+              "h": 33
             }
           },
           {
@@ -911,10 +842,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 64,
-              "y": 776.109375,
-              "w": 458.5,
-              "h": 29
+              "x": 702.96875,
+              "y": 490,
+              "w": 495.1875,
+              "h": 21
             }
           },
           {
@@ -922,10 +853,10 @@
             "field": "",
             "text": "示例大学 · 东区田径场",
             "rect": {
-              "x": 64,
-              "y": 814.109375,
-              "w": 458.5,
-              "h": 49.296875
+              "x": 702.96875,
+              "y": 514,
+              "w": 495.1875,
+              "h": 33
             }
           },
           {
@@ -933,10 +864,10 @@
             "field": "",
             "text": "报名方式",
             "rect": {
-              "x": 64,
-              "y": 888.40625,
-              "w": 952,
-              "h": 29
+              "x": 56,
+              "y": 565,
+              "w": 618.96875,
+              "h": 21
             }
           },
           {
@@ -944,10 +875,10 @@
             "field": "",
             "text": "https://example.org/events/campus-run",
             "rect": {
-              "x": 64,
-              "y": 926.40625,
-              "w": 952,
-              "h": 49.296875
+              "x": 56,
+              "y": 589,
+              "w": 618.96875,
+              "h": 33
             }
           },
           {
@@ -955,10 +886,10 @@
             "field": "",
             "text": "参与费用",
             "rect": {
-              "x": 64,
-              "y": 1000.703125,
-              "w": 458.5,
-              "h": 29
+              "x": 702.96875,
+              "y": 565,
+              "w": 495.1875,
+              "h": 21
             }
           },
           {
@@ -966,10 +897,10 @@
             "field": "",
             "text": "免费",
             "rect": {
-              "x": 64,
-              "y": 1038.703125,
-              "w": 458.5,
-              "h": 49.296875
+              "x": 702.96875,
+              "y": 589,
+              "w": 495.1875,
+              "h": 33
             }
           },
           {
@@ -977,72 +908,109 @@
             "field": "",
             "text": "示例运动社",
             "rect": {
-              "x": 64,
-              "y": 1209,
-              "w": 120,
-              "h": 36
+              "x": 56,
+              "y": 633.5,
+              "w": 90,
+              "h": 27
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "设计编号 / D454ADA6",
+            "rect": {
+              "x": 1007.390625,
+              "y": 635,
+              "w": 190.765625,
+              "h": 24
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "来宾副券",
+            "rect": {
+              "x": 1372.078125,
+              "y": 118.625,
+              "w": 84,
+              "h": 24
             }
           },
           {
             "tag": "SPAN",
             "field": "",
-            "text": "邀请函",
+            "text": "扫码报名",
             "rect": {
-              "x": 959,
-              "y": 1216.5,
-              "w": 57,
-              "h": 21
+              "x": 1384.078125,
+              "y": 476.921875,
+              "w": 60,
+              "h": 20
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "设计编号 / D454ADA6",
+            "rect": {
+              "x": 1318.703125,
+              "y": 557.5625,
+              "w": 190.765625,
+              "h": 24
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "视觉邀请函 · 非实际入场凭证",
+            "rect": {
+              "x": 1336.375,
+              "y": 642.203125,
+              "w": 155.421875,
+              "h": 19.796875
             }
           }
         ],
-        "width": 1080,
-        "height": 1350,
+        "width": 1600,
+        "height": 700,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [],
         "font_sizes": [
           {
             "field": "title",
-            "size": "112px"
+            "size": "82px"
           },
           {
             "field": "subtitle",
-            "size": "32px"
+            "size": "23px"
           },
           {
             "field": "",
-            "size": "30px"
-          },
-          {
-            "field": "speakers",
-            "size": "29px"
+            "size": "22px"
           },
           {
             "field": "",
-            "size": "34px"
+            "size": "22px"
           },
           {
             "field": "",
-            "size": "34px"
+            "size": "22px"
           },
           {
             "field": "",
-            "size": "34px"
-          },
-          {
-            "field": "",
-            "size": "34px"
+            "size": "22px"
           },
           {
             "field": "credit",
-            "size": "24px"
+            "size": "18px"
           }
         ],
-        "font_families": "\"Arial Narrow\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
+        "font_families": "Georgia, SimSun, \"Noto Serif CJK SC\", serif",
         "browser_version": "154.0.8037.98",
         "actual_fonts": [
           {
-            "familyName": "Microsoft YaHei",
-            "postScriptName": "MicrosoftYaHei-Bold",
+            "familyName": "SimSun",
+            "postScriptName": "SimSun",
             "isCustomFont": false,
             "glyphCount": 5
           }
@@ -1055,23 +1023,12 @@
           {
             "tag": "DIV",
             "field": "",
-            "text": "SPORTS",
+            "text": "DEMO / 虚构活动",
             "rect": {
               "x": 64,
-              "y": 75,
-              "w": 101.59375,
-              "h": 27
-            }
-          },
-          {
-            "tag": "DIV",
-            "field": "",
-            "text": "2026.11.15",
-            "rect": {
-              "x": 869.953125,
-              "y": 73.5,
-              "w": 146.046875,
-              "h": 30
+              "y": 20,
+              "w": 151.71875,
+              "h": 25
             }
           },
           {
@@ -1079,10 +1036,10 @@
             "field": "title",
             "text": "奔向下一程",
             "rect": {
-              "x": 119,
-              "y": 156,
-              "w": 897,
-              "h": 156.796875
+              "x": 100,
+              "y": 820.40625,
+              "w": 898,
+              "h": 173.59375
             }
           },
           {
@@ -1090,32 +1047,10 @@
             "field": "",
             "text": "校园友谊跑 · 共同出发",
             "rect": {
-              "x": 119,
-              "y": 332.796875,
-              "w": 897,
-              "h": 48
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "校园友谊赛",
-            "rect": {
-              "x": 64,
-              "y": 697.8125,
-              "w": 210,
-              "h": 81
-            }
-          },
-          {
-            "tag": "LI",
-            "field": "",
-            "text": "一起向前",
-            "rect": {
-              "x": 294,
-              "y": 697.8125,
-              "w": 180,
-              "h": 81
+              "x": 100,
+              "y": 1010,
+              "w": 898,
+              "h": 43.5
             }
           },
           {
@@ -1123,10 +1058,10 @@
             "field": "",
             "text": "日期 / 时间",
             "rect": {
-              "x": 64,
-              "y": 840.8125,
-              "w": 952,
-              "h": 29
+              "x": 82,
+              "y": 1149.5,
+              "w": 507.828125,
+              "h": 28.5
             }
           },
           {
@@ -1134,10 +1069,10 @@
             "field": "",
             "text": "2026.11.15  09:00 – 12:00  (Asia/Shanghai)",
             "rect": {
-              "x": 64,
-              "y": 878.8125,
-              "w": 952,
-              "h": 49.296875
+              "x": 82,
+              "y": 1183,
+              "w": 507.828125,
+              "h": 90
             }
           },
           {
@@ -1145,10 +1080,10 @@
             "field": "",
             "text": "活动地点",
             "rect": {
-              "x": 64,
-              "y": 953.109375,
-              "w": 458.5,
-              "h": 29
+              "x": 621.828125,
+              "y": 1149.5,
+              "w": 376.171875,
+              "h": 28.5
             }
           },
           {
@@ -1156,54 +1091,21 @@
             "field": "",
             "text": "示例大学 · 东区田径场",
             "rect": {
-              "x": 64,
-              "y": 991.109375,
-              "w": 458.5,
-              "h": 49.296875
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "报名方式",
-            "rect": {
-              "x": 64,
-              "y": 1065.40625,
-              "w": 952,
-              "h": 29
+              "x": 621.828125,
+              "y": 1183,
+              "w": 376.171875,
+              "h": 45
             }
           },
           {
             "tag": "P",
-            "field": "",
-            "text": "https://example.org/events/campus-run",
+            "field": "cta",
+            "text": "扫码报名 / Scan to Register",
             "rect": {
-              "x": 64,
-              "y": 1103.40625,
-              "w": 952,
-              "h": 49.296875
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "参与费用",
-            "rect": {
-              "x": 64,
-              "y": 1177.703125,
-              "w": 458.5,
-              "h": 29
-            }
-          },
-          {
-            "tag": "P",
-            "field": "",
-            "text": "免费",
-            "rect": {
-              "x": 64,
-              "y": 1215.703125,
-              "w": 458.5,
-              "h": 49.296875
+              "x": 82,
+              "y": 1352,
+              "w": 758,
+              "h": 42
             }
           },
           {
@@ -1211,21 +1113,10 @@
             "field": "",
             "text": "示例运动社",
             "rect": {
-              "x": 64,
-              "y": 1386,
-              "w": 120,
-              "h": 36
-            }
-          },
-          {
-            "tag": "SPAN",
-            "field": "",
-            "text": "活动 / 2026.11.15",
-            "rect": {
-              "x": 839.921875,
-              "y": 1393.5,
-              "w": 176.078125,
-              "h": 21
+              "x": 82,
+              "y": 1406,
+              "w": 758,
+              "h": 30
             }
           }
         ],
@@ -1233,42 +1124,77 @@
         "height": 1527,
         "title_layout": "display",
         "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 58,
+              "y": 800.40625,
+              "width": 964,
+              "height": 273.09375,
+              "top": 800.40625,
+              "right": 1022,
+              "bottom": 1073.5,
+              "left": 58
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 58,
+              "y": 1117.5,
+              "width": 964,
+              "height": 179.5,
+              "top": 1117.5,
+              "right": 1022,
+              "bottom": 1297,
+              "left": 58
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgb(9, 44, 61)",
+            "color": "rgb(255, 244, 202)",
+            "rect": {
+              "x": 58,
+              "y": 1319,
+              "width": 964,
+              "height": 150,
+              "top": 1319,
+              "right": 1022,
+              "bottom": 1469,
+              "left": 58
+            }
+          }
+        ],
         "font_sizes": [
           {
             "field": "title",
-            "size": "112px"
+            "size": "124px"
           },
           {
             "field": "subtitle",
-            "size": "32px"
+            "size": "29px"
           },
           {
             "field": "",
             "size": "30px"
           },
           {
-            "field": "speakers",
-            "size": "29px"
+            "field": "",
+            "size": "30px"
           },
           {
-            "field": "",
-            "size": "34px"
-          },
-          {
-            "field": "",
-            "size": "34px"
-          },
-          {
-            "field": "",
-            "size": "34px"
-          },
-          {
-            "field": "",
-            "size": "34px"
+            "field": "cta",
+            "size": "28px"
           },
           {
             "field": "credit",
-            "size": "24px"
+            "size": "20px"
           }
         ],
         "font_families": "\"Arial Narrow\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"PingFang SC\", sans-serif",
@@ -1286,15 +1212,16 @@
     "png_dimensions": true,
     "pdf_pages": {
       "poster_print.pdf": 1,
-      "invite_letter.pdf": 1
+      "invite_letter.pdf": 1,
+      "invitation_print.pdf": 1
     },
-    "contrast": 15.35,
+    "contrast": 13.23,
     "registration_url": "syntax-checked-only",
     "qr": "generated-from-url"
   },
   "palette": [
-    "#0e2331",
-    "#f8faf7",
-    "#d6f349"
+    "#092c3d",
+    "#fff4ca",
+    "#ffb32c"
   ]
 }

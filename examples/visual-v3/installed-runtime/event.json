@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "title": "深空计算论坛",
+  "subtitle": "计算科学与深空探索",
+  "category": "forum",
+  "subtype": "",
+  "start": "2026-12-03T14:00",
+  "end": "2026-12-03T17:00",
+  "timezone": "Asia/Shanghai",
+  "venue": "虚构科学中心 · 论坛厅",
+  "online_platform": null,
+  "venue_mode": "unknown",
+  "organizer": null,
+  "audience": [],
+  "formality": "professional",
+  "atmosphere": [],
+  "keywords": [],
+  "channels": [],
+  "highlights": [],
+  "speakers": [],
+  "teams": [],
+  "fee": null,
+  "registration": "无需报名",
+  "registration_url": null,
+  "deadline": null,
+  "contact": null,
+  "recipient": null,
+  "language": "zh",
+  "style": "tech-gradient",
+  "style_description": "",
+  "invitation_format": "auto",
+  "show_timezone": false,
+  "timezone_label": null,
+  "qr_policy": "auto",
+  "poster_cta": null,
+  "brand": {
+    "colors": [],
+    "forbidden_colors": [],
+    "forbidden_styles": [],
+    "high_contrast": false,
+    "preserve_logo": true
+  },
+  "assets": {
+    "visual_receipt": "campaign_art_receipt.json",
+    "visual_variants": {},
+    "logo": null,
+    "hero_image": null,
+    "speaker_photo": null,
+    "qr_image": null,
+    "style_reference": []
+  },
+  "sources": {
+    "title": {
+      "source": "forum.docx",
+      "excerpt": "深空计算论坛",
+      "confidence": 0.95,
+      "status": "extracted"
+    },
+    "category": {
+      "source": "forum.docx",
+      "excerpt": "forum",
+      "confidence": 0.95,
+      "status": "extracted"
+    },
+    "start": {
+      "source": "forum.docx",
+      "excerpt": "2026-12-03T14:00",
+      "confidence": 0.95,
+      "status": "extracted"
+    },
+    "end": {
+      "source": "forum.docx",
+      "excerpt": "2026-12-03T17:00",
+      "confidence": 0.95,
+      "status": "extracted"
+    },
+    "timezone": {
+      "source": "forum.docx",
+      "excerpt": "Asia/Shanghai",
+      "confidence": 0.95,
+      "status": "extracted"
+    },
+    "venue": {
+      "source": "forum.docx",
+      "excerpt": "虚构科学中心 · 论坛厅",
+      "confidence": 0.95,
+      "status": "extracted"
+    },
+    "registration": {
+      "source": "forum.docx",
+      "excerpt": "无需报名",
+      "confidence": 0.95,
+      "status": "extracted"
+    },
+    "subtitle": {
+      "source": "forum.docx",
+      "excerpt": "计算科学与深空探索",
+      "confidence": 0.95,
+      "status": "extracted"
+    },
+    "formality": {
+      "source": "forum.docx",
+      "excerpt": "forum",
+      "confidence": 0.7,
+      "status": "inferred"
+    },
+    "venue_mode": {
+      "source": "event.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "language": {
+      "source": "event.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "invitation_format": {
+      "source": "event.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "qr_policy": {
+      "source": "event.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "brand": {
+      "source": "event.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "assets": {
+      "source": "event.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "demo": {
+      "source": "event.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    }
+  },
+  "confirmed_fields": [],
+  "uncertainties": [],
+  "demo": true
+}

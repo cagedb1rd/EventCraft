@@ -1,23 +1,34 @@
-# 现代科技渐变风 / Tech gradient
+# 现代科技渐变风 / tech-gradient
 
-定位：space。适用：launch, lecture, academic, workshop, forum。这是一套原创布局，网络参考仅用于原则研究。
+十套预设是艺术指导、字体与构图契约；每个新活动重新构思主体，不依赖本地 image/。
 
-## Tokens 与字体
+## 艺术指导
 
-背景 `#101733`，正文 `#f6f8ff`，强调 `#8b9cff`。采用系统无衬线字体；中文分别回退 Microsoft YaHei / Noto Sans CJK SC 或 SimSun / Noto Serif CJK SC。系统字体不进入仓库。
-标题字体栈：`Segoe UI, Microsoft YaHei, Noto Sans CJK SC, PingFang SC`；字重 700。中英文各自回退到可用字体，manifest 记录实际使用结果。温暖风使用系统楷体，保留亲切的书写感。
-海报标题上限 148 px，正文 35 px，信息 40 px，标签 24 px；邀请函标题 112 px，方图标题 96 px。1080 宽画布安全边距 72 px（各风格另有轴线与框线边距）。实际字体尺寸由 Chromium 度量，优先压缩装饰空间，再根据可用区域收缩，达到下限仍溢出则失败。
+Original translucent glass sculpture and luminous cyan/cobalt/magenta physical lattice expressing the current event. A conceptually relevant central object, premium futuristic art, deep ink navy space, no dashboard UI.
 
-## 构图与成套适配
+实际标题长度、文字量和输出比例由 composition.py 在生成前计算自然留白；同一规范坐标指导宿主图像工具与渲染器。没有固定主体或统一标题板。
 
-海报：顶部坐标 / 左对齐标题 / 轨道光环主视觉 / 底部半透明信息区。
-邀请函：短轨道图形与横向卡片，增加阅读空间。使用相同颜色、图案和字体，在 1080×1350 上重排正文，不裁切竖版。
-方图压缩图形区并减少标题上限；A4 重新采用邀请式版式并在 PDF 中保留矢量文字。
+## 字体契约
 
-## 适配与负面约束
+- 中文标题：Microsoft YaHei → Noto Sans SC → DengXian → PingFang SC → Noto Sans CJK SC。
+- 英文标题：Bahnschrift → Arial。
+- 副标题：Noto Sans SC → Microsoft YaHei → PingFang SC → Noto Sans CJK SC。
+- 信息文字：Noto Sans SC → Microsoft YaHei → PingFang SC → Noto Sans CJK SC。
+- 日期数字：Bahnschrift → Arial。
+- 字重 600，字形 normal，字距 -0.025 em，行高 1.2，left 对齐。
+- 角色比例：{'title': 1, 'subtitle': 0.23, 'information': 0.25, 'labels': 0.13}。
+- 分行：balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation。
+- 混排：Latin display family followed by native CJK family; no forced uppercasing of Chinese。
+- 长标题：reserve more natural negative space before generation; expand the title region and measure real fonts before export。
 
-长标题按真实字宽自动换行，不截断日期地点报名；中英混排使用 `overflow-wrap:anywhere`，英文保持自然词界。可省略可选的视觉副文，但原始信息保留在 event.json 和完整文案中。没有主图仍使用自有 SVG/几何装饰；用户主图、Logo 使用 contain，二维码有白色静区。
-按浏览器度量的标题宽度判断短/中/长标题，平衡换行；长标题在瑞士与运动海报中由左右分栏展开为全宽标题，其他风格压缩装饰区。结构先适配，字号再收缩。
-避免假 UI、假数据和在模型图中排关键文字。正文颜色自动调整至对背景至少 4.5:1；品牌禁止色先过滤。图案不可冒充真实徽章或活动事实。
+使用用户已安装或有授权的字体，不打包商业字体。实际字体回退写入 manifest；字号按浏览器真实测量适配。
 
-取舍：科技氛围强，正文应控制密度。
+## 文字与图像融合
+
+使用自然低纹理留白；禁止把不透明标题矩形、日期条、页脚底板作为默认补救。Swiss/Brutalist/Retro 几何形可以是原创艺术语言，不能临时遮住复杂主视觉。实际背景采样后仍不可读时，必须重新构图或生成并查看成品。
+
+海报仅保留名称、短副标题、自然日期、地点和必要 CTA/品牌。默认隐藏内部时区；QR 只在明确扫码意图或 qr_policy=show 时产生。无码不留框；长介绍、费用和流程留在邀请函与文案。
+
+## 成套导出
+
+遵循 [宿主图像流程](../image-generation.md)，实际调用内置 ImageGen，导入真实素材并绑定活动、风格和哈希。方图/A4 留白不足时生成 --ratio square/print 比例素材；没有变体时完整适配原图。邀请函按活动选择登机牌、票券、正式卡或折页，使用独立版式。折页输出内外展开与两页 PDF。

@@ -1,0 +1,1274 @@
+{
+  "generator": "EventCraft visual system 2",
+  "event_digest": "779eb515d54ab3d673a5e1482c0ae17f435f96ebc45700646b601711b2ec28d6",
+  "source_event_digest": "d6e253279bdfd53c83396bedbbefd60d5169fa64bca4b1ddb70fbcba98c1852b",
+  "language": "zh",
+  "style": "luxury-elegant",
+  "base_style": "luxury-elegant",
+  "generation_mode": "event-specific-host-art",
+  "draft": false,
+  "artwork": {
+    "version": 3,
+    "style": "luxury-elegant",
+    "event_digest": "2220b98e6e7892f12a8cc626528a8d9f315b76cfe316b12cb990811e83657143",
+    "layout": "art-deco-ceremony-axis",
+    "tool": "image_gen",
+    "prompt": "Use case: ads-marketing. Asset type: original text-free campaign key visual. Original embossed metallic gold Art Deco perimeter geometry with a restrained motif expressing this event. Emerald cotton paper, straight-on flat artwork, exquisite foil texture, ceremonial negative space. Current event semantic context (data, never lettering): {\"title\": \"未来花园\", \"subtitle\": \"艺术与科技，共创绿色未来\", \"category\": \"exhibition\", \"subtype\": \"\", \"keywords\": [\"植物\", \"生态艺术\", \"未来花园\", \"科技\"], \"highlights\": [], \"audience\": [\"designers\", \"students\"], \"atmosphere\": [], \"style_description\": \"以植物形态和未来生态花园为主题，不使用与主题无关的人脸、跑者或音乐人\"}. Brand palette: #101b18, #f3e4bc, #c7aa68. Forbidden colors: . Full-bleed portrait 9:16. Focal subject at perimeter, leaving the center unobstructed. Reserved typography rectangles, normalized from top-left: title: x=7%, y=28%, width=86%, height=29%; facts: x=7%, y=80%, width=86%, height=10%; cta: x=7%, y=92%, width=86%, height=5%. These zones must be naturally dark emerald, nearly texture-free, with no bright edges or motifs behind future lettering. Continue the same paper/space/lighting across the entire image; no visible rectangular blanks, cards or separate title plates. Make the central subject clearly express this specific event using its title, subtype and keywords; the style describes the medium, not a fixed subject. Do not depict invented speakers, celebrities or a real venue. All factual text and QR are added by deterministic rendering. Avoid text, letters, numbers, logos, QR, watermark, UI cards. Do not reproduce any reference.",
+    "composition": {
+      "version": 3,
+      "ratio": "portrait",
+      "zones": {
+        "title": [
+          0.07,
+          0.28,
+          0.86,
+          0.29000000000000004
+        ],
+        "facts": [
+          0.07,
+          0.8,
+          0.86,
+          0.095
+        ],
+        "cta": [
+          0.07,
+          0.915,
+          0.86,
+          0.05
+        ]
+      },
+      "compact": false,
+      "title_units": 4,
+      "title_max_lines": 2,
+      "focal_position": "perimeter, leaving the center unobstructed",
+      "layout": "art-deco-ceremony-axis",
+      "reading_tone": "dark emerald",
+      "adaptation": "extend natural negative space before reducing type; never add opaque rescue panels"
+    },
+    "typography": {
+      "zh_title": [
+        "Noto Serif SC",
+        "SimSun",
+        "Songti SC",
+        "Noto Serif CJK SC"
+      ],
+      "en_title": [
+        "Bodoni MT",
+        "Times New Roman"
+      ],
+      "subtitle": [
+        "Noto Serif SC",
+        "SimSun",
+        "Songti SC",
+        "Noto Serif CJK SC"
+      ],
+      "information": [
+        "Noto Sans SC",
+        "Microsoft YaHei",
+        "PingFang SC",
+        "Noto Sans CJK SC"
+      ],
+      "numbers": [
+        "Georgia",
+        "Arial"
+      ],
+      "weight": 400,
+      "shape": "normal",
+      "tracking": 0.065,
+      "leading": 1.32,
+      "alignment": "center",
+      "generic": "serif",
+      "scale": {
+        "title": 1,
+        "subtitle": 0.23,
+        "information": 0.25,
+        "labels": 0.13
+      },
+      "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+      "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+      "title_image_relation": "art-deco-ceremony-axis",
+      "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+    },
+    "semantic_context": {
+      "title": "未来花园",
+      "subtitle": "艺术与科技，共创绿色未来",
+      "category": "exhibition",
+      "subtype": "",
+      "keywords": [
+        "植物",
+        "生态艺术",
+        "未来花园",
+        "科技"
+      ],
+      "highlights": [],
+      "audience": [
+        "designers",
+        "students"
+      ],
+      "atmosphere": [],
+      "style_description": "以植物形态和未来生态花园为主题，不使用与主题无关的人脸、跑者或音乐人"
+    },
+    "transparent_background": false,
+    "asset_role": "original-key-visual",
+    "instructions": "Agent must actually call its built-in image_gen, inspect the result, then art-import. A plan is not a generated asset. Never use a paid API without explicit authorization.",
+    "generator": "codex-imagegen",
+    "provenance": "host-agent-attested",
+    "image": "luxury-elegant.png",
+    "sha256": "9e8c776cd91beb0c1d3b8f5392ea329e0dce53808158482d9348b137b114c244",
+    "dimensions": [
+      941,
+      1672
+    ]
+  },
+  "composition": "art-deco-ceremony-axis",
+  "invitation_format": "formal-card",
+  "publishable": false,
+  "batch_entry_calls": 1,
+  "files": [
+    {
+      "path": "campaign_art.png",
+      "bytes": 2886418,
+      "sha256": "9e8c776cd91beb0c1d3b8f5392ea329e0dce53808158482d9348b137b114c244",
+      "dimensions": [
+        941,
+        1672
+      ]
+    },
+    {
+      "path": "campaign_art_receipt.json",
+      "bytes": 4841,
+      "sha256": "eff8734f9371f88107d30617a2752b4741af84a3bfc25078c521f88f7ab063ba"
+    },
+    {
+      "path": "copy/formal.md",
+      "bytes": 210,
+      "sha256": "021dbb4a7171e5a1a01dc115553916fe7c7ab6d0ddefb0091043049e4bd3809a"
+    },
+    {
+      "path": "copy/invitation.txt",
+      "bytes": 223,
+      "sha256": "a102ca0532e9e9e77fdc63e79e7b6e169508d66fd393a8deb6e1907e18fc1f2e"
+    },
+    {
+      "path": "copy/short.txt",
+      "bytes": 123,
+      "sha256": "a2e9f99aa2c6d29f52d7f691fdc7e73e52c8c03689fbd8928671d7ff50554ec1"
+    },
+    {
+      "path": "copy/social.md",
+      "bytes": 198,
+      "sha256": "d244a59bb30b85b38e28373693532169d32614921a4d2221c6362b1b11059eba"
+    },
+    {
+      "path": "event.json",
+      "bytes": 4143,
+      "sha256": "ee0e8df2d2875603f3f54ceeacb98183082446f7b1a98b91227588f0afb63eec"
+    },
+    {
+      "path": "invitation.html",
+      "bytes": 3858435,
+      "sha256": "eec1103975d91c2efa442878b20a5a5b32e3ebe7b9124d99ea8b776bd6de6807"
+    },
+    {
+      "path": "invitation.png",
+      "bytes": 2132128,
+      "sha256": "d92c650d45f7d3f8405b4a4b87d2db27ca0b3192145b9120ea7bd804d35fcb19",
+      "dimensions": [
+        1080,
+        1350
+      ]
+    },
+    {
+      "path": "invitation_print.pdf",
+      "bytes": 2249635,
+      "sha256": "cbffe3b8d89cf9ad867c849ca056e2f292a5f8e2c3975ea44d18d9eda71d9393"
+    },
+    {
+      "path": "invite_letter.html",
+      "bytes": 979,
+      "sha256": "f029308f118db68ad7aacec06c8611ad835667f92bbf5dda7e2a080a0f74dbe7"
+    },
+    {
+      "path": "invite_letter.pdf",
+      "bytes": 36762,
+      "sha256": "9f651e9da9ea15f8b0910d1a4894f21ed930e68d386f350caa74eddb79578fcb"
+    },
+    {
+      "path": "poster_portrait.html",
+      "bytes": 3856275,
+      "sha256": "62fa7596238389b238083988b06bd9efdf0c281426649b146bd31f661cd3ca9d"
+    },
+    {
+      "path": "poster_portrait.png",
+      "bytes": 3108379,
+      "sha256": "dcf2ff26e7af1cca08b68e9bc4d97290bd1d42f6aed8977f562c626f970ec2ee",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "poster_print.html",
+      "bytes": 3856272,
+      "sha256": "e3ea5340074d931f3c63c08c800d4facc3cd15ff48f7e4af787258446b92e7b4"
+    },
+    {
+      "path": "poster_print.pdf",
+      "bytes": 3246770,
+      "sha256": "0523782829ea52253e3ae15cf5bab3bee0f2435adda0a6fb66140d9a29c5f243"
+    },
+    {
+      "path": "poster_square.html",
+      "bytes": 3856259,
+      "sha256": "3fdc526349de00a7816610a2b2d10a95c944f5b4f0681033b032877e6d0144c9"
+    },
+    {
+      "path": "poster_square.png",
+      "bytes": 1175147,
+      "sha256": "9c4ddbe296382312e5e983e6d09df8bab4e6291d500cfd46f5833aea2311bc63",
+      "dimensions": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "path": "preview.html",
+      "bytes": 2271,
+      "sha256": "81cf2a2c5f24b211af461988a61001396e9cf8b5abd83e8bec049f3136749545"
+    }
+  ],
+  "selection": {
+    "ranking_version": "2.0.0",
+    "weights": {
+      "type": 30,
+      "audience": 20,
+      "formality": 15,
+      "scene": 10,
+      "density": 10,
+      "brand": 10,
+      "readability": 5
+    },
+    "input_digest": "d6e253279bdfd53c83396bedbbefd60d5169fa64bca4b1ddb70fbcba98c1852b",
+    "profile_digest": "1c1c4dba914bdfee1b0a886ac5b13d5d515048416f4702cd579fac8e194b959d",
+    "input_summary": {
+      "category": "exhibition",
+      "language": "zh",
+      "title_length": 4,
+      "audience": [
+        "designers",
+        "students"
+      ],
+      "formality": "casual",
+      "scene": "day",
+      "density": 16
+    },
+    "style_scores": [
+      {
+        "style_id": "editorial-minimal",
+        "score": 100,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 30,
+          "audience": 20,
+          "formality": 15,
+          "scene": 10,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；主题含 艺术；日间时段。采用photographic-editorial / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "留白丰富，长议程更适合附页",
+        "preview_path": null,
+        "family": "editorial"
+      },
+      {
+        "style_id": "swiss-grid",
+        "score": 97.0,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 30,
+          "audience": 20,
+          "formality": 15,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；日间时段。采用asymmetric-type-and-print / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "构图鲜明，超长标题需要压缩字号",
+        "preview_path": null,
+        "family": "grid"
+      },
+      {
+        "style_id": "tech-gradient",
+        "score": 73.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 20,
+          "formality": 15,
+          "scene": 10,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；主题含 科技；日间时段。采用immersive-sculptural / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "科技氛围强，正文应控制密度",
+        "preview_path": null,
+        "family": "space"
+      },
+      {
+        "style_id": "neo-brutal",
+        "score": 70.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 20,
+          "formality": 15,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；日间时段。采用acid-cutout-collage / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "年轻醒目，不适合庄重礼仪",
+        "preview_path": null,
+        "family": "blocks"
+      },
+      {
+        "style_id": "sports-dynamic",
+        "score": 70.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 20,
+          "formality": 15,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；日间时段。采用action-and-diagonal-type / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "速度感强，仪式性活动适配较弱",
+        "preview_path": null,
+        "family": "diagonal"
+      },
+      {
+        "style_id": "academic-clean",
+        "score": 57.85,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 20,
+          "formality": 2.25,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；日间时段。采用panorama-research-band / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "专业可信，视觉表达相对克制",
+        "preview_path": null,
+        "family": "institutional"
+      },
+      {
+        "style_id": "retro-print",
+        "score": 57.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 7.0,
+          "formality": 15,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；日间时段。采用letterpress-pictorial / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "温厚怀旧，色彩表现较柔和",
+        "preview_path": null,
+        "family": "print"
+      },
+      {
+        "style_id": "warm-playful",
+        "score": 57.6,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 7.0,
+          "formality": 15,
+          "scene": 7.0,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；日间时段。采用illustrated-landscape / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "亲和温暖，正式商务气质较弱",
+        "preview_path": null,
+        "family": "organic"
+      },
+      {
+        "style_id": "neon-night",
+        "score": 54.23,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 7.0,
+          "formality": 15,
+          "scene": 3.62,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；日间时段。采用radial-night-scene / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "夜间吸睛，不适合密集学术信息",
+        "preview_path": null,
+        "family": "neon"
+      },
+      {
+        "style_id": "luxury-elegant",
+        "score": 41.48,
+        "eligible": true,
+        "conflicts": [],
+        "components": {
+          "type": 3.6,
+          "audience": 7.0,
+          "formality": 2.25,
+          "scene": 3.62,
+          "density": 10,
+          "brand": 10,
+          "readability": 5
+        },
+        "reason": "活动「未来花园」；类型 exhibition；面向 designers、students；气质 casual；日间时段。采用art-deco-ceremony-axis / 自然留白与低纹理文字区 / 按主题与标题长度动态构图。",
+        "tradeoff": "礼仪感突出，长文本会降低高级留白感",
+        "preview_path": null,
+        "family": "ceremony"
+      }
+    ],
+    "selected_style": "luxury-elegant",
+    "selection_source": "user-specified"
+  },
+  "checks": {
+    "facts": true,
+    "fact_issues": [],
+    "layouts": {
+      "poster_portrait": {
+        "passed": true,
+        "problems": [],
+        "text_boxes": [
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "DEMO / 虚构活动",
+            "rect": {
+              "x": 75.59375,
+              "y": 38.390625,
+              "w": 121.734375,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "H1",
+            "field": "title",
+            "text": "未来花园",
+            "rect": {
+              "x": 140.390625,
+              "y": 707.953125,
+              "w": 799.1875,
+              "h": 157.078125
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "艺术与科技，共创绿色未来",
+            "rect": {
+              "x": 140.390625,
+              "y": 885.03125,
+              "w": 799.1875,
+              "h": 39
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "日期 / 时间",
+            "rect": {
+              "x": 75.59375,
+              "y": 1511.390625,
+              "w": 928.796875,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "2026.11.14 · 14:00 – 17:00",
+            "rect": {
+              "x": 75.59375,
+              "y": 1530.890625,
+              "w": 928.796875,
+              "h": 37.5
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动地点",
+            "rect": {
+              "x": 75.59375,
+              "y": 1580.390625,
+              "w": 928.796875,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "虚构花园美术馆 · 主展厅",
+            "rect": {
+              "x": 75.59375,
+              "y": 1599.890625,
+              "w": 928.796875,
+              "h": 37.5
+            }
+          }
+        ],
+        "width": 1080,
+        "height": 1920,
+        "title_layout": "display",
+        "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 140.390625,
+              "y": 537.59375,
+              "width": 799.1875,
+              "height": 556.796875,
+              "top": 537.59375,
+              "right": 939.578125,
+              "bottom": 1094.390625,
+              "left": 140.390625
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 75.59375,
+              "y": 1420.796875,
+              "width": 928.796875,
+              "height": 307.1875,
+              "top": 1420.796875,
+              "right": 1004.390625,
+              "bottom": 1727.984375,
+              "left": 75.59375
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 75.59375,
+              "y": 1756.796875,
+              "width": 928.796875,
+              "height": 96,
+              "top": 1756.796875,
+              "right": 1004.390625,
+              "bottom": 1852.796875,
+              "left": 75.59375
+            }
+          }
+        ],
+        "font_sizes": [
+          {
+            "field": "title",
+            "size": "119px"
+          },
+          {
+            "field": "subtitle",
+            "size": "26px"
+          },
+          {
+            "field": "",
+            "size": "25px"
+          },
+          {
+            "field": "",
+            "size": "25px"
+          },
+          {
+            "field": "cta",
+            "size": "25px"
+          },
+          {
+            "field": "credit",
+            "size": "17px"
+          }
+        ],
+        "font_families": "\"Bodoni MT\", \"Times New Roman\", \"Noto Serif SC\", SimSun, \"Songti SC\", \"Noto Serif CJK SC\", serif",
+        "browser_version": "154.0.8037.98",
+        "image_readability": {
+          "method": "60 background samples per actual text-line range with lettering hidden",
+          "regions": [
+            {
+              "field": "title",
+              "minimum": 12.14,
+              "mean": 13.04,
+              "passing_fraction": 1.0,
+              "target": 3
+            },
+            {
+              "field": "subtitle",
+              "minimum": 12.26,
+              "mean": 13.01,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            },
+            {
+              "field": "when",
+              "minimum": 13.01,
+              "mean": 13.4,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            },
+            {
+              "field": "where",
+              "minimum": 12.85,
+              "mean": 13.35,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            }
+          ],
+          "needs_visual_review": false,
+          "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+        },
+        "actual_fonts": [
+          {
+            "familyName": "Noto Serif SC",
+            "postScriptName": "Noto-Serif-SC",
+            "isCustomFont": false,
+            "glyphCount": 4
+          }
+        ]
+      },
+      "poster_square": {
+        "passed": true,
+        "problems": [],
+        "text_boxes": [
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "DEMO / 虚构活动",
+            "rect": {
+              "x": 75.59375,
+              "y": 21.59375,
+              "w": 121.734375,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "H1",
+            "field": "title",
+            "text": "未来花园",
+            "rect": {
+              "x": 140.390625,
+              "y": 171.703125,
+              "w": 799.1875,
+              "h": 116.15625
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "艺术与科技，共创绿色未来",
+            "rect": {
+              "x": 140.390625,
+              "y": 299.859375,
+              "w": 799.1875,
+              "h": 36
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "日期 / 时间",
+            "rect": {
+              "x": 75.59375,
+              "y": 838.984375,
+              "w": 928.796875,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "2026.11.14 · 14:00 – 17:00",
+            "rect": {
+              "x": 75.59375,
+              "y": 858.484375,
+              "w": 928.796875,
+              "h": 33
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动地点",
+            "rect": {
+              "x": 75.59375,
+              "y": 899.484375,
+              "w": 928.796875,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "虚构花园美术馆 · 主展厅",
+            "rect": {
+              "x": 75.59375,
+              "y": 918.984375,
+              "w": 928.796875,
+              "h": 33
+            }
+          }
+        ],
+        "width": 1080,
+        "height": 1080,
+        "title_layout": "display",
+        "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 140.390625,
+              "y": 97.1875,
+              "width": 799.1875,
+              "height": 313.1875,
+              "top": 97.1875,
+              "right": 939.578125,
+              "bottom": 410.375,
+              "left": 140.390625
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 75.59375,
+              "y": 799.1875,
+              "width": 928.796875,
+              "height": 183.59375,
+              "top": 799.1875,
+              "right": 1004.390625,
+              "bottom": 982.78125,
+              "left": 75.59375
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 75.59375,
+              "y": 999,
+              "width": 928.796875,
+              "height": 43.1875,
+              "top": 999,
+              "right": 1004.390625,
+              "bottom": 1042.1875,
+              "left": 75.59375
+            }
+          }
+        ],
+        "font_sizes": [
+          {
+            "field": "title",
+            "size": "88px"
+          },
+          {
+            "field": "subtitle",
+            "size": "24px"
+          },
+          {
+            "field": "",
+            "size": "22px"
+          },
+          {
+            "field": "",
+            "size": "22px"
+          },
+          {
+            "field": "cta",
+            "size": "20px"
+          },
+          {
+            "field": "credit",
+            "size": "16px"
+          }
+        ],
+        "font_families": "\"Bodoni MT\", \"Times New Roman\", \"Noto Serif SC\", SimSun, \"Songti SC\", \"Noto Serif CJK SC\", serif",
+        "browser_version": "154.0.8037.98",
+        "image_readability": {
+          "method": "60 background samples per actual text-line range with lettering hidden",
+          "regions": [
+            {
+              "field": "title",
+              "minimum": 11.7,
+              "mean": 12.52,
+              "passing_fraction": 1.0,
+              "target": 3
+            },
+            {
+              "field": "subtitle",
+              "minimum": 11.71,
+              "mean": 12.63,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            },
+            {
+              "field": "when",
+              "minimum": 12.87,
+              "mean": 13.32,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            },
+            {
+              "field": "where",
+              "minimum": 12.87,
+              "mean": 13.39,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            }
+          ],
+          "needs_visual_review": false,
+          "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+        },
+        "actual_fonts": [
+          {
+            "familyName": "Noto Serif SC",
+            "postScriptName": "Noto-Serif-SC",
+            "isCustomFont": false,
+            "glyphCount": 4
+          }
+        ]
+      },
+      "invitation": {
+        "passed": true,
+        "problems": [],
+        "text_boxes": [
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "DEMO / 虚构活动",
+            "rect": {
+              "x": 35,
+              "y": 15,
+              "w": 131.5625,
+              "h": 22
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "FORMAL CARD",
+            "rect": {
+              "x": 460.390625,
+              "y": 107.5,
+              "w": 159.21875,
+              "h": 26
+            }
+          },
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "诚邀莅临",
+            "rect": {
+              "x": 100,
+              "y": 175,
+              "w": 880,
+              "h": 42
+            }
+          },
+          {
+            "tag": "H1",
+            "field": "title",
+            "text": "未来花园",
+            "rect": {
+              "x": 100,
+              "y": 224,
+              "w": 880,
+              "h": 151.1875
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "艺术与科技，共创绿色未来",
+            "rect": {
+              "x": 100,
+              "y": 383.1875,
+              "w": 880,
+              "h": 39.140625
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "日期 / 时间",
+            "rect": {
+              "x": 100,
+              "y": 611.90625,
+              "w": 880,
+              "h": 21
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "2026.11.14 · 14:00 – 17:00",
+            "rect": {
+              "x": 100,
+              "y": 635.90625,
+              "w": 880,
+              "h": 40.5
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动地点",
+            "rect": {
+              "x": 100,
+              "y": 696.40625,
+              "w": 880,
+              "h": 21
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "虚构花园美术馆 · 主展厅",
+            "rect": {
+              "x": 100,
+              "y": 720.40625,
+              "w": 880,
+              "h": 40.5
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "报名方式",
+            "rect": {
+              "x": 100,
+              "y": 780.90625,
+              "w": 880,
+              "h": 21
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "无需报名",
+            "rect": {
+              "x": 100,
+              "y": 804.90625,
+              "w": 880,
+              "h": 40.5
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "设计编号 / A41C2EB1",
+            "rect": {
+              "x": 462.890625,
+              "y": 1057.75,
+              "w": 154.21875,
+              "h": 19.5
+            }
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "title_layout": "display",
+        "title_lines": 1,
+        "reading_zones": [],
+        "font_sizes": [
+          {
+            "field": "title",
+            "size": "108px"
+          },
+          {
+            "field": "subtitle",
+            "size": "27px"
+          },
+          {
+            "field": "",
+            "size": "27px"
+          },
+          {
+            "field": "",
+            "size": "27px"
+          },
+          {
+            "field": "",
+            "size": "27px"
+          },
+          {
+            "field": "credit",
+            "size": "18px"
+          }
+        ],
+        "font_families": "\"Times New Roman\", SimSun, \"Noto Serif CJK SC\", serif",
+        "browser_version": "154.0.8037.98",
+        "actual_fonts": [
+          {
+            "familyName": "SimSun",
+            "postScriptName": "SimSun",
+            "isCustomFont": false,
+            "glyphCount": 4
+          }
+        ]
+      },
+      "poster_print": {
+        "passed": true,
+        "problems": [],
+        "text_boxes": [
+          {
+            "tag": "DIV",
+            "field": "",
+            "text": "DEMO / 虚构活动",
+            "rect": {
+              "x": 75.59375,
+              "y": 30.53125,
+              "w": 121.734375,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "H1",
+            "field": "title",
+            "text": "未来花园",
+            "rect": {
+              "x": 140.390625,
+              "y": 534.796875,
+              "w": 799.1875,
+              "h": 166.3125
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "艺术与科技，共创绿色未来",
+            "rect": {
+              "x": 140.390625,
+              "y": 721.109375,
+              "w": 799.1875,
+              "h": 42
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "日期 / 时间",
+            "rect": {
+              "x": 75.59375,
+              "y": 1183.125,
+              "w": 928.796875,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "2026.11.14 · 14:00 – 17:00",
+            "rect": {
+              "x": 75.59375,
+              "y": 1202.625,
+              "w": 928.796875,
+              "h": 43.5
+            }
+          },
+          {
+            "tag": "SPAN",
+            "field": "",
+            "text": "活动地点",
+            "rect": {
+              "x": 75.59375,
+              "y": 1258.125,
+              "w": 928.796875,
+              "h": 19.5
+            }
+          },
+          {
+            "tag": "P",
+            "field": "",
+            "text": "虚构花园美术馆 · 主展厅",
+            "rect": {
+              "x": 75.59375,
+              "y": 1277.625,
+              "w": 928.796875,
+              "h": 43.5
+            }
+          }
+        ],
+        "width": 1080,
+        "height": 1527,
+        "title_layout": "display",
+        "title_lines": 1,
+        "reading_zones": [
+          {
+            "zone": "title",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 140.390625,
+              "y": 427.546875,
+              "width": 799.1875,
+              "height": 442.828125,
+              "top": 427.546875,
+              "right": 939.578125,
+              "bottom": 870.375,
+              "left": 140.390625
+            }
+          },
+          {
+            "zone": "facts",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 75.59375,
+              "y": 1129.96875,
+              "width": 928.796875,
+              "height": 244.3125,
+              "top": 1129.96875,
+              "right": 1004.390625,
+              "bottom": 1374.28125,
+              "left": 75.59375
+            }
+          },
+          {
+            "zone": "cta",
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(243, 228, 188)",
+            "rect": {
+              "x": 75.59375,
+              "y": 1397.203125,
+              "width": 928.796875,
+              "height": 76.34375,
+              "top": 1397.203125,
+              "right": 1004.390625,
+              "bottom": 1473.546875,
+              "left": 75.59375
+            }
+          }
+        ],
+        "font_sizes": [
+          {
+            "field": "title",
+            "size": "126px"
+          },
+          {
+            "field": "subtitle",
+            "size": "28px"
+          },
+          {
+            "field": "",
+            "size": "29px"
+          },
+          {
+            "field": "",
+            "size": "29px"
+          },
+          {
+            "field": "cta",
+            "size": "25px"
+          },
+          {
+            "field": "credit",
+            "size": "18px"
+          }
+        ],
+        "font_families": "\"Bodoni MT\", \"Times New Roman\", \"Noto Serif SC\", SimSun, \"Songti SC\", \"Noto Serif CJK SC\", serif",
+        "browser_version": "154.0.8037.98",
+        "image_readability": {
+          "method": "60 background samples per actual text-line range with lettering hidden",
+          "regions": [
+            {
+              "field": "title",
+              "minimum": 1.94,
+              "mean": 12.82,
+              "passing_fraction": 0.983,
+              "target": 3
+            },
+            {
+              "field": "subtitle",
+              "minimum": 12.13,
+              "mean": 13.0,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            },
+            {
+              "field": "when",
+              "minimum": 12.83,
+              "mean": 13.41,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            },
+            {
+              "field": "where",
+              "minimum": 12.6,
+              "mean": 13.39,
+              "passing_fraction": 1.0,
+              "target": 4.5
+            }
+          ],
+          "needs_visual_review": false,
+          "limitation": "Samples do not trace glyphs; inspect final imagery and regenerate/recompose when flagged."
+        },
+        "actual_fonts": [
+          {
+            "familyName": "Noto Serif SC",
+            "postScriptName": "Noto-Serif-SC",
+            "isCustomFont": false,
+            "glyphCount": 4
+          }
+        ]
+      }
+    },
+    "png_dimensions": true,
+    "pdf_pages": {
+      "poster_print.pdf": 1,
+      "invite_letter.pdf": 1,
+      "invitation_print.pdf": 1
+    },
+    "contrast": 13.96,
+    "registration_url": "not-provided",
+    "qr": "absent"
+  },
+  "palette": [
+    "#101b18",
+    "#f3e4bc",
+    "#c7aa68"
+  ]
+}

@@ -33,6 +33,8 @@ class Brand(BaseModel):
 
 
 class Assets(BaseModel):
+    visual_receipt: str | None = None
+    visual_variants: dict[Literal['square', 'print'], str] = Field(default_factory=dict)
     logo: str | None = None
     hero_image: str | None = None
     speaker_photo: str | None = None
@@ -71,6 +73,11 @@ class Event(BaseModel):
     language: Literal["zh", "en", "bilingual"] = "zh"
     style: str | None = None
     style_description: str = ""
+    invitation_format: Literal["auto", "boarding-pass", "ticket-stub", "formal-card", "folded"] = "auto"
+    show_timezone: bool = False
+    timezone_label: str | None = Field(default=None, max_length=50)
+    qr_policy: Literal["auto", "show", "hide"] = "auto"
+    poster_cta: str | None = Field(default=None, max_length=100)
     brand: Brand = Field(default_factory=Brand)
     assets: Assets = Field(default_factory=Assets)
     sources: dict[str, Evidence] = Field(default_factory=dict)
@@ -113,6 +120,8 @@ def issues(event: Event) -> list[str]:
         problems.append("请确认报名方式或无需报名 / Confirm registration or no registration")
     if event.registration_url and not valid_url(event.registration_url):
         problems.append("报名链接无效（仅做语法检查，未联网验证） / Invalid registration URL")
+    if event.qr_policy == 'show' and not (event.registration_url or event.assets.qr_image):
+        problems.append('扫码要求缺少报名链接或二维码 / QR requested without a registration URL or QR image')
     if event.venue_mode == "online" and event.venue and not event.online_platform:
         problems.append("线上模式与实体地点冲突 / Online mode conflicts with physical venue")
     if event.start and event.timezone:
@@ -138,6 +147,16 @@ def issues(event: Event) -> list[str]:
     return list(dict.fromkeys(problems))
 
 
+def display_datetime(value: str, event: Event) -> str:
+    dt = datetime.fromisoformat(value)
+    if dt.tzinfo and event.timezone:
+        dt = dt.astimezone(ZoneInfo(event.timezone))
+    if event.language == 'en':
+        months = 'JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC'.split()
+        return f'{months[dt.month-1]} {dt.day}, {dt.year} · {dt:%H:%M}'
+    return dt.strftime('%Y.%m.%d · %H:%M')
+
+
 def facts(event: Event) -> dict[str, str]:
     english = event.language == "en"
     date = ""
@@ -145,14 +164,15 @@ def facts(event: Event) -> dict[str, str]:
         start = datetime.fromisoformat(event.start)
         if start.tzinfo and event.timezone:
             start = start.astimezone(ZoneInfo(event.timezone))
-        date = start.strftime("%Y.%m.%d  %H:%M")
+        date = display_datetime(event.start, event)
         if event.end:
             end = datetime.fromisoformat(event.end)
             if end.tzinfo and event.timezone:
                 end = end.astimezone(ZoneInfo(event.timezone))
-            date += " – " + end.strftime("%H:%M" if end.date() == start.date() else "%Y.%m.%d %H:%M")
-        if event.timezone:
-            date += f"  ({event.timezone})"
+            date += " – " + (end.strftime('%H:%M') if end.date() == start.date() else display_datetime(event.end, event))
+        if event.show_timezone and event.timezone:
+            label = event.timezone_label or start.replace(tzinfo=ZoneInfo(event.timezone)).tzname()
+            date += f" ({label})"
     return {
         "title": event.title or ("Title pending" if english else "活动名称待确认"),
         "when": date or ("Date pending" if english else "日期时间待确认"),
@@ -160,4 +180,5 @@ def facts(event: Event) -> dict[str, str]:
         "registration": event.registration_url or event.registration or ("Registration pending" if english else "报名方式待确认"),
         "fee": event.fee or "",
         "organizer": event.organizer or "",
+        'deadline': display_datetime(event.deadline,event) if event.deadline else '',
     }

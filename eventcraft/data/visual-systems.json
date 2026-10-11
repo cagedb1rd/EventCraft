@@ -1,0 +1,102 @@
+{
+  "swiss-grid": {
+    "layout": "asymmetric-type-and-print",
+    "palette": [
+      "#e32319",
+      "#ffffff",
+      "#000000"
+    ],
+    "art": "Original Swiss silkscreen abstract forms that symbolize the current event, rational circles, intersecting lines and strong asymmetric vermilion/black/white shapes. No unrelated fixed motifs.",
+    "reading_tone": "saturated vermilion"
+  },
+  "editorial-minimal": {
+    "layout": "photographic-editorial",
+    "palette": [
+      "#20201e",
+      "#f7f3eb",
+      "#c9bda5"
+    ],
+    "art": "Original monochrome fine-art editorial photograph or sculptural still-life that expresses the current event; carefully cropped, oblique soft light, silver gelatin detail. Deep charcoal negative space.",
+    "reading_tone": "dark charcoal"
+  },
+  "tech-gradient": {
+    "layout": "immersive-sculptural",
+    "palette": [
+      "#090b21",
+      "#f5f7ff",
+      "#66e5ff"
+    ],
+    "art": "Original translucent glass sculpture and luminous cyan/cobalt/magenta physical lattice expressing the current event. A conceptually relevant central object, premium futuristic art, deep ink navy space, no dashboard UI.",
+    "reading_tone": "dark navy"
+  },
+  "academic-clean": {
+    "layout": "panorama-research-band",
+    "palette": [
+      "#d5eafb",
+      "#12222d",
+      "#1f68a0"
+    ],
+    "art": "Original archival monochrome photography and subtle blueprint collage expressing the current research subject. Refined scholarly material on pale ice blue paper, rigorous and credible, no invented charts or labels.",
+    "reading_tone": "pale ice blue"
+  },
+  "neo-brutal": {
+    "layout": "acid-cutout-collage",
+    "palette": [
+      "#dfff00",
+      "#121411",
+      "#6640e8"
+    ],
+    "art": "Original punk photocopy cutout collage depicting a subject relevant to this event, acid yellow paper, black ink, violet gesture marks, radical asymmetric edges. Do not default to an unrelated hand.",
+    "reading_tone": "light acid yellow"
+  },
+  "retro-print": {
+    "layout": "letterpress-pictorial",
+    "palette": [
+      "#e9d1a5",
+      "#30231d",
+      "#ac3928"
+    ],
+    "art": "Original vintage letterpress and sepia halftone picture expressing the event subject. Warm ochre uncoated stock, ink misregistration, woodcut shadows; no unrelated fixed musician.",
+    "reading_tone": "light ochre"
+  },
+  "neon-night": {
+    "layout": "radial-night-scene",
+    "palette": [
+      "#060e18",
+      "#e7ffff",
+      "#a5ff4d"
+    ],
+    "art": "Original photoreal CGI stage sculpture expressing this event with elaborate radial lasers, chrome, green/cyan/magenta lighting and physical depth. Keep the outer space dark, no unrelated fixed beetle.",
+    "reading_tone": "dark blue-black"
+  },
+  "warm-playful": {
+    "layout": "illustrated-landscape",
+    "palette": [
+      "#f9eccc",
+      "#29483c",
+      "#bd503b"
+    ],
+    "art": "Original warm gouache and cut-paper scene expressing the current event. Small anonymous people and handmade objects only when relevant, ochre/coral/sage pigments, charming natural detail on cream paper.",
+    "reading_tone": "light cream"
+  },
+  "luxury-elegant": {
+    "layout": "art-deco-ceremony-axis",
+    "palette": [
+      "#101b18",
+      "#f3e4bc",
+      "#c7aa68"
+    ],
+    "art": "Original embossed metallic gold Art Deco perimeter geometry with a restrained motif expressing this event. Emerald cotton paper, straight-on flat artwork, exquisite foil texture, ceremonial negative space.",
+    "reading_tone": "dark emerald"
+  },
+  "sports-dynamic": {
+    "layout": "action-and-diagonal-type",
+    "palette": [
+      "#092c3d",
+      "#fff4ca",
+      "#ffb32c"
+    ],
+    "art": "Original energetic low-angle painted action expressing the current event and subtype, powerful diagonal brush strokes, petrol blue/orange palette, athletic anatomy only when relevant. No fixed runners for unrelated sports.",
+    "reading_tone": "dark petrol blue"
+  }
+}

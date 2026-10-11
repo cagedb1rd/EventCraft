@@ -9,5 +9,5 @@ DEMO · 虚构活动示例
 
 时间：2026.11.14  14:00 – 17:00  (Asia/Shanghai)
 地点：示例艺术空间 · 一层展厅
-报名：无需报名 · 示例活动
+报名：https://example.org/events/inspiration-demo
 主办方：EventCraft Demo

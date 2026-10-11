@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "title": "未来花园",
+  "subtitle": "艺术与科技，共创绿色未来",
+  "category": "exhibition",
+  "subtype": "",
+  "start": "2026-11-14T14:00",
+  "end": "2026-11-14T17:00",
+  "timezone": "Asia/Shanghai",
+  "venue": "虚构花园美术馆 · 主展厅",
+  "online_platform": null,
+  "venue_mode": "unknown",
+  "organizer": null,
+  "audience": [
+    "designers",
+    "students"
+  ],
+  "formality": "casual",
+  "atmosphere": [],
+  "keywords": [
+    "植物",
+    "生态艺术",
+    "未来花园",
+    "科技"
+  ],
+  "channels": [],
+  "highlights": [],
+  "speakers": [],
+  "teams": [],
+  "fee": null,
+  "registration": "无需报名",
+  "registration_url": null,
+  "deadline": null,
+  "contact": null,
+  "recipient": null,
+  "language": "zh",
+  "style": null,
+  "style_description": "以植物形态和未来生态花园为主题，不使用与主题无关的人脸、跑者或音乐人",
+  "invitation_format": "auto",
+  "show_timezone": false,
+  "timezone_label": null,
+  "qr_policy": "auto",
+  "poster_cta": null,
+  "brand": {
+    "colors": [],
+    "forbidden_colors": [],
+    "forbidden_styles": [],
+    "high_contrast": false,
+    "preserve_logo": true
+  },
+  "assets": {
+    "visual_receipt": "campaign_art_receipt.json",
+    "visual_variants": {},
+    "logo": null,
+    "hero_image": null,
+    "speaker_photo": null,
+    "qr_image": null,
+    "style_reference": []
+  },
+  "sources": {
+    "title": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "subtitle": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "category": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "start": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "end": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "timezone": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue_mode": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "audience": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "formality": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "keywords": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "registration": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "language": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "style_description": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "invitation_format": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "qr_policy": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "brand": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "assets": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "demo": {
+      "source": "garden.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    }
+  },
+  "confirmed_fields": [],
+  "uncertainties": [],
+  "demo": true
+}

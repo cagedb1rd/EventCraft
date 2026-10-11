@@ -3,9 +3,9 @@
   "name": "奢华典雅风",
   "name_en": "Luxury elegant",
   "palette": [
-    "#f5f0e5",
-    "#18392d",
-    "#876d3c"
+    "#101b18",
+    "#f3e4bc",
+    "#c7aa68"
   ],
   "types": [
     "wedding",
@@ -34,7 +34,7 @@
   "time": "night",
   "density": "low",
   "family": "ceremony",
-  "hero": "optional",
+  "hero": "event-specific-host-art; explicitly identified reusable preview fallback",
   "language": [
     "zh",
     "en",
@@ -48,13 +48,13 @@
   },
   "tokens": {
     "grid_columns": 6,
-    "margin": 72,
-    "title_px": 140,
-    "body_px": 35,
-    "small_px": 24,
-    "invitation_title_px": 112,
-    "square_title_px": 96,
-    "heading_fonts": "Times New Roman, SimSun, Noto Serif CJK SC, Songti SC",
+    "margin": 64,
+    "title_px": 124,
+    "body_px": 34,
+    "small_px": 19,
+    "invitation_title_px": 86,
+    "square_title_px": 92,
+    "heading_fonts": "Bodoni MT, Times New Roman, Noto Serif SC, SimSun, Songti SC, Noto Serif CJK SC",
     "heading_weight": 400,
     "font": "serif",
     "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
@@ -63,9 +63,54 @@
     "alignment": "center"
   },
   "layout": {
-    "poster": "双层细线框 / 精致几何花结 / 衬线主标题 / 中轴留白 / 礼仪信息组",
-    "invitation": "把礼仪称谓置于主标题上，细信息与报名做信笺底栏"
+    "poster": "art-deco-ceremony-axis / 自然留白与低纹理文字区 / 按主题与标题长度动态构图",
+    "invitation": "按活动自动选择登机牌、票券、正式卡或折页；共享原创主视觉与配色，独立构图"
   },
   "negative": "避免金色渐变堆砌、虚假家徽和假主办方 Logo",
-  "tradeoff": "礼仪感突出，长文本会降低高级留白感"
+  "tradeoff": "礼仪感突出，长文本会降低高级留白感",
+  "composition": "art-deco-ceremony-axis",
+  "typography": {
+    "zh_title": [
+      "Noto Serif SC",
+      "SimSun",
+      "Songti SC",
+      "Noto Serif CJK SC"
+    ],
+    "en_title": [
+      "Bodoni MT",
+      "Times New Roman"
+    ],
+    "subtitle": [
+      "Noto Serif SC",
+      "SimSun",
+      "Songti SC",
+      "Noto Serif CJK SC"
+    ],
+    "information": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "numbers": [
+      "Georgia",
+      "Arial"
+    ],
+    "weight": 400,
+    "shape": "normal",
+    "tracking": 0.065,
+    "leading": 1.32,
+    "alignment": "center",
+    "generic": "serif",
+    "scale": {
+      "title": 1,
+      "subtitle": 0.23,
+      "information": 0.25,
+      "labels": 0.13
+    },
+    "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+    "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+    "title_image_relation": "art-deco-ceremony-axis",
+    "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+  }
 }

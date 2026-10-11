@@ -3,16 +3,17 @@
   "name": "瑞士网格设计",
   "name_en": "Swiss grid",
   "palette": [
-    "#f4f2ec",
-    "#151515",
-    "#db2b21"
+    "#e32319",
+    "#ffffff",
+    "#000000"
   ],
   "types": [
     "lecture",
     "exhibition",
     "forum",
     "recruitment",
-    "academic"
+    "academic",
+    "conference"
   ],
   "audience": [
     "students",
@@ -31,7 +32,7 @@
   "time": "day",
   "density": "medium",
   "family": "grid",
-  "hero": "optional",
+  "hero": "event-specific-host-art; explicitly identified reusable preview fallback",
   "language": [
     "zh",
     "en",
@@ -45,13 +46,13 @@
   },
   "tokens": {
     "grid_columns": 12,
-    "margin": 72,
-    "title_px": 148,
-    "body_px": 35,
-    "small_px": 24,
-    "invitation_title_px": 112,
-    "square_title_px": 96,
-    "heading_fonts": "Arial, DengXian, Noto Sans CJK SC, PingFang SC",
+    "margin": 64,
+    "title_px": 156,
+    "body_px": 34,
+    "small_px": 19,
+    "invitation_title_px": 86,
+    "square_title_px": 92,
+    "heading_fonts": "Arial, Helvetica Neue, DengXian, Noto Sans SC, Microsoft YaHei, PingFang SC, Noto Sans CJK SC",
     "heading_weight": 700,
     "font": "sans",
     "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
@@ -60,9 +61,55 @@
     "alignment": "left"
   },
   "layout": {
-    "poster": "左侧窄索引栏 / 大字号标题 / 右侧几何圆 / 底部横向信息表",
-    "invitation": "红色矩形邀请标记，标题与信息左右分栏"
+    "poster": "asymmetric-type-and-print / 自然留白与低纹理文字区 / 按主题与标题长度动态构图",
+    "invitation": "按活动自动选择登机牌、票券、正式卡或折页；共享原创主视觉与配色，独立构图"
   },
   "negative": "避免装饰性渐变与居中堆叠",
-  "tradeoff": "构图鲜明，超长标题需要压缩字号"
+  "tradeoff": "构图鲜明，超长标题需要压缩字号",
+  "composition": "asymmetric-type-and-print",
+  "typography": {
+    "zh_title": [
+      "DengXian",
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "en_title": [
+      "Arial",
+      "Helvetica Neue"
+    ],
+    "subtitle": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "information": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "numbers": [
+      "Arial",
+      "Noto Sans SC"
+    ],
+    "weight": 700,
+    "shape": "normal",
+    "tracking": -0.035,
+    "leading": 1.16,
+    "alignment": "left",
+    "generic": "sans-serif",
+    "scale": {
+      "title": 1,
+      "subtitle": 0.23,
+      "information": 0.25,
+      "labels": 0.13
+    },
+    "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+    "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+    "title_image_relation": "asymmetric-type-and-print",
+    "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+  }
 }

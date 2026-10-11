@@ -5,6 +5,8 @@ __pycache__/
 .ruff_cache/
 *.egg-info/
 build/
+# Temporary source-distribution staging created by setuptools.
+/eventcraft-[0-9]*/
 dist/
 output/
 tmp/
@@ -12,7 +14,10 @@ tmp/
 .env.*
 !.env.example
 private/
+/image/
 *.log
 .coverage
 # The user's original task brief is local planning material, not a release asset.
 EventCraft_Codex_OneShot_Brief_v3.md
+# Local agent state, not public product documentation.
+/HANDOFF.md

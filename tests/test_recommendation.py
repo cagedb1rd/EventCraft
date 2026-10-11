@@ -46,7 +46,8 @@ def test_determinism_and_no_missing_facts(event):
 
 def test_brand_density_bilingual_constraints(event):
     event.brand.forbidden_styles = ["tech-gradient"]
-    event.brand.forbidden_colors = ["#db2b21"]
+    forbidden = profiles()["swiss-grid"]["palette"][0]
+    event.brand.forbidden_colors = [forbidden]
     event.brand.high_contrast = True
     event.title *= 10
     event.language = "bilingual"
@@ -54,7 +55,7 @@ def test_brand_density_bilingual_constraints(event):
     choices = shortlist(ranking)
     assert not {"tech-gradient", "swiss-grid"} & {s["style_id"] for s in choices}
     assert any(s["components"]["density"] < 10 for s in ranking["style_scores"])
-    event.brand.colors = ["#db2b21"]
+    event.brand.colors = [forbidden]
     assert shortlist(rank(event)) == []
     with pytest.raises(ValueError):
         rank(event, {"type": 100})

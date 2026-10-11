@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "style": "tech-gradient",
+  "event_digest": "1a6842749edacafab96525b3c7249e0d681a7c10adf1322e7901047c1a299bd6",
+  "layout": "immersive-sculptural",
+  "tool": "image_gen",
+  "prompt": "Use case: ads-marketing. Asset type: original text-free campaign key visual. Premium 3D translucent cobalt glass human profile interwoven with magenta polygonal neural lattice, cyan rim lighting, sculptural floating ribbons, deep ink navy space. Monumental physical sculpture in middle right, portrait 2:3, calm top quarter and bottom fifth for typography. No words, numbers or UI. Event subject/context: conference; Connect ideas. Shape tomorrow. / 汇聚创意，共创未来. Adapt the subject to this event; do not depict invented speakers, celebrities or a real venue. All factual text and QR are added by deterministic rendering. Avoid text, letters, numbers, logos, QR, watermark, UI cards. Do not reproduce any reference.",
+  "transparent_background": false,
+  "asset_role": "original-key-visual",
+  "instructions": "Agent must actually call its built-in image_gen, inspect the result, then art-import. A plan is not a generated asset. Never use a paid API without explicit authorization.",
+  "generator": "codex-imagegen",
+  "provenance": "host-agent-attested",
+  "image": "tech-gradient.png",
+  "sha256": "e5a6e27e7792d03bbef964e5db53928e4dfb11fd0614dac0fdefb6c217c03aff",
+  "dimensions": [
+    1024,
+    1536
+  ]
+}

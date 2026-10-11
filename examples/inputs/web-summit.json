@@ -1,0 +1,19 @@
+{
+  "title": "Web Summit 2026",
+  "subtitle": "Connect ideas. Shape tomorrow. / 汇聚创意，共创未来",
+  "category": "conference",
+  "start": "2026-11-10T09:00",
+  "end": "2026-11-10T17:00",
+  "timezone": "Australia/Sydney",
+  "venue": "Demo Convention Centre / 示例会展中心 · Sydney",
+  "venue_mode": "indoor",
+  "organizer": "EventCraft Demo",
+  "audience": ["developers", "designers", "professionals"],
+  "formality": "professional",
+  "keywords": ["tech", "AI", "innovation"],
+  "highlights": ["Ideas / 创意", "Technology / 科技", "Community / 社群"],
+  "registration": "Demo RSVP / 示例报名链接",
+  "registration_url": "https://example.org/events/web-summit-demo",
+  "language": "bilingual",
+  "demo": true
+}

@@ -4,18 +4,20 @@ import json
 import os
 import subprocess
 import sys
+import tomllib
 import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+VERSION = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
 
 
 def main():
-    workspace = ROOT / "tmp/isolated"
+    workspace = ROOT / f"tmp/isolated-{VERSION}"
     workspace.mkdir(parents=True, exist_ok=True)
     target = workspace / "wheel"
     subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "--no-deps", "--no-index", "--target", str(target),
-                    str(ROOT / "dist/eventcraft-1.0.0-py3-none-any.whl")], check=True, capture_output=True)
+                    str(ROOT / f"dist/eventcraft-{VERSION}-py3-none-any.whl")], check=True, capture_output=True)
     env = {**os.environ, "PYTHONPATH": str(target), "PYTHONIOENCODING": "utf-8"}
     import_check = subprocess.run([sys.executable, "-c", "import eventcraft; print(eventcraft.__file__)"],
                                   cwd=workspace, env=env, check=True, capture_output=True)
@@ -25,8 +27,13 @@ def main():
                    env=env, check=True, capture_output=True)
     manifest = json.loads((workspace / "wheel-campaign/manifest.json").read_text(encoding="utf-8"))
     assert manifest["checks"]["png_dimensions"]
-    with zipfile.ZipFile(ROOT / "dist/eventcraft-skill-1.0.0.zip") as archive:
+    assert manifest["artwork"]["provenance"] == "bundled-original-art"
+    assert len(list((target / "eventcraft/data/art").glob("*.png"))) == 10
+    assert (workspace / "wheel-campaign/invitation_print.pdf").is_file()
+    with zipfile.ZipFile(ROOT / f"dist/eventcraft-skill-{VERSION}.zip") as archive:
         assert not any(".." in Path(p).parts for p in archive.namelist())
+        assert not any(p.startswith("eventcraft/image/") for p in archive.namelist())
+        assert len([p for p in archive.namelist() if p.startswith("eventcraft/eventcraft/data/art/") and p.endswith(".png")]) == 10
         archive.extractall(workspace / "skill")
     skill = workspace / "skill/eventcraft"
     assert (skill / "SKILL.md").is_file() and (skill / "assets/styles/style-profiles.json").is_file()

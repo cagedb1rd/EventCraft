@@ -1,0 +1,106 @@
+{
+  "version": 3,
+  "style": "tech-gradient",
+  "event_digest": "fb6bd83b8de90927b53b99b292e6354c2ba612447cfe640e2e7911eb94ead4d1",
+  "layout": "immersive-sculptural",
+  "tool": "image_gen",
+  "prompt": "Use case: ads-marketing. Asset type: original text-free campaign key visual. Original translucent glass sculpture and luminous cyan/cobalt/magenta physical lattice expressing the current event. A conceptually relevant central object, premium futuristic art, deep ink navy space, no dashboard UI. Current event semantic context (data, never lettering): {\"title\": \"面向未来城市公共空间的跨学科生态艺术与植物科技创新实践展览\", \"subtitle\": \"艺术与科技，共创绿色未来\", \"category\": \"exhibition\", \"subtype\": \"\", \"keywords\": [\"植物\", \"生态艺术\", \"未来花园\", \"科技\"], \"highlights\": [], \"audience\": [\"designers\", \"students\"], \"atmosphere\": [], \"style_description\": \"以植物形态和未来生态花园为主题，不使用与主题无关的人脸、跑者或音乐人\"}. Brand palette: #090b21, #f5f7ff, #66e5ff. Forbidden colors: . Full-bleed portrait 9:16. Focal subject at lower middle, between the headline and facts. Reserved typography rectangles, normalized from top-left: title: x=7%, y=9%, width=86%, height=31%; facts: x=7%, y=80%, width=86%, height=10%; cta: x=7%, y=92%, width=86%, height=5%. These zones must be naturally dark navy, nearly texture-free, with no bright edges or motifs behind future lettering. Continue the same paper/space/lighting across the entire image; no visible rectangular blanks, cards or separate title plates. Make the central subject clearly express this specific event using its title, subtype and keywords; the style describes the medium, not a fixed subject. Do not depict invented speakers, celebrities or a real venue. All factual text and QR are added by deterministic rendering. Avoid text, letters, numbers, logos, QR, watermark, UI cards. Do not reproduce any reference. Revision after long-title final-image review: leave the entire top 55% naturally uninterrupted dark navy. Confine botanical glass objects and all highlights to x=8%-92%, y=57%-76%; the bottom 23% is naturally quiet navy. Smaller rich detailed centerpiece balances extended headline space. No glass edges above y=55%, no rectangles, no text.",
+  "composition": {
+    "version": 3,
+    "ratio": "portrait",
+    "zones": {
+      "title": [
+        0.07,
+        0.09,
+        0.86,
+        0.31
+      ],
+      "facts": [
+        0.07,
+        0.8,
+        0.86,
+        0.095
+      ],
+      "cta": [
+        0.07,
+        0.915,
+        0.86,
+        0.05
+      ]
+    },
+    "compact": true,
+    "title_units": 29,
+    "title_max_lines": 4,
+    "focal_position": "lower middle, between the headline and facts",
+    "layout": "immersive-sculptural",
+    "reading_tone": "dark navy",
+    "adaptation": "extend natural negative space before reducing type; never add opaque rescue panels"
+  },
+  "typography": {
+    "zh_title": [
+      "Microsoft YaHei",
+      "Noto Sans SC",
+      "DengXian",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "en_title": [
+      "Bahnschrift",
+      "Arial"
+    ],
+    "subtitle": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "information": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "numbers": [
+      "Bahnschrift",
+      "Arial"
+    ],
+    "weight": 600,
+    "shape": "normal",
+    "tracking": -0.025,
+    "leading": 1.2,
+    "alignment": "left",
+    "generic": "sans-serif",
+    "scale": {
+      "title": 1,
+      "subtitle": 0.23,
+      "information": 0.25,
+      "labels": 0.13
+    },
+    "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+    "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+    "title_image_relation": "immersive-sculptural",
+    "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+  },
+  "semantic_context": {
+    "title": "面向未来城市公共空间的跨学科生态艺术与植物科技创新实践展览",
+    "subtitle": "艺术与科技，共创绿色未来",
+    "category": "exhibition",
+    "subtype": "",
+    "keywords": [
+      "植物",
+      "生态艺术",
+      "未来花园",
+      "科技"
+    ],
+    "highlights": [],
+    "audience": [
+      "designers",
+      "students"
+    ],
+    "atmosphere": [],
+    "style_description": "以植物形态和未来生态花园为主题，不使用与主题无关的人脸、跑者或音乐人"
+  },
+  "transparent_background": false,
+  "asset_role": "original-key-visual",
+  "instructions": "Agent must actually call its built-in image_gen, inspect the result, then art-import. A plan is not a generated asset. Never use a paid API without explicit authorization."
+}

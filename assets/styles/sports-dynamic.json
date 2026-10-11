@@ -3,9 +3,9 @@
   "name": "运动竞技风",
   "name_en": "Sports dynamic",
   "palette": [
-    "#0e2331",
-    "#f8faf7",
-    "#d6f349"
+    "#092c3d",
+    "#fff4ca",
+    "#ffb32c"
   ],
   "types": [
     "sports",
@@ -34,7 +34,7 @@
   "time": "day",
   "density": "medium",
   "family": "diagonal",
-  "hero": "optional",
+  "hero": "event-specific-host-art; explicitly identified reusable preview fallback",
   "language": [
     "zh",
     "en",
@@ -50,13 +50,13 @@
   },
   "tokens": {
     "grid_columns": 6,
-    "margin": 72,
-    "title_px": 162,
-    "body_px": 35,
-    "small_px": 24,
-    "invitation_title_px": 112,
-    "square_title_px": 96,
-    "heading_fonts": "Arial Narrow, Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
+    "margin": 64,
+    "title_px": 160,
+    "body_px": 34,
+    "small_px": 19,
+    "invitation_title_px": 86,
+    "square_title_px": 92,
+    "heading_fonts": "Impact, Arial Narrow, SimHei, Noto Sans SC, Microsoft YaHei, PingFang SC, Noto Sans CJK SC",
     "heading_weight": 900,
     "font": "sans",
     "cjk_sans": "Microsoft YaHei, Noto Sans CJK SC, PingFang SC",
@@ -65,9 +65,55 @@
     "alignment": "left"
   },
   "layout": {
-    "poster": "右侧巨大日期数字 / 斜切速度带 / 左侧竞技标题 / 对抗队伍栏 / 硬信息底块",
-    "invitation": "队伍和时间靠前，速度图形移到侧边，正文不倾斜"
+    "poster": "action-and-diagonal-type / 自然留白与低纹理文字区 / 按主题与标题长度动态构图",
+    "invitation": "按活动自动选择登机牌、票券、正式卡或折页；共享原创主视觉与配色，独立构图"
   },
   "negative": "竞技与夜生活分开；不虚构队伍、赛程或编号",
-  "tradeoff": "速度感强，仪式性活动适配较弱"
+  "tradeoff": "速度感强，仪式性活动适配较弱",
+  "composition": "action-and-diagonal-type",
+  "typography": {
+    "zh_title": [
+      "SimHei",
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "en_title": [
+      "Impact",
+      "Arial Narrow"
+    ],
+    "subtitle": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "information": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC",
+      "Noto Sans CJK SC"
+    ],
+    "numbers": [
+      "Bahnschrift",
+      "Arial"
+    ],
+    "weight": 900,
+    "shape": "italic",
+    "tracking": -0.03,
+    "leading": 1.4,
+    "alignment": "left",
+    "generic": "sans-serif",
+    "scale": {
+      "title": 1,
+      "subtitle": 0.23,
+      "information": 0.25,
+      "labels": 0.13
+    },
+    "line_break": "balance measured glyph widths; keep short CJK phrases and Latin words; strict Chinese punctuation",
+    "bilingual": "Latin display family followed by native CJK family; no forced uppercasing of Chinese",
+    "title_image_relation": "action-and-diagonal-type",
+    "long_title": "reserve more natural negative space before generation; expand the title region and measure real fonts before export"
+  }
 }

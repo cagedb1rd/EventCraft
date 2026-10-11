@@ -1,35 +1,46 @@
-# Maintainer release checklist
+# Preparing a GitHub update
 
-Use this checklist when preparing a release. Review fictional examples, notices and checks before publishing; maintainers choose the repository owner and visibility.
+The existing remote is [cagedb1rd/EventCraft](https://github.com/cagedb1rd/EventCraft). This guide prepares version **1.1.0**; it does not create a repository, push a branch or publish a release automatically.
 
-The public repository is [cagedb1rd/EventCraft](https://github.com/cagedb1rd/EventCraft). Its remote is already configured: use `git push origin main` for updates, rather than creating a second repository. Check [Actions](https://github.com/cagedb1rd/EventCraft/actions) before a stable release. The first Ubuntu run failed during tests; investigate the authenticated logs and fix it before claiming Linux acceptance.
-
-1. Install and run `ruff check eventcraft scripts tests`, `python scripts/validate_skill.py`, `pytest -q`, `python -m build`.
-2. Regenerate examples/Gallery when templates change; visually inspect the pairs and print PDFs.
-3. `git status --short`; inspect `git diff --cached`; verify no `.env`, private input, credential, user reference or `output/` file is tracked. `python scripts/release_check.py` performs scope, link and obvious-secret checks.
-4. Confirm the intended account/owner, repository visibility and remote URL with `git remote -v`. The suggested repository name is `eventcraft`.
-
-Only when you are ready, with GitHub CLI installed/authenticated:
+## Validate the exact source
 
 ```sh
-gh auth login
-# Choose --private instead if that is your intention; this command publishes files.
-gh repo create eventcraft --public --source . --remote origin --push
+python -m pip install -e '.[dev]'
+python -m playwright install chromium
+python -m ruff check eventcraft scripts tests
+python scripts/validate_skill.py
+python scripts/release_check.py
+python -m pytest -q
 ```
 
-Or create the repository in GitHub's UI and use the exact URL GitHub gives you:
+Use the project virtual environment. CJK fonts must be installed on the test host. `release_check.py` inspects tracked and pending unignored files, obvious credential patterns, local Markdown links and the project's per-file size threshold. It cannot certify rights or detect every secret. Review `git diff`, `git status --short` and the eventual staged diff; do not stage unknown private files.
+
+`/image/` is ignored and must remain untracked. Keep all 14 research files locally unchanged. Generated original art is stored separately. `.env`, `private/`, `output/`, `tmp/`, dependencies and `dist/` remain ignored. Inspect any other user data before adding it.
+
+The source contains large fictional development galleries and inline-image HTML. The runtime archive below is intentionally smaller; a source push may still be large. Use the PNG/PDF Gallery index for GitHub viewing: GitHub does not execute the offline HTML previews.
+
+## Build versioned assets
 
 ```sh
-git remote add origin <YOUR_REPOSITORY_URL>
-git push -u origin main
+python -m build
+python scripts/package_skill.py
+# Optional complete development archive, not required for installation:
+python scripts/package_skill.py --with-examples
+python scripts/isolated_smoke.py
 ```
 
-Inspect CI results after each push/PR. The committed verification report describes the environment actually tested; do not infer Linux/macOS, OCR or paid-API support from the Windows run alone. PyPI publication is a separate maintainer decision; build outputs are local under `dist/`. Generate the complete Skill archive with `python scripts/package_skill.py`, then attach it to a GitHub Release if desired. The archive includes runtime code/config and required references, excluding private outputs and dependencies. Because `dist/` is Git-ignored, these release artifacts are not included in a normal push.
+Expected default files:
 
-## Upload release assets in the browser
+- `dist/eventcraft-skill-1.1.0.zip`: complete runtime Agent Skill, guides, original preview art and input samples.
+- `dist/eventcraft-1.1.0-py3-none-any.whl`: Python CLI.
+- `dist/eventcraft-1.1.0.tar.gz`: source distribution with development materials; larger than the runtime archive.
 
-1. Run `python scripts/package_skill.py` and `python -m build`. Rebuild after documentation/code changes so the attachments match the release commit.
-2. Open [New release](https://github.com/cagedb1rd/EventCraft/releases/new), signed into the intended maintainer account. Create tag `v1.0.0` from the verified `main` commit and title it `EventCraft v1.0.0`.
-3. Attach `dist/eventcraft-skill-1.0.0.zip`. This is the complete Agent Skill. Optionally attach `dist/eventcraft-1.0.0-py3-none-any.whl` and `dist/eventcraft-1.0.0.tar.gz` for Python users, plus `dist/SHA256SUMS.txt` for integrity checks. Do not attach private input or virtual environments.
-4. Describe the ten styles, explainable three-way recommendations, generated deliverables, installation requirements and verified/unverified environments. The automatic **Source code** downloads do not replace the complete Skill ZIP.
-5. While required CI checks remain unresolved, save a draft rather than publishing a stable release. Once checks pass and the notes accurately describe remaining limitations, publish the release. Confirm each attachment downloads and its SHA-256 matches the checksum file.
+The optional `eventcraft-skill-1.1.0-with-examples.zip` contains all development outputs. Do not accidentally attach an old 1.0.0 build. Rebuild after the final source/documentation edit. Archive links to omitted examples/evidence point to the repository; runtime guide links stay local. Generate SHA-256 checksums for the exact attachments being released. `dist/` is not part of a normal source commit.
+
+## Update the existing repository
+
+Inspect `git remote -v` and the current branch. Commit only reviewed changes, then push that branch to the existing `origin` when the maintainer is ready. Do not create a duplicate repository or change visibility as part of this update.
+
+Check [GitHub Actions](https://github.com/cagedb1rd/EventCraft/actions) for the exact new commit. Local Windows acceptance does not prove Ubuntu CI passed. The historical report includes an earlier failing run; it is not the current CI status.
+
+For a release, create tag `v1.1.0` from the intended verified commit and use [prepared release notes](release-notes-1.1.0.md). Attach the compact Skill ZIP and optionally the wheel/source distribution with checksums. Keep the release as a draft while required checks are unresolved. Verify downloaded attachments and hashes before publishing. A source-only GitHub update does not require a new Release.

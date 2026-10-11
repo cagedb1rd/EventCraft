@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "title": "城市篮球夜赛",
+  "subtitle": "球场相遇，一起突破",
+  "category": "sports",
+  "subtype": "basketball",
+  "start": "2026-11-21T19:00",
+  "end": "2026-11-21T21:00",
+  "timezone": "Asia/Shanghai",
+  "venue": "虚构城市运动中心 · 篮球馆",
+  "online_platform": null,
+  "venue_mode": "unknown",
+  "organizer": null,
+  "audience": [],
+  "formality": "casual",
+  "atmosphere": [],
+  "keywords": [
+    "篮球",
+    "夜赛",
+    "竞技"
+  ],
+  "channels": [],
+  "highlights": [],
+  "speakers": [],
+  "teams": [],
+  "fee": null,
+  "registration": "扫码报名",
+  "registration_url": "https://example.org/fictional/basketball",
+  "deadline": null,
+  "contact": null,
+  "recipient": null,
+  "language": "zh",
+  "style": null,
+  "style_description": "",
+  "invitation_format": "auto",
+  "show_timezone": false,
+  "timezone_label": null,
+  "qr_policy": "show",
+  "poster_cta": null,
+  "brand": {
+    "colors": [],
+    "forbidden_colors": [],
+    "forbidden_styles": [],
+    "high_contrast": false,
+    "preserve_logo": true
+  },
+  "assets": {
+    "visual_receipt": "campaign_art_receipt.json",
+    "visual_variants": {},
+    "logo": null,
+    "hero_image": null,
+    "speaker_photo": null,
+    "qr_image": null,
+    "style_reference": []
+  },
+  "sources": {
+    "title": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "subtitle": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "category": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "subtype": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "start": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "end": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "timezone": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "venue_mode": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "formality": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "keywords": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "registration": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "registration_url": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "language": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "invitation_format": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "qr_policy": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "brand": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "assets": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    },
+    "demo": {
+      "source": "basketball.json",
+      "excerpt": "",
+      "confidence": 1.0,
+      "status": "provided"
+    }
+  },
+  "confirmed_fields": [],
+  "uncertainties": [],
+  "demo": true
+}
