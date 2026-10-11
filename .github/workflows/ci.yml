@@ -19,7 +19,7 @@ jobs:
       - run: ruff check eventcraft scripts tests
       - run: python scripts/validate_skill.py
       - run: python scripts/release_check.py
-      - run: pytest -q --junitxml=test-results.xml
+      - run: python -m pytest -q --junitxml=test-results.xml
       - name: Offline campaign smoke
         run: eventcraft all examples/inputs/lecture.json --auto-style --output output/ci-smoke
       - name: Build distributable
