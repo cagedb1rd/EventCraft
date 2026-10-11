@@ -4,6 +4,8 @@ The repository root is the skill folder: `SKILL.md`, `agents/openai.yaml`, scrip
 
 For Codex, put the complete skill folder at `~/.agents/skills/eventcraft` (Windows: `%USERPROFILE%\.agents\skills\eventcraft`). Codex also discovers repository skills under `.agents/skills`, and supports symlinked skill folders. A root-level `SKILL.md` alone does not register the project as an installed skill. See [official skill discovery documentation](https://learn.chatgpt.com/docs/build-skills). Codex detects changes automatically; restart Codex if the skill does not appear.
 
+Download the maintainer-uploaded complete Skill ZIP from [Releases](https://github.com/cagedb1rd/EventCraft/releases), or build it from source. GitHub's automatically generated source archives are separate from the packaged Skill asset. Place a downloaded Skill ZIP in `dist/` and skip the packaging command below.
+
 A complete skill archive is built by `python scripts/package_skill.py`; it includes public fictional examples and excludes `.venv`, Git metadata and user output. From the repository root on Windows, install dependencies as described in the README, then run:
 
 ```powershell

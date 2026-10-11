@@ -41,8 +41,8 @@ Windows 环境命令通过 `.venv\Scripts\python.exe` 运行。测试原始报�
 
 - 官方 OpenAI 理解、视觉与图像生成适配器已做离线请求/错误契约测试，**未使用真实凭据执行付费 API**；账户模型权限、实时服务响应和生成质量未验证。
 - 本机没有 Tesseract 和相应 OCR 语言包，截图 OCR 没有真实执行。扫描 PDF 需要 Agent 视觉理解或外部转录；纯文本抽取不宣称语义理解。
-- 实际端到端运行仅覆盖 Windows/Python 3.12/Chrome。Linux/macOS、其他 Python 版本、各 Agent 客户端安装与远端 GitHub Actions 仍需对应环境验证。CI 已配置 CJK 字体与完整测试，尚未远程触发。
+- 实际端到端运行仅覆盖 Windows/Python 3.12/Chrome。Linux/macOS、其他 Python 版本、各 Agent 客户端安装与远端 GitHub Actions 仍需对应环境验证。CI 已在公开 GitHub 仓库触发；[首次 Ubuntu 运行](https://github.com/cagedb1rd/EventCraft/actions/runs/38149871328) 的依赖安装、lint 和 Skill 校验通过，测试步骤失败，生成烟测和构建被跳过。公开注释没有具体失败断言，需登录查看测试日志后修复，不能宣称 Linux 验收通过。
 - 无视觉模型的参考分析只提取颜色，不理解字体、网格或构图。文字风格偏好映射到已实现的原创设计系统；不会复制参考图。跨平台字体回退会改变具体字形。
 - 多语输出保留用户提供的活动名称/地址，不自动翻译事实。URL 只做语法验证，未联网检查可用性。原始二维码保留内容，未声称验证其业务有效性。
 - A4 PDF 为 RGB、有矢量文字的浏览器打印文件，未提供 CMYK、出血与印刷厂色彩校准。极端密集内容若达到最小字号仍放不下，会明确失败。
-- 已准备 MIT、双语 README、贡献指南、CI、依赖锁定、迁移包和本地 Git 提交；**没有创建 GitHub 仓库、配置远程或上传文件**。公开发布由维护者执行。
+- 已准备 MIT、双语 README、贡献指南、CI、依赖锁定和迁移包，源码已上传至 [cagedb1rd/EventCraft](https://github.com/cagedb1rd/EventCraft)。`dist/` 不随 Git 推送；完整 Skill ZIP 需作为 Release 附件单独上传。

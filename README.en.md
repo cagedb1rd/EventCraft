@@ -2,7 +2,7 @@
 
 **Turn event information into a complete campaign: ten design systems, three recommendations, one batch of deliverables.**
 
-[中文](README.md) · [Style Gallery](docs/style-gallery.md) · [Codex Skill guide](docs/skill-usage.md) · [MIT License](LICENSE)
+[中文](README.md) · [Releases](https://github.com/cagedb1rd/EventCraft/releases) · [Style Gallery](docs/style-gallery.md) · [Codex Skill guide](docs/skill-usage.md) · [MIT License](LICENSE)
 
 ![Real style recommendations and generated campaign](docs/images/selection-workflow.png)
 
@@ -24,6 +24,14 @@ EventCraft is an installable Agent Skill and a standalone Python CLI. Its base m
 - A single event record supplies facts to every deliverable; essential missing facts require confirmation.
 - Logos, hero images, speaker photos, QR assets and visual references; headings adapt to measured title width.
 
+## Downloads and releases
+
+- **Source and full examples**: clone this repository or use **Code → Download ZIP**.
+- **Installable Skill ZIP**: check [Releases](https://github.com/cagedb1rd/EventCraft/releases) for the maintainer-uploaded `eventcraft-skill-1.0.0.zip` asset. It includes instructions, runtime code, assets and examples. GitHub's automatic **Source code (zip)** is a source snapshot. If no release asset is available, build the skill archive using the instructions below.
+- **Python CLI**: `.whl` / `.tar.gz` release assets install the Python package; installing a wheel alone does not register a Codex skill.
+
+The Skill ZIP excludes Python environments, Chromium, system fonts and API credentials. Runtime dependencies must still be installed.
+
 ## Install and generate your first campaign
 
 Requirements: **Python 3.11+, Chromium and a CJK font**. Windows usually provides Microsoft YaHei/SimSun; macOS provides system CJK fonts; Linux should install Noto CJK. Fonts are not distributed with the project.
@@ -31,11 +39,11 @@ Requirements: **Python 3.11+, Chromium and a CJK font**. Windows usually provide
 Download and extract the source using **Code → Download ZIP**, or copy this repository's Git URL:
 
 ```sh
-git clone <YOUR_REPOSITORY_URL> eventcraft
+git clone https://github.com/cagedb1rd/EventCraft.git eventcraft
 cd eventcraft
 ```
 
-Replace `<YOUR_REPOSITORY_URL>` with the actual repository address. Run all following commands from the directory containing `pyproject.toml` and `SKILL.md`.
+The public repository is `cagedb1rd/EventCraft`. Run all following commands from the directory containing `pyproject.toml` and `SKILL.md`.
 
 ### Windows PowerShell
 
@@ -67,9 +75,12 @@ Open `output/lecture/preview.html` in a browser. Installing dependencies and Chr
 
 Install Python dependencies first, then register the complete skill, including runtime code, configuration, guides and assets. Copying only `SKILL.md` is insufficient.
 
+Place the downloaded complete Skill ZIP under the project's `dist/` directory. If you already have the ZIP, skip the packaging command below; the extraction steps are identical. Otherwise, build it from source.
+
 Windows PowerShell:
 
 ```powershell
+# Skip the next line if you downloaded the complete Skill ZIP
 .\.venv\Scripts\python.exe scripts/package_skill.py
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills" | Out-Null
 Expand-Archive -LiteralPath ".\dist\eventcraft-skill-1.0.0.zip" -DestinationPath "$env:USERPROFILE\.agents\skills"
@@ -78,6 +89,7 @@ Expand-Archive -LiteralPath ".\dist\eventcraft-skill-1.0.0.zip" -DestinationPath
 macOS/Linux, in the activated virtual environment:
 
 ```sh
+# Skip the next line if you downloaded the complete Skill ZIP
 python scripts/package_skill.py
 mkdir -p "$HOME/.agents/skills"
 unzip dist/eventcraft-skill-1.0.0.zip -d "$HOME/.agents/skills"
@@ -179,7 +191,7 @@ output/<activity>/
 
 The manifest records hashes, dimensions, platform fonts, title structure/line count, text bounds, fact checks and selection state. Checks cover text clipping, section overlap, image loading, PDF pages and contrast. Essential text that cannot fit at minimum sizes causes an explicit error.
 
-[Verification report](docs/verification.md): 86 tests passed on Windows/Python 3.12/Chrome. Five examples and ten Gallery campaigns contain 45 final PNGs and 30 PDFs. The report separately documents Linux/macOS, OCR, remote CI and paid-API verification status.
+[Verification report](docs/verification.md): 86 tests passed on Windows/Python 3.12/Chrome. Five examples and ten Gallery campaigns contain 45 final PNGs and 30 PDFs. The report separately documents platform, OCR and paid-API verification status. The first Ubuntu CI run failed during tests; Linux acceptance is not yet established. See [Actions](https://github.com/cagedb1rd/EventCraft/actions) for the latest status.
 
 ## Privacy, limitations and troubleshooting
 

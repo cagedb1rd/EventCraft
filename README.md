@@ -2,7 +2,7 @@
 
 **把活动资料变成一整套宣传物料：十套风格，智能三选一，确认后一次生成。**
 
-[English](README.en.md) · [Style Gallery](docs/style-gallery.md) · [Codex Skill 使用指南](docs/skill-usage.md) · [MIT License](LICENSE)
+[English](README.en.md) · [Releases](https://github.com/cagedb1rd/EventCraft/releases) · [Style Gallery](docs/style-gallery.md) · [Codex Skill 使用指南](docs/skill-usage.md) · [MIT License](LICENSE)
 
 ![从活动资料到真实推荐预览和整套物料](docs/images/selection-workflow.png)
 
@@ -24,6 +24,14 @@ EventCraft 是一个可安装的 Agent Skill，也提供独立 Python CLI。基�
 - 海报、邀请函与文案读取同一份活动事实，缺失必填信息时集中确认。
 - 支持 Logo、主图、讲者照片、原始二维码和参考图片；标题按实际字宽自适应排版。
 
+## 下载与版本
+
+- **源码和完整示例**：克隆本仓库，或点击 **Code → Download ZIP**。
+- **可安装 Skill ZIP**：查看 [Releases](https://github.com/cagedb1rd/EventCraft/releases)，选择维护者上传的 `eventcraft-skill-1.0.0.zip` 附件。它包含 `SKILL.md`、运行代码、资源和示例；GitHub 自动生成的 **Source code (zip)** 是源码快照。若 Release 尚无附件，可按下文从源码打包。
+- **Python CLI**：Release 中的 `.whl` / `.tar.gz` 用于 Python 安装；只安装 wheel 不会注册 Codex Skill。
+
+完整 Skill ZIP 不包含 Python 虚拟环境、Chromium、系统字体或 API 凭据，安装后仍需配置运行依赖。
+
 ## 安装与第一次生成
 
 需要 **Python 3.11+、Chromium 和中文字体**。Windows 通常已有 Microsoft YaHei / SimSun；macOS 使用系统中文字体；Linux 建议安装 Noto CJK。系统字体不随仓库分发。
@@ -31,11 +39,11 @@ EventCraft 是一个可安装的 Agent Skill，也提供独立 Python CLI。基�
 在本仓库点击 **Code → Download ZIP** 并解压，或复制仓库地址执行：
 
 ```sh
-git clone <YOUR_REPOSITORY_URL> eventcraft
+git clone https://github.com/cagedb1rd/EventCraft.git eventcraft
 cd eventcraft
 ```
 
-`<YOUR_REPOSITORY_URL>` 替换为本仓库的 Git 地址。以下命令均在包含 `pyproject.toml` 和 `SKILL.md` 的项目根目录运行。
+本项目仓库为 `cagedb1rd/EventCraft`。以下命令均在包含 `pyproject.toml` 和 `SKILL.md` 的项目根目录运行。
 
 ### Windows PowerShell
 
@@ -67,9 +75,12 @@ eventcraft all examples/inputs/lecture.json --auto-style --output output/lecture
 
 先完成上面的 Python 依赖安装，再安装完整 Skill。Skill 包含运行代码、配置、设计规范和资源，不能只复制 `SKILL.md`。
 
+将 Release 下载的完整 Skill ZIP 放入项目 `dist/`；没有下载包时运行下面的打包命令。已有 ZIP 时跳过该命令，其余安装步骤相同。
+
 Windows PowerShell：
 
 ```powershell
+# 已下载完整 Skill ZIP 时跳过下一行
 .\.venv\Scripts\python.exe scripts/package_skill.py
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills" | Out-Null
 Expand-Archive -LiteralPath ".\dist\eventcraft-skill-1.0.0.zip" -DestinationPath "$env:USERPROFILE\.agents\skills"
@@ -78,6 +89,7 @@ Expand-Archive -LiteralPath ".\dist\eventcraft-skill-1.0.0.zip" -DestinationPath
 macOS/Linux，在已激活的虚拟环境中：
 
 ```sh
+# 已下载完整 Skill ZIP 时跳过下一行
 python scripts/package_skill.py
 mkdir -p "$HOME/.agents/skills"
 unzip dist/eventcraft-skill-1.0.0.zip -d "$HOME/.agents/skills"
@@ -184,7 +196,7 @@ output/<activity>/
 
 manifest 记录文件哈希、尺寸、实际字体、标题布局/行数、文字边界、事实检查和选择状态。检查覆盖文字越界、模块重叠、图片加载、PDF 页面与对比度。长内容达到最小字号仍放不下时会明确报错。
 
-[验收记录](docs/verification.md)：Windows/Python 3.12/Chrome 下 86 项完整测试通过；五套示例与十风格 Gallery 共 45 张成品 PNG、30 个 PDF。Linux/macOS、真实 OCR、远端 CI 与付费 API 的验证状态详见该报告。
+[验收记录](docs/verification.md)：Windows/Python 3.12/Chrome 下 86 项完整测试通过；五套示例与十风格 Gallery 共 45 张成品 PNG、30 个 PDF。真实 OCR、跨平台与付费 API 的验证状态详见该报告。首次 Ubuntu GitHub CI 在测试阶段失败，当前不能宣称 Linux 验收通过；最新状态见 [Actions](https://github.com/cagedb1rd/EventCraft/actions)。
 
 ## 隐私、限制与常见问题
 
