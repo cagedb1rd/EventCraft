@@ -40,7 +40,7 @@ def main():
     gallery_md += "![十风格总览](images/style-contact-sheet.png)\n\n"
     for sid, p in profiles().items():
         gallery_md += f"## {p['name']} / `{sid}`\n\n{p['layout']['poster']}。邀请函：{p['layout']['invitation']}。\n\n| 主海报 | 邀请函 |\n|---|---|\n| ![海报](../examples/gallery/{sid}/poster_portrait.png) | ![邀请函](../examples/gallery/{sid}/invitation.png) |\n\n[完整物料与检查](../examples/gallery/{sid}/preview.html) · [设计规范](../references/style-guides/{sid}.md)\n\n"
-    (ROOT / "docs/style-gallery.md").write_text(gallery_md, encoding="utf-8")
+    (ROOT / "docs/style-gallery.md").write_text(gallery_md.rstrip() + "\n", encoding="utf-8")
     print("Showcase screenshots and gallery document generated")
 
 

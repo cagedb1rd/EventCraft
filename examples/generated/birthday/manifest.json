@@ -56,7 +56,7 @@
     {
       "path": "invite_letter.pdf",
       "bytes": 44547,
-      "sha256": "edb16371ce0101e3426583fe50e6aaf189ac8aa237a2e2d607c6d580b5b247cb"
+      "sha256": "4dfedd19f0d2b0db4912b73248c8b437c2ea9608ce9052bf6659e72f55aecd7a"
     },
     {
       "path": "poster_portrait.html",
@@ -80,7 +80,7 @@
     {
       "path": "poster_print.pdf",
       "bytes": 143705,
-      "sha256": "2216c5f1ecf87fb96b6da6a79e15f31446af756f31f7f13ac8d821f852514d5e"
+      "sha256": "e60d3d011118e8a0641e2b46860e493d4aafb29bcf28f059241ff08357c976bd"
     },
     {
       "path": "poster_square.html",

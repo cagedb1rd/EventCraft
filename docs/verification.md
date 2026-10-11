@@ -6,7 +6,7 @@
 
 | 检查 | 实际结果 |
 |---|---|
-| `pytest -q --junitxml=docs/test-results.xml` | 86 项通过，包含真实浏览器集成测试 |
+| `pytest -q --junitxml=docs/test-results.xml` | 86 项通过，包含真实浏览器集成测试；文案末尾空行清理后 35 项相关测试再次通过 |
 | `ruff check eventcraft scripts tests` | 通过 |
 | `python scripts/validate_skill.py` | Skill frontmatter、资源链接与 metadata 通过 |
 | skill-creator `quick_validate.py .` | Skill is valid |

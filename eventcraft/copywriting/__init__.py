@@ -18,9 +18,10 @@ def campaign(event: Event) -> dict[str, str]:
     demo = "DEMO · Fictional event\n" if event.demo and en else "DEMO · 虚构活动示例\n" if event.demo else ""
     short_title = event.title if len(event.title) <= 90 else event.title[:89] + "…"
     greeting = event.recipient or ("Dear guest" if en else "尊敬的来宾")
-    return {
+    content = {
         "short.txt": demo + f"{short_title}\n{f['when']}\n{f['where']}\n{f['registration']}\n",
         "social.md": demo + f"# {event.title}\n\n{event.subtitle}\n\n{highlights}\n\n{speakers}{body}\n",
         "formal.md": demo + ("# Event notice\n\n" if en else "# 活动通知\n\n") + f"{event.title}\n\n{event.subtitle}\n\n{speakers}{body}\n\n{highlights}\n",
         "invitation.txt": demo + f"{greeting}：\n\n" + (f"You are invited to {event.title}.\n\n" if en else f"诚邀您参加「{event.title}」。\n\n") + body + "\n\n" + ("We look forward to seeing you.\n" if en else "期待与您相见。\n"),
     }
+    return {name: text.rstrip() + "\n" for name, text in content.items()}

@@ -103,4 +103,3 @@
 | ![海报](../examples/gallery/sports-dynamic/poster_portrait.png) | ![邀请函](../examples/gallery/sports-dynamic/invitation.png) |
 
 [完整物料与检查](../examples/gallery/sports-dynamic/preview.html) · [设计规范](../references/style-guides/sports-dynamic.md)
-
