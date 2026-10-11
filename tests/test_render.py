@@ -199,3 +199,21 @@ def test_rerender_removes_obsolete_qr_only(event, chromium, tmp_path):
     batch_render(event, output, "swiss-grid", instance=chromium)
     assert not (output / "registration_qr.png").exists()
     assert extra.read_text() == "keep"
+
+
+@pytest.mark.render
+def test_measured_font_box_expands_tight_title_leading(event, chromium):
+    page = chromium.new_page()
+    try:
+        html = sheet_html(event, "editorial-minimal", 1080, 1920, "portrait",
+                          palette_for(event, "editorial-minimal"), {})
+        html = html.replace("<h1 ", '<h1 style="line-height:0.5" ', 1)
+        _, report = prepare(page, html, 1080, 1920)
+        assert report["passed"]
+        assert page.locator("h1").evaluate("""e=>{
+          const s=getComputedStyle(e),c=document.createElement('canvas').getContext('2d');
+          c.font=s.font;const m=c.measureText(e.textContent);
+          return parseFloat(s.lineHeight)>=m.fontBoundingBoxAscent+m.fontBoundingBoxDescent;
+        }""")
+    finally:
+        page.close()

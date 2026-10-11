@@ -35,7 +35,15 @@ FIT_SCRIPT = """() => {
   const style=getComputedStyle(title), canvas=document.createElement('canvas');
   const context=canvas.getContext('2d');
   context.font=style.font;
-  const naturalWidth=context.measureText(title.textContent).width;
+  const titleMetrics=context.measureText(title.textContent);
+  // CJK fallback fonts can have taller ascent/descent than the authored leading.
+  // Reserve their actual font box before fitting, including inline word spans.
+  const fontBox=titleMetrics.fontBoundingBoxAscent+titleMetrics.fontBoundingBoxDescent;
+  const fontSize=parseFloat(style.fontSize);
+  if(Number.isFinite(fontBox)&&fontBox+2>parseFloat(style.lineHeight)){
+    title.style.lineHeight=String((fontBox+2)/fontSize);
+  }
+  const naturalWidth=titleMetrics.width;
   const density=naturalWidth/Math.max(1,title.clientWidth);
   sheet.dataset.titleLayout=density<=1.2?'display':density<=3?'balanced':'compact';
   if(density>3){
@@ -81,7 +89,8 @@ FIT_SCRIPT = """() => {
     if(!changed)break;
   }
   // Persist sizes back to HTML so offline re-open is identical, with no runtime JS.
-  return items.map(e=>({field:e.dataset.field||e.className,size:getComputedStyle(e).fontSize}));
+  return items.map(e=>({field:e.dataset.field||e.className,size:getComputedStyle(e).fontSize,
+    line_height:getComputedStyle(e).lineHeight}));
 }"""
 
 CHECK_SCRIPT = """() => {

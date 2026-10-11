@@ -2,6 +2,7 @@
 
 import json
 import re
+import unicodedata
 import zipfile
 from datetime import datetime
 from pathlib import Path
@@ -69,7 +70,9 @@ def read_text(path: Path, ocr: bool = False) -> str:
             raise ValueError("Scanned PDF has no text layer; use the Agent's vision or transcribe it")
         if len(text) > 400_000:
             raise ValueError("PDF text exceeds the extraction limit")
-        return text
+        # Browser PDF font mappings may use compatibility radicals/ligatures.
+        # Normalize the extracted text rather than losing equivalent event facts.
+        return unicodedata.normalize("NFKC", text)
     if suffix in {".jpg", ".jpeg", ".png", ".webp"}:
         image_uri(path)
         if not ocr:
