@@ -11,6 +11,7 @@ This version is prepared in source; this changelog does not assert that a tag or
 - Preserve extraction, fact confirmation, three-choice/next/auto/reference selection, complete copy and batch export.
 - Export four independent visual invitation structures with native PNG/PDF and two-page folded print output.
 - Fix Shanghai keyword matching, CJK line/spacing measurements, composed QR sizing and reading-zone contrast.
+- Fix CI module discovery, adapt title leading to measured fallback font metrics, normalize compatibility characters extracted from PDFs, and use software rendering for repeatable image exports.
 - Include real 15-call visual acceptance, same-style different-event comparisons, title stress outputs and an isolated installed-Skill Word workflow.
 - Default to a compact runtime Skill ZIP; full development examples are opt-in. Inspect pending as well as tracked files in release checks.
 

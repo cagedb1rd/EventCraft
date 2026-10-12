@@ -38,7 +38,10 @@ def browser():
         return
     with sync_playwright() as playwright:
         executable = os.environ.get("EVENTCRAFT_BROWSER")
-        options = {"headless": True, "timeout": 20000}
+        # Use software rasterization and grayscale text antialiasing so GPU/font
+        # cache state cannot change pixels between identical campaign exports.
+        options = {"headless": True, "timeout": 20000,
+                   "args": ["--disable-gpu", "--disable-lcd-text"]}
         if executable:
             options["executable_path"] = executable
         try:
@@ -49,7 +52,7 @@ def browser():
             found = next((p for p in candidates if p.is_file()), None)
             if not found or executable:
                 raise ValueError("Chromium unavailable; run python -m playwright install chromium") from None
-            instance = playwright.chromium.launch(headless=True, executable_path=str(found), timeout=20000)
+            instance = playwright.chromium.launch(**{**options, "executable_path": str(found)})
         token = _active_browser.set(instance)
         try:
             yield instance

@@ -33,4 +33,5 @@ jobs:
           path: |
             test-results.xml
             output/ci-smoke/
+            output/ci-diagnostics/
             dist/

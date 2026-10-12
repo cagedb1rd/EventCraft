@@ -1,4 +1,5 @@
 import json
+import shutil
 from pathlib import Path
 from unittest.mock import patch
 
@@ -186,7 +187,16 @@ def test_deterministic_re_render(event, chromium, tmp_path):
     batch_render(event, tmp_path / "first", "luxury-elegant", instance=chromium)
     batch_render(event, tmp_path / "second", "luxury-elegant", instance=chromium)
     with Image.open(tmp_path / "first/poster_portrait.png") as left, Image.open(tmp_path / "second/poster_portrait.png") as right:
-        assert ImageChops.difference(left, right).getbbox() is None
+        difference = ImageChops.difference(left, right)
+        bounds = difference.getbbox()
+        if bounds is not None:
+            diagnostics = ROOT / "output/ci-diagnostics/deterministic-render"
+            diagnostics.mkdir(parents=True, exist_ok=True)
+            for name in ["first", "second"]:
+                for filename in ["poster_portrait.png", "poster_portrait.html", "manifest.json"]:
+                    shutil.copyfile(tmp_path / name / filename, diagnostics / f"{name}-{filename}")
+            difference.save(diagnostics / "difference.png")
+        assert bounds is None
 
 
 def test_rerender_removes_obsolete_qr_only(event, chromium, tmp_path):
