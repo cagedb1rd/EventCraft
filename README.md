@@ -4,13 +4,44 @@
 
 [English](README.en.md) · [Releases](https://github.com/cagedb1rd/EventCraft/releases) · [Style Gallery](docs/style-gallery.md) · [Codex Skill 使用指南](docs/skill-usage.md) · [MIT License](LICENSE)
 
-![四种独立视觉邀请函](examples/visual-v3/invitation-gallery.png)
+## 十套独立视觉设计系统
+
+![十套风格实际生成海报](examples/visual-v3/style-gallery.png)
+
+| ID | 风格 | 结构与适用场景 |
+|---|---|---|
+| swiss-grid | 瑞士网格设计 | 索引轴线、不对称网格；讲座、论坛 |
+| editorial-minimal | 编辑杂志极简风 | 刊头、偏置构图、编辑留白；艺术、文化 |
+| tech-gradient | 现代科技渐变风 | 活动主题相关的玻璃雕塑与光学结构、深色自然留白；科技、发布 |
+| academic-clean | 学术专业风 | 主题相关的研究绘图、宋体层级与浅色留白；学术、培训 |
+| neo-brutal | 年轻大胆风 | 实验拼贴、极粗标题与非对称构图；招新、市集 |
+| retro-print | 复古印刷风 | 主题相关的版画与半调质感、复古标题；复古、音乐 |
+| neon-night | 霓虹夜生活风 | 主题相关的舞台光线、克制发光标题；夜间音乐、派对 |
+| warm-playful | 温暖手绘风 | 主题插画、楷体气质与温暖留白；生日、亲子 |
+| luxury-elegant | 奢华典雅风 | 浮雕金箔 Art Deco、仪式中轴；婚礼、晚宴 |
+| sports-dynamic | 运动竞技风 | 主题竞技元素、绘画动势与粗重斜体；体育、竞技 |
+
+每套风格均有真实海报与邀请函：[完整 Style Gallery](examples/visual-v3/index.html) · [图片与 PDF 索引](docs/style-gallery.md)。海报默认仅含标题、一个简短且由用户提供的副标题、自然日期和地点；CTA／品牌按需要展示。文字融入预先设计的自然留白，不默认贴不透明底板。报名链接不强制生成二维码，只有明确扫码意图或 `qr_policy=show` 才加入。[标题长度压力测试](examples/visual-v3/title-gallery.png)
+
+五套完整案例：[校园讲座](examples/generated/lecture/preview.html) · [科技发布](examples/generated/launch/preview.html) · [生日聚会](examples/generated/birthday/preview.html) · [典雅晚宴](examples/generated/dinner/preview.html) · [运动赛事](examples/generated/sports/preview.html)。GitHub 不会直接执行这些 HTML；下载后可离线打开，PNG 和 PDF 可直接查看。
+
+```sh
+eventcraft gallery --output output/gallery
+# 以下是可重复的离线复用素材示例，不会调用宿主 ImageGen
+python scripts/generate_examples.py
+python scripts/generate_style_gallery.py
+python scripts/build_title_showcase.py
+```
+
+## 项目简介
 
 EventCraft 是一个可安装的 Agent Skill，也提供独立 Python CLI。Codex Agent 用内置 `image_gen` 创作主视觉，Chromium 精确排版中英文、日期、地点和二维码。无需 OpenAI API Key；CLI 离线预览可复用随包附带的原创素材，并如实记录素材来源。所有公开示例均为虚构 Demo。
 
 当前源码版本 **1.1.0**：根据活动主题、标题长度和输出比例先规划构图，再生成原创主视觉；十套风格同时定义艺术媒介、中文／英文字体和排版策略。[视觉架构](docs/visual-architecture.md) · [验收记录](docs/verification-visual-v3.md) · [更新说明](docs/release-notes-1.1.0.md)。源码版本与已发布的 Release 可能不同，请核对下载附件的版本。
 
 ## 可以生成什么
+
+![四种独立视觉邀请函](examples/visual-v3/invitation-gallery.png)
 
 | 产物 | 格式 |
 |---|---|
@@ -135,35 +166,6 @@ eventcraft all examples/inputs/lecture.md --interactive --output output/interact
 ```
 
 支持 JSON、文本、Markdown、TXT、DOCX、带文本层 PDF，以及可选 Tesseract OCR 截图。无模型的抽取采用字段标签和保守正则；隐含信息与冲突需要确认。`--draft` 允许生成明确标记的草稿。中文默认，`--language en` 使用英文标签与文案；`bilingual` 接受用户提供的中英混排内容，活动事实不会自动翻译。
-
-## 十套独立视觉设计系统
-
-![十套风格实际生成海报](examples/visual-v3/style-gallery.png)
-
-| ID | 风格 | 结构与适用场景 |
-|---|---|---|
-| swiss-grid | 瑞士网格设计 | 索引轴线、不对称网格；讲座、论坛 |
-| editorial-minimal | 编辑杂志极简风 | 刊头、偏置构图、编辑留白；艺术、文化 |
-| tech-gradient | 现代科技渐变风 | 活动主题相关的玻璃雕塑与光学结构、深色自然留白；科技、发布 |
-| academic-clean | 学术专业风 | 主题相关的研究绘图、宋体层级与浅色留白；学术、培训 |
-| neo-brutal | 年轻大胆风 | 实验拼贴、极粗标题与非对称构图；招新、市集 |
-| retro-print | 复古印刷风 | 主题相关的版画与半调质感、复古标题；复古、音乐 |
-| neon-night | 霓虹夜生活风 | 主题相关的舞台光线、克制发光标题；夜间音乐、派对 |
-| warm-playful | 温暖手绘风 | 主题插画、楷体气质与温暖留白；生日、亲子 |
-| luxury-elegant | 奢华典雅风 | 浮雕金箔 Art Deco、仪式中轴；婚礼、晚宴 |
-| sports-dynamic | 运动竞技风 | 主题竞技元素、绘画动势与粗重斜体；体育、竞技 |
-
-每套风格均有真实海报与邀请函：[完整 Style Gallery](examples/visual-v3/index.html) · [图片与 PDF 索引](docs/style-gallery.md)。海报默认仅含标题、一个简短且由用户提供的副标题、自然日期和地点；CTA／品牌按需要展示。文字融入预先设计的自然留白，不默认贴不透明底板。报名链接不强制生成二维码，只有明确扫码意图或 `qr_policy=show` 才加入。[标题长度压力测试](examples/visual-v3/title-gallery.png)
-
-五套完整案例：[校园讲座](examples/generated/lecture/preview.html) · [科技发布](examples/generated/launch/preview.html) · [生日聚会](examples/generated/birthday/preview.html) · [典雅晚宴](examples/generated/dinner/preview.html) · [运动赛事](examples/generated/sports/preview.html)。GitHub 不会直接执行这些 HTML；下载后可离线打开，PNG 和 PDF 可直接查看。
-
-```sh
-eventcraft gallery --output output/gallery
-# 以下是可重复的离线复用素材示例，不会调用宿主 ImageGen
-python scripts/generate_examples.py
-python scripts/generate_style_gallery.py
-python scripts/build_title_showcase.py
-```
 
 ## 内置图像生成与参考图
 

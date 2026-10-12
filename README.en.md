@@ -4,13 +4,43 @@
 
 [中文](README.md) · [Releases](https://github.com/cagedb1rd/EventCraft/releases) · [Style Gallery](docs/style-gallery.md) · [Codex Skill guide](docs/skill-usage.md) · [MIT License](LICENSE)
 
-![Four independent visual invitations](examples/visual-v3/invitation-gallery.png)
+## Ten independent design systems
+
+![Ten actually generated poster styles](examples/visual-v3/style-gallery.png)
+
+| ID | Style | Structure and use |
+|---|---|---|
+| swiss-grid | Swiss grid | Index axis, asymmetric grid; lectures and forums |
+| editorial-minimal | Editorial minimal | Masthead, offset composition, whitespace; art and culture |
+| tech-gradient | Tech gradient | Event-relevant glass sculpture and optical structures, natural dark space; technology |
+| academic-clean | Academic professional | Event-relevant research drawings, serif hierarchy and pale space; research |
+| neo-brutal | Neo brutalism | Experimental collage, heavy type and asymmetry; recruitment and markets |
+| retro-print | Retro print | Event-relevant print imagery, letterpress texture and retro type; music |
+| neon-night | Neon nightlife | Event-relevant stage lighting and restrained luminous type; nightlife |
+| warm-playful | Warm illustrated | Thematic illustration, native handwritten character and warm space; families |
+| luxury-elegant | Luxury elegant | Embossed Art Deco foil, ceremonial axis; weddings and dinners |
+| sports-dynamic | Sports dynamic | Relevant competitive elements, painted movement and heavy italic type; sports |
+
+[Complete Gallery](examples/visual-v3/index.html) · [PNG/PDF index](docs/style-gallery.md). Posters default to title, one short supplied subtitle, natural date/time and venue. Useful CTA/brand details are optional. A URL alone does not create a QR; explicit scan intent or `qr_policy=show` is required. Pre-generation composition reserves natural negative space; transparent typography integrates with the actual image. Detailed information remains in invitations and copy. [Title stress comparison](examples/visual-v3/title-gallery.png)
+
+Complete examples: [lecture](examples/generated/lecture/preview.html), [launch](examples/generated/launch/preview.html), [birthday](examples/generated/birthday/preview.html), [formal dinner](examples/generated/dinner/preview.html), [sports](examples/generated/sports/preview.html). GitHub does not execute the HTML previews; download them to view offline. PNG and PDF files can be viewed directly.
+
+```sh
+eventcraft gallery --output output/gallery
+python scripts/generate_examples.py
+python scripts/generate_style_gallery.py
+python scripts/build_title_showcase.py
+```
+
+## About EventCraft
 
 EventCraft is an installable Agent Skill and a standalone Python CLI. The Codex Agent uses built-in `image_gen` for original key visuals; Chromium typesets exact facts and QR codes. No OpenAI API key is required. Offline CLI previews can reuse bundled original art and record that provenance. Every public example is a fictional Demo.
 
 Current source version: **1.1.0**. Plan composition from event meaning, title length and output ratio before generating original art. Each style defines artistic medium, Chinese/English typography and layout. [Architecture](docs/visual-architecture.md) · [Verification](docs/verification-visual-v3.md) · [Release notes](docs/release-notes-1.1.0.md). Published assets may lag the source; check the downloaded version.
 
 ## Deliverables and features
+
+![Four independent visual invitations](examples/visual-v3/invitation-gallery.png)
 
 | Deliverable | Format |
 |---|---|
@@ -131,34 +161,6 @@ eventcraft all examples/inputs/lecture.md --interactive --output output/interact
 ```
 
 Inputs include JSON, text/Markdown/TXT, DOCX, text-layer PDF and optional Tesseract screenshots. Offline extraction uses conservative labeled fields and regular expressions. Ambiguous or implicit facts need confirmation; `--draft` creates visibly marked unfinished work. Chinese is the default; `--language en` uses English labels/copy and `bilingual` accepts supplied mixed text. Event facts are not automatically translated.
-
-## Ten independent design systems
-
-![Ten actually generated poster styles](examples/visual-v3/style-gallery.png)
-
-| ID | Style | Structure and use |
-|---|---|---|
-| swiss-grid | Swiss grid | Index axis, asymmetric grid; lectures and forums |
-| editorial-minimal | Editorial minimal | Masthead, offset composition, whitespace; art and culture |
-| tech-gradient | Tech gradient | Event-relevant glass sculpture and optical structures, natural dark space; technology |
-| academic-clean | Academic professional | Event-relevant research drawings, serif hierarchy and pale space; research |
-| neo-brutal | Neo brutalism | Experimental collage, heavy type and asymmetry; recruitment and markets |
-| retro-print | Retro print | Event-relevant print imagery, letterpress texture and retro type; music |
-| neon-night | Neon nightlife | Event-relevant stage lighting and restrained luminous type; nightlife |
-| warm-playful | Warm illustrated | Thematic illustration, native handwritten character and warm space; families |
-| luxury-elegant | Luxury elegant | Embossed Art Deco foil, ceremonial axis; weddings and dinners |
-| sports-dynamic | Sports dynamic | Relevant competitive elements, painted movement and heavy italic type; sports |
-
-[Complete Gallery](examples/visual-v3/index.html) · [PNG/PDF index](docs/style-gallery.md). Posters default to title, one short supplied subtitle, natural date/time and venue. Useful CTA/brand details are optional. A URL alone does not create a QR; explicit scan intent or `qr_policy=show` is required. Pre-generation composition reserves natural negative space; transparent typography integrates with the actual image. Detailed information remains in invitations and copy. [Title stress comparison](examples/visual-v3/title-gallery.png)
-
-Complete examples: [lecture](examples/generated/lecture/preview.html), [launch](examples/generated/launch/preview.html), [birthday](examples/generated/birthday/preview.html), [formal dinner](examples/generated/dinner/preview.html), [sports](examples/generated/sports/preview.html). GitHub does not execute the HTML previews; download them to view offline. PNG and PDF files can be viewed directly.
-
-```sh
-eventcraft gallery --output output/gallery
-python scripts/generate_examples.py
-python scripts/generate_style_gallery.py
-python scripts/build_title_showcase.py
-```
 
 ## Built-in image generation and references
 
