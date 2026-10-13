@@ -1,0 +1,22 @@
+{
+  "input": "../inputs/garden.json",
+  "previews_use": "bundled original artwork",
+  "recommendations": [
+    {
+      "position": 1,
+      "style_id": "editorial-minimal",
+      "score": 100
+    },
+    {
+      "position": 2,
+      "style_id": "swiss-grid",
+      "score": 97.0
+    },
+    {
+      "position": 3,
+      "style_id": "tech-gradient",
+      "score": 73.6
+    }
+  ],
+  "example_choice": 3
+}

@@ -33,3 +33,14 @@ def test_compact_docs_link_omitted_evidence_to_source_without_losing_local_contr
     full = set(selected_files(with_examples=True))
     assert ROOT / "examples/visual-v3/style-gallery.png" in full
     assert not any(p.is_relative_to(ROOT / "image") for p in full)
+
+
+def test_compact_readme_images_load_without_bundling_showcase_output():
+    selected = set(selected_files())
+    for name in ["README.md", "README.en.md"]:
+        text = markdown_for_archive(ROOT / name, selected)
+        assert '<img src="https://raw.githubusercontent.com/cagedb1rd/EventCraft/main/examples/visual-v3/' in text
+        assert "](https://raw.githubusercontent.com/cagedb1rd/EventCraft/main/examples/readme-demo/previews/" in text
+        assert "](examples/inputs/garden.md)" in text
+        assert "](references/event-schema.md)" in text
+    assert not any(p.is_relative_to(ROOT / "examples/readme-demo") for p in selected)

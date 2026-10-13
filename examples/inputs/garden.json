@@ -1,0 +1,23 @@
+{
+  "title": "未来花园",
+  "subtitle": "艺术与科技，共创绿色未来",
+  "category": "exhibition",
+  "start": "2026-11-14T14:00",
+  "end": "2026-11-14T17:00",
+  "timezone": "Asia/Shanghai",
+  "venue": "虚构花园美术馆 · 主展厅",
+  "audience": [
+    "designers",
+    "students"
+  ],
+  "formality": "casual",
+  "keywords": [
+    "植物",
+    "生态艺术",
+    "未来花园",
+    "科技"
+  ],
+  "registration": "无需报名",
+  "style_description": "以植物形态和未来生态花园为主题，不使用与主题无关的人脸、跑者或音乐人",
+  "demo": true
+}

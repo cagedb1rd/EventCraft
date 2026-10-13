@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "https://github.com/cagedb1rd/EventCraft/blob/main/"
+RAW_FILES = "https://raw.githubusercontent.com/cagedb1rd/EventCraft/main/"
 CORE = ["eventcraft", "references", "agents", "assets/styles", "examples/inputs"]
 FULL = ["assets", "docs", "examples", "tests", ".github", "scripts"]
 FILES = ["SKILL.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "pyproject.toml", "README.md",
@@ -43,7 +44,23 @@ def markdown_for_archive(path, selected):
             raise ValueError(f"External local documentation link: {path}: {link}")
         url = REPOSITORY + resolved.relative_to(ROOT).as_posix()
         return "](" + url + ("#" + fragment if fragment else "") + ")"
-    return re.sub(r"\]\(([^)\s]+)\)", replace, path.read_text(encoding="utf-8"))
+    text = re.sub(r"\]\(([^)\s]+)\)", replace, path.read_text(encoding="utf-8"))
+    # An image needs raw bytes, while ordinary links should open its GitHub page.
+    text = re.sub(r"(!\[[^\]\n]*\]\()" + re.escape(REPOSITORY),
+                  lambda m: m.group(1) + RAW_FILES, text)
+
+    def image_source(match):
+        link = match.group(2)
+        if link.startswith(("http:", "https:", "data:")):
+            return match.group(0)
+        resolved = (path.parent / link).resolve()
+        if resolved in selected:
+            return match.group(0)
+        if not resolved.is_relative_to(ROOT):
+            raise ValueError(f"External local image: {path}: {link}")
+        return match.group(1) + RAW_FILES + resolved.relative_to(ROOT).as_posix() + match.group(3)
+
+    return re.sub(r'''(<img\b[^>]*\bsrc=["'])([^"']+)(["'])''', image_source, text)
 
 
 def main():
