@@ -38,8 +38,8 @@ def browser():
         return
     with sync_playwright() as playwright:
         executable = os.environ.get("EVENTCRAFT_BROWSER")
-        # Use software rasterization and grayscale text antialiasing so GPU/font
-        # cache state cannot change pixels between identical campaign exports.
+        # Reduce GPU-dependent variation with software rasterization and grayscale
+        # text antialiasing. Chromium can still vary tiny glyph-edge coverage values.
         options = {"headless": True, "timeout": 20000,
                    "args": ["--disable-gpu", "--disable-lcd-text"]}
         if executable:

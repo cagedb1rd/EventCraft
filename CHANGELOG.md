@@ -5,6 +5,7 @@
 - Remove old rendered galleries, duplicate inline-image HTML, campaign source artwork and historical QA exports from the current source tree. Preserve representative current posters, four invitations and print samples; full historical evidence remains in the v1.1.0 snapshot.
 - Reorganize Chinese and English READMEs around visual examples, complete Skill installation, one-time runtime setup, event input, style choice and output viewing.
 - Exclude tests, CI, development scripts and development reports from the default Skill ZIP. Keep automated test source in Git for CI and direct generated examples to ignored output directories.
+- Check repeated exports for identical HTML, facts, artwork and layout, while allowing only sparse low-amplitude text antialiasing differences observed in Chromium CI. Reject background, geometry and stronger pixel changes.
 
 ## 1.1.0 - release preparation, 2026-10-12
 
