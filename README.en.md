@@ -104,25 +104,16 @@ Open `output/demo/preview.html`. macOS provides system CJK fonts. On Ubuntu / De
 
 Start a chat in your event project and select the Skill, or explicitly ask to use EventCraft. In the CLI / IDE, use `$eventcraft`. If it does not appear, check the final path above and restart Codex if needed.
 
-Replace every bracketed field below; write “none” where appropriate:
+Paste your original event description, or attach **Word, a text-layer PDF, or Markdown**, then send:
 
 ```text
-Use EventCraft to create posters, an invitation, and copy for my event.
-Title: [event name]
-Date and time: [full date, start and end times]
-Timezone: [IANA timezone, e.g. Asia/Shanghai]
-Venue: [address or online platform]
-Registration: [URL, contact details, or no registration required]
-Audience and theme: [who it is for and what it covers]
-Assets: [attached logo, photos, references, or none]
-
-Confirm missing facts together, then show three real style previews.
-After I choose, use built-in image generation for this event's original artwork
-and export the complete campaign. Run the CLI through the installed Skill's .venv.
-Save the campaign to this project's output/my-event directory.
+Use EventCraft to turn this event brief into posters, an invitation, and promotional copy.
+Start by recommending three styles.
 ```
 
-You can also attach Word, text-layer PDF, Markdown, or event text. The Agent extracts facts and asks about conflicts instead of inventing dates, venues, or registration details.
+The Skill reads the material, extracts event facts, and prepares the data for generation. Complete briefs go straight to three previews; it asks a combined follow-up only for essential missing or conflicting information. You do not need to extract fields, fill in a form, or specify CLI commands.
+
+Attach logos, photos, or visual references if available. Describe style and invitation preferences in ordinary language.
 
 ### 4. Choose a style and view the results
 
