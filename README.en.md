@@ -1,12 +1,14 @@
 # EventCraft
 
-**Turn event information into a complete campaign: ten design systems, three recommendations, one batch of deliverables.**
+**An AI poster and event campaign Skill: ten independent visual design systems, with posters, invitations, and promotional copy in one export.**
 
-[中文](README.md) · [Releases](https://github.com/cagedb1rd/EventCraft/releases) · [Style Gallery](docs/style-gallery.md) · [Codex Skill guide](docs/skill-usage.md) · [MIT License](LICENSE)
+[中文](README.md) · [Download Skill](https://github.com/cagedb1rd/EventCraft/releases/latest) · [Gallery](docs/style-gallery.md) · [Detailed guide](docs/skill-usage.md)
 
-## Ten independent design systems
+## Ten independent visual design systems
 
-![Ten actually generated poster styles](examples/visual-v3/style-gallery.png)
+![Ten actual poster designs](examples/visual-v3/style-gallery.png)
+
+Each system defines its artistic medium, typography, and composition. Codex creates artwork for your event, then the local renderer adds exact Chinese/English lettering, dates, and venues. Initial style previews use bundled original artwork; fresh artwork is created after you choose a style.
 
 | ID | Style | Structure and use |
 |---|---|---|
@@ -21,215 +23,127 @@
 | luxury-elegant | Luxury elegant | Embossed Art Deco foil, ceremonial axis; weddings and dinners |
 | sports-dynamic | Sports dynamic | Relevant competitive elements, painted movement and heavy italic type; sports |
 
-[Complete Gallery](examples/visual-v3/index.html) · [PNG/PDF index](docs/style-gallery.md). Posters default to title, one short supplied subtitle, natural date/time and venue. Useful CTA/brand details are optional. A URL alone does not create a QR; explicit scan intent or `qr_policy=show` is required. Pre-generation composition reserves natural negative space; transparent typography integrates with the actual image. Detailed information remains in invitations and copy. [Title stress comparison](examples/visual-v3/title-gallery.png)
+## What you get
 
-Complete examples: [lecture](examples/generated/lecture/preview.html), [launch](examples/generated/launch/preview.html), [birthday](examples/generated/birthday/preview.html), [formal dinner](examples/generated/dinner/preview.html), [sports](examples/generated/sports/preview.html). GitHub does not execute the HTML previews; download them to view offline. PNG and PDF files can be viewed directly.
+![Four visual invitation formats](examples/visual-v3/invitation-gallery.png)
 
-```sh
-eventcraft gallery --output output/gallery
-python scripts/generate_examples.py
-python scripts/generate_style_gallery.py
-python scripts/build_title_showcase.py
-```
-
-## About EventCraft
-
-EventCraft is an installable Agent Skill and a standalone Python CLI. The Codex Agent uses built-in `image_gen` for original key visuals; Chromium typesets exact facts and QR codes. No OpenAI API key is required. Offline CLI previews can reuse bundled original art and record that provenance. Every public example is a fictional Demo.
-
-Current source version: **1.1.0**. Plan composition from event meaning, title length and output ratio before generating original art. Each style defines artistic medium, Chinese/English typography and layout. [Architecture](docs/visual-architecture.md) · [Verification](docs/verification-visual-v3.md) · [Release notes](docs/release-notes-1.1.0.md). Published assets may lag the source; check the downloaded version.
-
-## Deliverables and features
-
-![Four independent visual invitations](examples/visual-v3/invitation-gallery.png)
-
-| Deliverable | Format |
+| Deliverable | Contents |
 |---|---|
-| Portrait poster | 1080 × 1920 PNG |
-| Social square | 1080 × 1080 PNG |
-| Visual invitation | Boarding pass 1600×800, ticket 1600×700, formal card 1080×1350, folded spread 1800×1000 PNG |
-| Print files | A4 poster/letter, native-ratio invitation PDF, two-page folded exterior/interior PDF |
-| Promotional copy | Short copy, social post, event notice, invitation text |
-| Editable sources and audit | HTML, event.json, manifest.json, offline preview |
+| Posters | 1080×1920 portrait, 1080×1080 social square, A4 print PDF |
+| Visual invitation | Boarding pass, ticket stub, formal card, or folded invitation; PNG and native-ratio PDF |
+| Copy | Short copy, social post, event notice, and invitation text |
+| Editable files | HTML, event data, offline preview, and generation records |
 
-- Three real previews selected from ten styles, with reasons and tradeoffs.
-- Numbered choices, automatic selection, another batch, explicit styles and saved state.
-- A single event record supplies facts to every deliverable; essential missing facts require confirmation.
-- Logos, hero images, speaker photos, QR assets and visual references; headings adapt to measured title width.
+Posters focus on core facts; QR codes are optional. Folded invitations include exterior/interior artwork and a two-page PDF. [See individual designs and print samples](docs/style-gallery.md). All public examples are fictional Demos.
 
-## Downloads and releases
+## First-time setup
 
-- **Source and full examples**: clone this repository or use **Code → Download ZIP**.
-- **Installable Skill ZIP**: check [Releases](https://github.com/cagedb1rd/EventCraft/releases) for the maintainer-uploaded `eventcraft-skill-1.1.0.zip` asset. The compact default includes instructions, runtime code, ten original preview assets, design guides and input samples. Full campaign galleries remain in source, or can be packaged separately with `--with-examples`. GitHub's automatic **Source code (zip)** is a source snapshot. If no release asset is available, build the skill archive using the instructions below.
-- **Python CLI**: `.whl` / `.tar.gz` release assets install the Python package; installing a wheel alone does not register a Codex skill.
+Use Codex with local file and Python execution access, **Python 3.11+, Chromium, and CJK fonts**. Fresh artwork also requires a built-in image generation tool in your current chat. No OpenAI API key is required. If the tool is unavailable, the Agent explains the limitation and can reuse bundled artwork with your acceptance.
 
-The Skill ZIP excludes Python environments, Chromium, system fonts and API credentials. Runtime dependencies must still be installed.
+### 1. Download the complete Skill
 
-## Install and generate your first campaign
+Open the [latest Release](https://github.com/cagedb1rd/EventCraft/releases/latest) and download **`eventcraft-skill-VERSION.zip`**, rather than GitHub's automatic Source code archive.
 
-Requirements: **Python 3.11+, Chromium and a CJK font**. Windows usually provides Microsoft YaHei/SimSun; macOS provides system CJK fonts; Linux should install Noto CJK. Fonts are not distributed with the project.
+Extract its entire `eventcraft` folder into your user skills directory:
 
-Download and extract the source using **Code → Download ZIP**, or copy this repository's Git URL:
+| System | Final manifest path |
+|---|---|
+| Windows | `%USERPROFILE%\.agents\skills\eventcraft\SKILL.md` |
+| macOS / Linux | `~/.agents/skills/eventcraft/SKILL.md` |
 
-```sh
-git clone https://github.com/cagedb1rd/EventCraft.git eventcraft
-cd eventcraft
+Keep all supporting files beside `SKILL.md`. See [official skill discovery documentation](https://learn.chatgpt.com/docs/build-skills). Back up personal changes before replacing an existing installation.
+
+### 2. Install runtime dependencies once
+
+Open the extracted `eventcraft` folder in Codex and send:
+
+```text
+Set up this EventCraft Skill locally.
+Check Python 3.11+, create .venv inside the Skill folder,
+install the current Python package and Playwright Chromium using that environment,
+and check CJK fonts. Export examples/inputs/lecture.json as an offline smoke demo.
+Return the preview path. Use bundled artwork for this setup check, without image generation.
 ```
 
-The public repository is `cagedb1rd/EventCraft`. Run all following commands from the directory containing `pyproject.toml` and `SKILL.md`.
+Or run the commands yourself. Initial dependency and browser downloads require network access.
 
-### Windows PowerShell
+<details>
+<summary>Windows PowerShell</summary>
 
-Use virtual-environment executables directly; activation is not required:
+Run inside the extracted Skill folder:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e .
 .\.venv\Scripts\python.exe -m playwright install chromium
-.\.venv\Scripts\eventcraft.exe all examples/inputs/lecture.json --auto-style --output output/lecture
-Start-Process .\output\lecture\preview.html
+.\.venv\Scripts\eventcraft.exe all examples/inputs/lecture.json --auto-style --output output/demo
+Start-Process .\output\demo\preview.html
 ```
 
-### macOS / Linux
+Windows usually provides Microsoft YaHei / SimSun. System fonts are not bundled.
+
+</details>
+
+<details>
+<summary>macOS / Linux</summary>
+
+Run inside the extracted Skill folder:
 
 ```sh
 python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -e .
-python -m playwright install chromium
-eventcraft all examples/inputs/lecture.json --auto-style --output output/lecture
+.venv/bin/python -m pip install -e .
+.venv/bin/python -m playwright install chromium
+.venv/bin/eventcraft all examples/inputs/lecture.json --auto-style --output output/demo
 ```
 
-These CLI commands are offline smoke examples using bundled art; they do not invoke ImageGen. Use the Codex Skill workflow below for fresh event-specific visuals. Open `output/lecture/preview.html` in a browser. Installing dependencies and Chromium requires network access; base template generation is local. Windows can fall back to installed Chrome/Edge. `EVENTCRAFT_BROWSER` sets an explicit browser executable path.
+Open `output/demo/preview.html`. macOS provides system CJK fonts. On Ubuntu / Debian, install them with `sudo apt-get install fonts-noto-cjk`. If browser libraries are missing on Linux, run `.venv/bin/python -m playwright install --with-deps chromium`.
 
-**In the CLI examples below, Windows users should replace `eventcraft` with `.\.venv\Scripts\eventcraft.exe`. macOS/Linux users can use it directly in the activated environment. Run Python scripts with the same virtual environment.**
+</details>
 
-## Use in Codex
+### 3. Give Codex your event brief
 
-Install Python dependencies first, then register the complete skill, including runtime code, configuration, guides and assets. Copying only `SKILL.md` is insufficient.
+Start a chat in your event project and select the Skill, or explicitly ask to use EventCraft. In the CLI / IDE, use `$eventcraft`. If it does not appear, check the final path above and restart Codex if needed.
 
-Place the downloaded complete Skill ZIP under the project's `dist/` directory. If you already have the ZIP, skip the packaging command below; the extraction steps are identical. Otherwise, build it from source.
-
-Windows PowerShell:
-
-```powershell
-# Skip the next line if you downloaded the complete Skill ZIP
-.\.venv\Scripts\python.exe scripts/package_skill.py
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills" | Out-Null
-Expand-Archive -LiteralPath ".\dist\eventcraft-skill-1.1.0.zip" -DestinationPath "$env:USERPROFILE\.agents\skills"
-```
-
-macOS/Linux, in the activated virtual environment:
-
-```sh
-# Skip the next line if you downloaded the complete Skill ZIP
-python scripts/package_skill.py
-mkdir -p "$HOME/.agents/skills"
-unzip dist/eventcraft-skill-1.1.0.zip -d "$HOME/.agents/skills"
-```
-
-The installed manifest should be at `~/.agents/skills/eventcraft/SKILL.md`. These commands are for first-time installation; check existing installations before updating. Restart Codex if the skill does not appear. [Official skill documentation](https://learn.chatgpt.com/docs/build-skills) · [Full usage guide](docs/skill-usage.md)
-
-Open the project directory in Codex and send:
+Replace every bracketed field below; write “none” where appropriate:
 
 ```text
-Use $eventcraft.
-Read examples/inputs/lecture.json as a fictional demo.
-Recommend three styles with actual previews, then wait for my selection before generating the complete campaign.
-Use the current project's .venv environment to run the CLI.
+Use EventCraft to create posters, an invitation, and copy for my event.
+Title: [event name]
+Date and time: [full date, start and end times]
+Timezone: [IANA timezone, e.g. Asia/Shanghai]
+Venue: [address or online platform]
+Registration: [URL, contact details, or no registration required]
+Audience and theme: [who it is for and what it covers]
+Assets: [attached logo, photos, references, or none]
+
+Confirm missing facts together, then show three real style previews.
+After I choose, use built-in image generation for this event's original artwork
+and export the complete campaign. Run the CLI through the installed Skill's .venv.
+Save the campaign to this project's output/my-event directory.
 ```
 
-Reply with a number, “another batch”, “choose automatically” or a style name. For your own activity, supply event text or documents; the Agent confirms essential facts before generating. Without global installation, you can explicitly ask Codex to read the project's root `SKILL.md` and follow its workflow.
+You can also attach Word, text-layer PDF, Markdown, or event text. The Agent extracts facts and asks about conflicts instead of inventing dates, venues, or registration details.
 
-## CLI recommendations and your own event
+### 4. Choose a style and view the results
 
-```sh
-eventcraft recommend examples/inputs/lecture.json --output output/selection
-# Open output/selection/recommendations.html, then choose option 2
-eventcraft all examples/inputs/lecture.json --select 2 --state output/selection --output output/chosen
-eventcraft recommend examples/inputs/lecture.json --output output/selection --next
-eventcraft render examples/inputs/lecture.json --style retro-print --output output/retro
-```
+Reply **“option 2”**, **“another batch”**, **“choose automatically”**, or name a style. You can also request a ticket invitation or supply visual references.
 
-The selection directory stores ranking and current numbered choices. Editing event facts invalidates old choices. Three options are shown by default; `--all` requests every style. Ranking is an explainable engineering heuristic, with hard brand constraints and configurable weights. [Algorithm](docs/style-recommendation.md) · [Actual CLI transcript](docs/recommendation-terminal.txt)
+The Agent creates and inspects original artwork, then exports the campaign. Open the returned `preview.html`; share the PNGs, print the PDFs, or edit the HTML. Your campaign stays in the local output directory and is not automatically published.
 
-Store personal event input under the Git-ignored `private/` directory. Start from the [JSON example](examples/inputs/lecture.json) and [event contract](references/event-schema.md). Provide a real title, date/time, IANA timezone, venue or online platform, and registration method. Remove irrelevant sample facts, replace the `example.org` URL, and set `demo` to `false` for a real activity.
+## Troubleshooting
 
-```sh
-eventcraft all private/event.json --auto-style --output output/my-event
-eventcraft extract examples/inputs/lecture.md --output output/extracted/event.json
-eventcraft all examples/inputs/lecture.md --interactive --output output/interactive
-```
+| Issue | Action |
+|---|---|
+| Skill is missing | Check `SKILL.md` and the final path; avoid an extra nested folder and restart if needed |
+| Command is missing | Use the installed Skill's `.venv`; Windows executables are under `.venv/Scripts/` |
+| Missing Chinese glyphs | Install CJK fonts and regenerate |
+| No image generation tool | The Agent explains reuse options; it does not silently use a paid API |
+| Which asset to download? | The complete Skill ZIP; SHA256SUMS is optional verification, and a wheel is unnecessary |
 
-Inputs include JSON, text/Markdown/TXT, DOCX, text-layer PDF and optional Tesseract screenshots. Offline extraction uses conservative labeled fields and regular expressions. Ambiguous or implicit facts need confirmation; `--draft` creates visibly marked unfinished work. Chinese is the default; `--language en` uses English labels/copy and `bilingual` accepts supplied mixed text. Event facts are not automatically translated.
+## CLI and development
 
-## Built-in image generation and references
+See the [detailed guide](docs/skill-usage.md), [contributing guide](CONTRIBUTING.md), and [architecture](docs/architecture.md) for source installation and CLI workflows. Python renders bundled/imported images; the Codex Agent orchestrates chat image generation.
 
-The installed Skill directs the Agent to actually invoke built-in `image_gen`, inspect the image and import it. Python does not impersonate the host tool:
+The repository keeps runtime code, ten original preview assets, input samples, a compact gallery, and automated tests. **Tests serve GitHub CI; the default user archive excludes tests, development scripts, and historical outputs.** Complete earlier acceptance artifacts remain in the [v1.1.0 source snapshot](https://github.com/cagedb1rd/EventCraft/tree/v1.1.0).
 
-```sh
-eventcraft art-plan examples/inputs/web-summit.json --style tech-gradient --output output/art-plan.json
-# Codex reads plan.prompt, actually calls image_gen and inspects the returned image.
-eventcraft art-import output/art-plan.json --image <actual-generated-file> --output output/art-v1
-eventcraft all examples/inputs/web-summit.json --style tech-gradient --visual-receipt output/art-v1/receipt.json --require-art --output output/web-summit
-```
-
-Each new event needs a fresh concept and actual generation. Plans reserve natural text space and typography before the call. Use `art-plan --ratio square` or `--ratio print` for alternate compositions and save imported receipts in `assets.visual_variants`.
-
-`--require-art` prevents silent bundled-art substitution. Receipts bind event facts, style and image hash. An unavailable host tool is reported explicitly; paid fallback requires authorization. [Portable bridge](references/image-generation.md) · [Same style, different themes](examples/visual-v3/dynamic-comparison.png) · [Isolated Skill result](examples/visual-v3/installed-runtime/preview.html)
-
-```sh
-eventcraft render examples/inputs/dinner.json --style luxury-elegant --style-reference examples/inputs/palette.png --style-description 'Luxury elegant, fine lines and whitespace' --output output/custom
-```
-
-Use up to five references. Offline CLI analysis extracts palette data only. The Codex Agent actually views references and studies composition/material/design language before creating original art. `style_override.json` persists reproducible parameters and reference hashes without embedding private reference images. Photos/logos preserve proportions; original QR content is retained, and explicit scan intent or qr_policy=show creates a real QR from the supplied URL.
-
-Optional official OpenAI adapters support extraction, reference vision and abstract hero-image generation. They require `OPENAI_API_KEY`, explicit `--allow-network` and potentially paid API usage.
-
-```sh
-eventcraft extract examples/inputs/lecture.md --llm --allow-network --output output/model-event.json
-eventcraft render examples/inputs/dinner.json --style-reference examples/inputs/palette.png --vision --allow-network --output output/vision
-eventcraft render examples/inputs/launch.json --auto-style --generate-hero 'Original abstract orbital sculpture, no text' --allow-network --output output/with-art
-```
-
-Template examples do not depend on these APIs. External request contracts and error branches have offline tests; live paid calls have not been verified. [Provider configuration and limits](docs/providers.md)
-
-## Output and verification
-
-```text
-output/<activity>/
-├── poster_portrait.png, poster_square.png, invitation.png
-├── poster_print.pdf, invitation_print.pdf, invite_letter.pdf
-├── invitation_outside.png, invitation_folded_print.pdf  # folded format
-├── copy/
-│   └── short.txt, social.md, formal.md, invitation.txt
-├── event.json, manifest.json, preview.html
-├── *.html
-└── registration_qr.png, style_override.json  # when applicable
-```
-
-The manifest records hashes, dimensions, platform fonts, title structure/line count, text bounds, fact checks and selection state. Checks cover text clipping, section overlap, image loading, PDF pages and contrast. Essential text that cannot fit at minimum sizes causes an explicit error.
-
-[Verification](docs/verification-visual-v3.md) records 15 real ImageGen calls, 16 campaign packages and 60 PDFs/66 pages. A full run passed 111 tests; later relevant regressions passed 23 tests and final contracts passed 6. These are separate runs. [Historical verification](docs/verification.md) retains earlier results. Cross-platform, live OCR and paid API acceptance remain unverified. Check remote CI for the actual release commit.
-
-## Privacy, limitations and troubleshooting
-
-- Base rendering does not fetch remote assets. `private/`, `output/` and `.env` are Git-ignored; check any other personal-input paths before committing.
-- `--input-root` restricts input/asset paths; documents and images have size limits. Registration URLs are syntax checked, not checked for business validity.
-- Scanned PDFs need Agent vision or transcription. Screenshot OCR requires optional dependencies, Tesseract and `chi_sim+eng`; live OCR verification is outstanding.
-- Install CJK fonts if Chinese text is missing. Platform font fallbacks can change glyphs and line breaks.
-- A4 PDFs are RGB browser-print files with vector text, without CMYK conversion, bleed or print-shop calibration.
-- Rerun `recommend` after a stale numbered choice. Resolve ambiguous input through structured JSON or Agent confirmation.
-
-## Development and contribution
-
-```sh
-python -m pip install -e '.[dev]'
-python -m ruff check eventcraft scripts tests
-python scripts/validate_skill.py
-python -m pytest -q
-python -m build
-```
-
-GitHub Actions is configured for lint, skill validation, tests, an offline campaign smoke test and builds on push/PR. Exact development dependencies are in `requirements-dev.lock`. [Contribution guide](CONTRIBUTING.md) · [Architecture](docs/architecture.md) · [Design system](docs/design-system.md) · [Design research](docs/design-research.md) · [Maintainer release guide](docs/release.md)
-
-Code and original graphics are [MIT licensed](LICENSE). System fonts and third-party artwork are not bundled; dependencies retain their own licenses. [Third-party notices](THIRD_PARTY_NOTICES.md)
+[MIT License](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Verification](docs/verification-visual-v3.md)

@@ -21,3 +21,12 @@ private/
 EventCraft_Codex_OneShot_Brief_v3.md
 # Local agent state, not public product documentation.
 /HANDOFF.md
+# Generated galleries, historical QA reports and campaign assets stay local.
+/examples/gallery/
+/examples/generated/
+/examples/recommendation/
+/examples/visual-v2/
+/assets/campaigns/
+/docs/images/
+/docs/test-results*.xml
+/test-results*.xml

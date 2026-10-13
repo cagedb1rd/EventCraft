@@ -3,9 +3,9 @@ recursive-include agents *.yaml
 recursive-include references *.md
 recursive-include assets *.json
 recursive-include eventcraft/data/art *.png
-recursive-include assets/campaigns *.png
 recursive-include scripts *.py
-recursive-include docs *.md *.json *.txt *.png *.html *.xml
-recursive-include examples *.json *.md *.txt *.png *.html *.pdf
+recursive-include docs *.md
+recursive-include examples/inputs *.json *.md *.txt *.png
+recursive-include examples/visual-v3 *.png *.pdf *.html
 recursive-include tests *.py
 global-exclude __pycache__ *.py[cod]

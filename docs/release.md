@@ -1,8 +1,10 @@
-# Preparing a GitHub update
+# 发布维护指南 / Release maintenance
 
-The existing remote is [cagedb1rd/EventCraft](https://github.com/cagedb1rd/EventCraft). This guide prepares version **1.1.0**; it does not create a repository, push a branch or publish a release automatically.
+面向维护者。用户安装请看 [README](../README.md) 和 [使用指南](skill-usage.md)。当前源码版本为 **1.1.1**。
 
-## Validate the exact source
+## 检查与构建
+
+在项目虚拟环境执行：
 
 ```sh
 python -m pip install -e '.[dev]'
@@ -11,36 +13,23 @@ python -m ruff check eventcraft scripts tests
 python scripts/validate_skill.py
 python scripts/release_check.py
 python -m pytest -q
-```
-
-Use the project virtual environment. CJK fonts must be installed on the test host. `release_check.py` inspects tracked and pending unignored files, obvious credential patterns, local Markdown links and the project's per-file size threshold. It cannot certify rights or detect every secret. Review `git diff`, `git status --short` and the eventual staged diff; do not stage unknown private files.
-
-`/image/` is ignored and must remain untracked. Keep all 14 research files locally unchanged. Generated original art is stored separately. `.env`, `private/`, `output/`, `tmp/`, dependencies and `dist/` remain ignored. Inspect any other user data before adding it.
-
-The source contains large fictional development galleries and inline-image HTML. The runtime archive below is intentionally smaller; a source push may still be large. Use the PNG/PDF Gallery index for GitHub viewing: GitHub does not execute the offline HTML previews.
-
-## Build versioned assets
-
-```sh
-python -m build
+python -m build --wheel
 python scripts/package_skill.py
-# Optional complete development archive, not required for installation:
-python scripts/package_skill.py --with-examples
-python scripts/isolated_smoke.py
 ```
 
-Expected default files:
+默认用户 Skill ZIP 包含指令、运行代码、必要配置、原创推荐素材、输入样例和使用指南；不包含 tests、开发脚本、CI 或 Gallery。`--with-examples` 构建另一个可选开发资料包，不作为用户默认下载。wheel 用于本地安装验证，不需要上传到面向 Skill 用户的 Release。
 
-- `dist/eventcraft-skill-1.1.0.zip`: complete runtime Agent Skill, guides, original preview art and input samples.
-- `dist/eventcraft-1.1.0-py3-none-any.whl`: Python CLI.
-- `dist/eventcraft-1.1.0.tar.gz`: source distribution with development materials; larger than the runtime archive.
+CI 在临时 runner 中构建 wheel 和源码包，运行报告与烟测输出作为 artifact 保存；这些文件不进入 Git。源码包只包含当前精简 Gallery，不重新收录旧版大目录。
 
-The optional `eventcraft-skill-1.1.0-with-examples.zip` contains all development outputs. Do not accidentally attach an old 1.0.0 build. Rebuild after the final source/documentation edit. Archive links to omitted examples/evidence point to the repository; runtime guide links stay local. Generate SHA-256 checksums for the exact attachments being released. `dist/` is not part of a normal source commit.
+## 上传
 
-## Update the existing repository
+选择 CI 通过的提交创建对应版本 tag。上传以下文件并生成对应 SHA256：
 
-Inspect `git remote -v` and the current branch. Commit only reviewed changes, then push that branch to the existing `origin` when the maintainer is ready. Do not create a duplicate repository or change visibility as part of this update.
+- `eventcraft-skill-1.1.1.zip`
+- `SHA256SUMS-1.1.1.txt`
 
-Check [GitHub Actions](https://github.com/cagedb1rd/EventCraft/actions) for the exact new commit. Local Windows acceptance does not prove Ubuntu CI passed. The historical report includes an earlier failing run; it is not the current CI status.
+使用 [发布说明](release-notes-1.1.1.md)。上传完成后检查资产大小及 GitHub 返回的 SHA256，再发布。不要把新包覆盖到 v1.1.0；历史版本保留完整快照。文档变更后也应重新打包。
 
-For a release, create tag `v1.1.0` from the intended verified commit and use [prepared release notes](release-notes-1.1.0.md). Attach the compact Skill ZIP and optionally the wheel/source distribution with checksums. Keep the release as a draft while required checks are unresolved. Verify downloaded attachments and hashes before publishing. A source-only GitHub update does not require a new Release.
+## 文件边界
+
+测试源码留在 Git 供 CI 检查；测试运行报告、开发画廊、原始活动输出放在忽略的 `output/` 或 `tmp/`。`/image/` 研究资料、用户附件、密钥、环境和系统字体不发布。源码目录缩小不会重写 Git 历史；仅需当前代码可用 `git clone --depth 1`。

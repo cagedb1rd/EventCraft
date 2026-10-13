@@ -32,4 +32,4 @@ eventcraft all examples/inputs/lecture.json --select 2 --state output/selection 
 
 数字映射当前 state 的 position；自动选择从全体 eligible 取最高。event_digest 不同会拒绝旧数字选择。显式 ID/中文名/英文名可选池外任意风格。显式风格高于编号/自动；参考图高于三选一交互，显式风格决定参考基础版式。`--all` 只在主动请求时展示完整候选，冲突项有说明而不渲染。
 
-每项返回 style_id、rank、position、score、reason、tradeoff、preview_path、来源 digest 和布局检查。图由同一 Chromium 引擎生成，预览分辨率 540×540；不是第三方网图。真实运行见 [终端记录](recommendation-terminal.txt)、[比较页](../examples/recommendation/recommendations.html) 和 README 截图。
+每项返回 style_id、rank、position、score、reason、tradeoff、preview_path、来源 digest 和布局检查。预览由同一 Chromium 引擎渲染，分辨率为 540×540。运行上面的命令可在本地生成当前三款预览；[精简 Gallery](style-gallery.md) 展示当前设计效果。

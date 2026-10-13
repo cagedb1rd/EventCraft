@@ -8,20 +8,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "https://github.com/cagedb1rd/EventCraft/blob/main/"
-CORE = ["eventcraft", "scripts", "references", "agents", "assets/styles", "examples/inputs"]
-FULL = ["assets", "docs", "examples", "tests", ".github"]
+CORE = ["eventcraft", "references", "agents", "assets/styles", "examples/inputs"]
+FULL = ["assets", "docs", "examples", "tests", ".github", "scripts"]
 FILES = ["SKILL.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "pyproject.toml", "README.md",
-         "README.en.md", "CONTRIBUTING.md", "CHANGELOG.md", ".env.example", ".gitignore",
-         ".gitattributes", "MANIFEST.in", "requirements-dev.lock", "assets/event.schema.json"]
+         "README.en.md", "assets/event.schema.json", "docs/skill-usage.md"]
+DEVELOPMENT_FILES = ["CONTRIBUTING.md", "CHANGELOG.md", ".env.example", ".gitignore",
+                     ".gitattributes", "MANIFEST.in", "requirements-dev.lock"]
 
 
 def selected_files(with_examples=False):
-    selected = {ROOT / path for path in FILES}
+    selected = {ROOT / path for path in FILES + (DEVELOPMENT_FILES if with_examples else [])}
     for directory in CORE + (FULL if with_examples else []):
         selected.update(p for p in (ROOT / directory).rglob("*")
                         if p.is_file() and "__pycache__" not in p.parts)
-    if not with_examples:
-        selected.update((ROOT / "docs").glob("*.md"))
     for path in selected:
         relative = path.relative_to(ROOT)
         assert not any(part in {"image", "private", "tmp", ".git", ".venv"} for part in relative.parts)

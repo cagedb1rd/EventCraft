@@ -12,4 +12,4 @@ A poster contains title, at most one short supplied subtitle, natural date/time,
 
 Four invitation forms are independent compositions: Boarding Pass body/stub/perforation, Ticket Stub tear-off/serial, Formal Card ceremonial frame/paper/type, Folded cover/back/interior/two-page spread PDF. Information may be richer than a poster. Dates are not repeated in a header. QR stays optional with a valid quiet zone.
 
-Current real artifacts and acceptance evidence are in [v3 acceptance](verification-visual-v3.md) and [Gallery](style-gallery.md). Earlier v2 evidence remains historical and does not describe the present renderer.
+Current real artifacts and acceptance evidence are in [v3 acceptance](verification-visual-v3.md) and [Gallery](style-gallery.md). Earlier evidence remains in the v1.1.0 Git snapshot and does not describe the present renderer.

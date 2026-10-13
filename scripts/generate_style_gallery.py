@@ -5,4 +5,4 @@ from pathlib import Path
 from eventcraft.cli import gallery
 
 if __name__ == "__main__":
-    gallery(Path(__file__).resolve().parents[1] / "examples/gallery")
+    gallery(Path(__file__).resolve().parents[1] / "output/gallery")

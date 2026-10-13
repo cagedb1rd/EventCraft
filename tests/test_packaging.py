@@ -11,6 +11,11 @@ def test_runtime_archive_retains_skill_resources_and_omits_large_campaigns():
     assert ROOT / "examples/inputs/birthday.json" in selected
     assert ROOT / "assets/styles/style-profiles.json" in selected
     assert not any(p.is_relative_to(ROOT / "examples/visual-v3") for p in selected)
+    assert not any(p.is_relative_to(ROOT / name) for p in selected
+                   for name in ["tests", "scripts", ".github"])
+    assert {p.relative_to(ROOT).as_posix() for p in selected if p.is_relative_to(ROOT / "docs")} == {
+        "docs/skill-usage.md"}
+    assert ROOT / "requirements-dev.lock" not in selected
     skill = ROOT / "SKILL.md"
     for link in re.findall(r"\]\(([^)]+)\)", skill.read_text(encoding="utf-8")):
         if not link.startswith("http"):

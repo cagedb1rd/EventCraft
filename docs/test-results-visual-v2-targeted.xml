@@ -1,2 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="4.534" timestamp="2026-10-12T04:21:45.770366+11:00"><testcase classname="tests.test_visuals" name="test_numbered_choice_accepts_fresh_art_and_invitation_override" time="4.427" /></testsuite></testsuites>

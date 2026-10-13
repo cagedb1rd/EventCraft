@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1 - 2026-10-14
+
+- Remove old rendered galleries, duplicate inline-image HTML, campaign source artwork and historical QA exports from the current source tree. Preserve representative current posters, four invitations and print samples; full historical evidence remains in the v1.1.0 snapshot.
+- Reorganize Chinese and English READMEs around visual examples, complete Skill installation, one-time runtime setup, event input, style choice and output viewing.
+- Exclude tests, CI, development scripts and development reports from the default Skill ZIP. Keep automated test source in Git for CI and direct generated examples to ignored output directories.
+
 ## 1.1.0 - release preparation, 2026-10-12
 
 This version is prepared in source; this changelog does not assert that a tag or Release has been published.

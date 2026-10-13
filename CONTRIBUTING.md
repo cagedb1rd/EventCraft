@@ -14,4 +14,8 @@ Ranking edits retain determinism, fact-grounded reasons, brand exclusions and sa
 
 Keep private inputs, references, keys and generated user campaigns out of Git. Only explicitly fictional public examples belong in `examples/`. Do not alter the user's local `/image/` research files or bundle commercial fonts. Provider mocks must be described as mocks. Archive packaging defaults to the runtime Skill; `--with-examples` is for complete development material.
 
-Inspect contact sheets and PDF pages after visual changes. Record the actual environment, tool calls, test snapshots and unverified limits; do not merge separate test runs into a fictional new full-suite result. Current visual evidence is [v3 verification](docs/verification-visual-v3.md); older reports remain historical. The maintainer controls commits, pushes and releases; no automatic publishing step exists.
+Inspect contact sheets and PDF pages after visual changes. Record the actual environment, tool calls, test snapshots and unverified limits; do not merge separate test runs into a fictional new full-suite result. Current visual evidence is [v3 verification](docs/verification-visual-v3.md); complete historical artifacts are preserved in the v1.1.0 Git snapshot. The maintainer controls commits, pushes and releases; no automatic publishing step exists.
+
+## Repository and package boundaries
+
+Keep automated test source in Git: CI needs it to detect regressions. Keep test reports, generated campaign HTML, raw acceptance exports and working images under ignored `output/` or `tmp/`, not in the source tree. The default Skill ZIP includes runtime resources and the usage guide; it excludes tests, development scripts and gallery output. Only compact representative poster/invitation images and a few print samples are checked in.
